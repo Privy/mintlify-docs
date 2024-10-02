@@ -1,0 +1,77 @@
+---
+categories:
+- integrations
+collection: account-settings
+helpscout_url: https://help.privy.com/article/289-install-privy-with-tag-manager
+keywords: []
+name: Install Privy with Tag Manager
+slug: install-privy-with-tag-manager
+---
+For users who don't want to [install the Privy
+Code](https://privy.helpscoutdocs.com/article/73-install-privy-on-your-site)
+manually or via a supported e-commerce platform, there is a way to install
+Privy by adding the code to Google Tag Manager (GTM). Utilizing a GTM
+container allows for the Privy code to be managed through Google and can make
+adding or removing Privy from multiple sites easier.
+
+# Considerations
+
+Before you begin, please review the guidelines below. Using Google Tag Manager
+to install and manage your Privy code will result in the loss of some
+functionality.
+
+  * If you've already installed Privy manually or through an integration, you should not also install Privy through Google Tag Manager. These methods are considered mutually exclusive. 
+  * If you install Privy through GTM, the following functionality will be lost within Privy versus installing through your e-commerce platform.
+    * Google Analytics tracking for view and signup events will not function. 
+    * Abandoned Cart and Purchase Follow-Up emails will not work with Privy installed via GTM.
+    * Display Revenue will not be detected and displayed on your dashboard.
+    * Cart Value, Product/Variant ID, and Order Count targeting for Convert displays and newsletter emails will not work. 
+
+# Copy your Privy code
+
+To install your code, you first need to copy it from your Privy account's
+settings:
+
+  1. In your Privy account, select the **Account** dropdown menu from the navigation bar. Your business name appears here. 
+  2. Select the **Business Information** option from the dropdown menu. 
+  3. In the sidebar, select **Privy Code** under the  _Business Settings_ section. 
+  4. Locate and copy the code listed in the _Install the Code Myself_ section. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/72a772c1-e4ca-46e1-b12f-4a3b16d086b8/Locate_the_Privy_Code.png)
+
+# Install the code
+
+To install your Privy code with Google Tag Manager:
+
+  * In a new browser tab or window, log in to your [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) account.
+  * Ensure you are in the proper _Workspace_. 
+  * In the left sidebar menu, navigate to **Tags** and click **New**.
+  * Name your tag by replacing the **Untitled Tag** at the top left of the pane.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/13eacce5-9050-4ff6-883f-4aaf2cef1157/Create_tag.gif)
+
+  * Select the **Tag Configuration** area and choose **Custom HTML** for the Tag type.
+  * Paste the Privy code that you retrieved earlier into the  _HTML_ field.
+  * Below the _Tag Configuration_ area, click **Triggering** to set up a firing rule. If you don't set up a firing rule, the tag will not fire, Privy Convert displays will not function, and Privy Analytics will not be collected.
+  * Select the **All Pages** (Page view) option for your trigger. 
+  * Click **Save** to save your new tag.
+  * In the upper right, click **Submit** to save your new tag and trigger. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/360ce0a7-cfc7-449b-a599-b4bad506c764/Save_and_submit_tag.gif)
+
+After submitting, you will have the option to give this version a name and
+description. You will want this version name and description to indicate the
+changes you are making to add the Privy Code to your GTM account to install
+the Privy app on your site. Once you have given your version a name and
+description, select the **Publish** button at the top right.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/1f95332a-ea3e-4eed-8df6-d542e4eab661/Publish_changes.png)
+
+Now, every time someone visits a page on your site (the trigger), the tag
+(Privy Code) will run so that your Privy Convert displays appear to visitors
+and analytics are collected.
+

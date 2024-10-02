@@ -1,0 +1,123 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/518-create-a-spin-to-win-display
+keywords: []
+name: Create a Spin to Win Display
+slug: create-a-spin-to-win-display
+---
+A spin-to-win display encourages site visitors to submit their contact
+information for a chance to win several potential prizes via an interactive
+wheel. Visitors love it because it's a highly engaging way to get a discount,
+and you'll love it because it converts at a high rate and is completely
+customizable.
+
+Need some inspiration before you begin? Check out [some customer
+examples](https://www.privy.com/customer-examples).
+
+**Note:** You must use a Classic Display in order to create a Spin to Win
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/4fd3d601-59ef-421f-b688-8d66fa93cab2/Spin-
+to-win_example.png)
+
+# Create the display
+
+To create a bar display:
+
+  * Navigate to **Convert** > **All Displays** and click on the **New Display** button. 
+  * On the _Templates_ dashboard, select Get Started under the "Prefer the classic creation experience?" card on the bottom right of the page, provide an internal name, and then click the **Create Display** button. 
+  * In the _Create_ step of the display builder, select the desired**Form fields** and **Validations** for the display if you hope to collect signups. One field is recommended, while the validation depends on your intended audiences and desired discount availability. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/6682df19e1989867dcefe9ff/file-
+EpL2yzQRyx.gif)
+
+  * Next, select the **Add a Display** option. 
+  * Select **Spin to Win** from the sidebar, choose a template to customize, and then click the **Choose selected** option in the upper right. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/25dff344-98b3-4ee3-bfb3-b52cbfaceb10/Select_a_Spin-
+to-win_template.gif)
+
+  * Select the Wheel element under the Fixed header in the sidebar in the display designer.
+  * In the new pane, select the **Configure slices** button. The subsequent prompt lets you edit the slice colors, labels, [coupons](https://privy.helpscoutdocs.com/article/91-add-coupons-to-a-spin-to-win), win ratios, and win text. 
+  * Select the **OK** option at the bottom of the prompt to save your selections. 
+
+**Note:** A wheel has six winning and six losing slices; however, a spin will
+never land on a losing slice. Use the "Win Ratio" setting to control how often
+the players win your more generous prizes.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/4d1791a1-ba80-40b5-ad33-8dcea49ca25d/Edit_slices.gif)
+
+  * Once you configure the slices, customize the rest of the display's design and content. 
+  * Select the **Save** option at the upper right. 
+
+**Note:** Please test any custom background images on various devices and
+screen sizes to ensure your design meets your goals for the largest audience.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/2c28c127-aeb5-4d21-b28c-9f2981dfaf55/Design_a_Spin-
+to-win.gif)
+
+  * After saving, a new _Spin to Win Design_ section will be available under the _Create_ tab. Click on the **Thank You Page Design** option. 
+  * In the thank-you page designer, add the "win text" and "coupon code" merge tags to display the winning text and coupon associated with the participant's prize. Include **{{ signup.win_text }}** to display the appropriate win text (e.g., Free Shipping) and include **{{ signup.coupon_code }}** to display the appropriate coupon code. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/d49705f9-d63e-4613-9bc8-b665a204322d/Customize_the_Thank_You_Page.gif)
+
+  * Select the **Save** option at the upper right.
+
+# Target the right audience
+
+To target the desired audience with your spin-to-win display:
+
+  1. Move to the  _Target_ step and ensure the **When To Show** settings provide at least a 15-second delay. Providing a delay or choosing only to display the spin-the-wheel on an exit attempt will help alleviate pressure on your visitors and usually translates into higher conversion rates. **Save**. 
+  2. If you would like to target a specific segment of your visitors instead of all visitors, select the **Who To Show It To** setting and click **Add targeting condition**. The subsequent prompt allows you to target visitors based on various [attributes, activities, and behaviors](https://privy.helpscoutdocs.com/article/70-use-audience-targeting-conditions). **Save**. 
+  3. Select the **How Long to Show It** setting if you want the spin-to-win to expire. **Save**. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/163b788f-20ca-4f6d-b2ec-e9406f0ef289/Target_options.png)
+
+# Follow-up the display
+
+To sync the display's signups to another service or send a follow-up message
+to the customers who submitted the display, move to the _Follow-up_ step and
+review the options below. Please note that accounts created before May 26,
+2022, won't automatically enable after signup emails. Instead, you must
+manually switch the **Published** toggle to the ON position.
+
+  1. [After-signup emails](https://privy.helpscoutdocs.com/article/166-set-up-an-after-signup-email) are enabled by default on active displays, meaning that they will immediately start sending to new signups if the following criteria are met:
+
+  * The display contains an email field and a [coupon code](https://privy.helpscoutdocs.com/article/72-create-and-manage-coupon-codes).
+  * The account has a _Website URL_ address set on its [Business Information](https://dashboard.privy.com/settings/business-info) page. 
+  * The display type is not [Phone Capture](https://privy.helpscoutdocs.com/article/199-create-a-phone-capture-display) or [Two-Step](https://privy.helpscoutdocs.com/article/93-create-a-two-step-display).
+
+  2. Select the **Create series** option to send additional after-signup emails. 
+  3. Select the **Sync signups** option to sync the signups to a list in a [linked account](https://dashboard.privy.com/settings/accounts). If you're not using [Privy Email](https://privy.helpscoutdocs.com/article/46-privy-email-abandoned-cart-email-core-customer-winback-ger-started-getting-started-newsletters-purchase-follow-up), this setting is particularly important as it ensures the contact information (e.g., email address) is available to the third-party provider.
+  4. Select the **Send text message** option to send an[ after-signup text message](https://privy.helpscoutdocs.com/article/166-set-up-an-after-signup-email) to the individuals who decided to sign up for the display.
+  5. Enable or disable real-time notifications for your users. These notifications will alert the user of new display signups immediately. **Save**. 
+
+**Note:** The text option requires a [Privy Text](https://www.privy.com/text)
+subscription. Customers are only eligible to receive texts if their phone
+number was collected via a Privy display using the phone field, they checked
+the text opt-in checkbox, and they answered "YES" to the double opt-in message
+sent to their number.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/c7c13033-4120-4827-9b99-0e6cbd0d8511/Follow-
+up_options.png)
+
+# Launch the display
+
+Once the display is designed, the target audience selected, and any desired
+follow-up messages configured, select the **Publish** button at the upper
+right of the _Follow-up step_ and confirm your decision in the prompt.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/9104851b-c3cb-49b9-b9ce-9578824a56d4/Publish.png)
+
+The spin-to-win display is now live and will appear to your qualifying
+customers.
+

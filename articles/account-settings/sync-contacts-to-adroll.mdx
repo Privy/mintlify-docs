@@ -1,0 +1,54 @@
+---
+categories:
+- integrations
+collection: account-settings
+helpscout_url: https://help.privy.com/article/294-sync-contacts-to-adroll
+keywords: []
+name: Sync Contacts to Adroll
+slug: sync-contacts-to-adroll
+---
+To sync the contacts captured by your Privy Convert displays to your Adroll
+account, you must link (integrate) the two accounts and add automation rules
+to your displays.
+
+# Link the accounts
+
+To link your Privy account with your Adroll account:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the**Integrations** option from the dropdown menu. 
+  * Scroll down to the _Available Integrations_ section and select the **Adroll** option. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-30/7d2ed1c4-c9fd-45c5-b712-8860812389e9/Available_integrations_4.png)
+
+  * Enter your credentials in the prompt and then select **Link Account**. To locate your Advertiser ID in Adroll, go to the left navigation menu and click **Website** under _Audiences_. From there, scroll down to the dashboard's AdRoll Pixel section and click **View Pixel**. The ID will be listed as a variable using the format _adroll_adv_id_. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66b21d6048915f570c6a9016/file-0NwlNxlwD1.png)
+
+All set! Adroll should now appear as a linked account in the _Authorized
+Accounts_ section. It's time to add some automation rules.
+
+# Add an automation rule
+
+**Note:** These settings must be set for each display individually. Displays
+syncing to Adroll sync every 100 signups and does not sync individual signups
+due to Adroll API restrictions. Manual exports also count towards this sync
+limit.
+
+To add an automation rule to a display so that the collected contacts sync to
+Adroll:
+
+  * Navigate to **Convert** > **All Displays**. 
+  * Select the display you'd like to sync and navigate to the **Settings** step of the display builder. The selected display must include a form to sync contacts. 
+  * Click the **Sync signups** button, select**Adroll** from the dropdown menu, configure the presented options, and **Save**. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66842a1ddd0f8c60bb3fdd68/file-
+XaCwLnTuzr.gif)
+
+This display's signups will now sync to Adroll. Click the **Sync signups**
+button to sync contacts to additional services or lists. Check out [this
+guide](https://privy.helpscoutdocs.com/article/108-use-display-automation-
+rules) for more information on automation rules and how to troubleshoot common
+sync issues.
+

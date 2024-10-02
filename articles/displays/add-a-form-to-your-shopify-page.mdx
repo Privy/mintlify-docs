@@ -1,0 +1,82 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/527-add-a-form-to-your-shopify-page
+keywords: []
+name: Add a Form to Your Shopify Page
+slug: add-a-form-to-your-shopify-page
+---
+If you're already using campaigns to grow your contact list, you should also
+consider replacing the embedded form (e.g., Newsletter) in the body content of
+your Shopify store with one from Privy. This replacement ensures that all your
+contacts -- wherever they sign up on your site -- sync with your Privy account
+and its [linked accounts](https://dashboard.privy.com/settings/accounts).
+
+**Note:** To add your embedded form to the footer of your Shopify store,
+follow [these steps](https://help.privy.com/article/511-add-a-form-to-your-
+shopify-footer) instead.
+
+# Configuration
+
+Once you've [created](https://help.privy.com/article/511-add-a-form-to-your-
+shopify-footer) your Privy form, replace your Shopify form by following these
+steps:
+
+  * Navigate to the **Online Store** > **Themes** section of your Shopify account.
+  * Select the **Customize** button of your store theme. 
+  * If you have a **Newsletter** section included on your page, click on the section and remove it. If you don't have this section in your content, you can skip this step. 
+  * Disable the default Shopify form on the footer.
+  * Select the [+] Add section option from the sidebar and search for Custom liquid block to add it.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/bba42887-5dcc-4266-8f2f-6d75c72e8dbe/Add_a_custom_content_block.gif)
+
+  * In another browser tab, open your Privy account and navigate to the [Convert](https://dashboard.privy.com/campaigns) dashboard.
+  * Locate and select the desired embedded form campaign and open the **Create** section.
+  * Click the **Get embed code** button on the _Embedded Form Design_ card. 
+  * Copy the entire embed code from the prompt.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/e0c884ef-
+cd6b-465c-ad67-a69db4e8e751/Copy_the_forms_embed_code.gif)
+
+  * Return to your Shopify tab, Click on the custom liquid you previously added, and paste the Privy embed code into the custom liquid HTML box.
+  * Select the **Save** button in the upper right to load the newly embedded form and ensure it matches your page's layout and design.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/9b53b6b8-9a42-4b61-a94a-724b1fb5ecfa/Add_form_to_Shopify.gif)
+
+Congratulations! Your Privy embedded form is now in the body content of your
+Shopify store. If you're not using [Privy
+Email](https://help.privy.com/article/46-get-started-privy-email), ensure that
+your embedded form syncs your signups to any other system. Update these
+settings in the **Follow-up** section of the form builder.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/863a9400-9b9c-4689-a750-eb2e7d002511/Sync_signups_2.png)
+
+# Troubleshooting
+
+If you're encountering issues with your embedded forms on Shopify, please
+attempt the following:
+
+### Disable reCAPTCHA
+
+To disable the reCAPTCHA for your Privy forms:
+
+  * Navigate to the [**Customizations**](https://dashboard.privy.com/settings/customizations) sections of your _Business Settings_. 
+  * Scroll down and locate the _Invisible reCAPTCHA_ section. 
+  * Disable the **Enable Invisible reCAPTCHA** checkbox. 
+  * Click the **Save** button.
+
+Please contact support via email or chat if this doesn't correct the issue.
+
+**Note** : When reCAPTCHA is disabled via your account settings, Privy is
+effectively vouching for your registration process and will attempt to waive
+all reCAPTCHA requirements. However, if behavioral analysis suspects that a
+user may be a bot or that spam activities are taking place, reCAPTCHA can
+still fire in the background. This aspect of reCAPTCHA cannot be disabled as
+it is currently one of the best ways to protect Privy merchants from
+suspicious or abusive activity.
+

@@ -1,0 +1,103 @@
+---
+categories:
+- plays
+collection: displays
+helpscout_url: https://help.privy.com/article/365-create-a-free-shipping-bar
+keywords: []
+name: Increase Order Value with a Free Shipping Bar
+slug: create-a-free-shipping-bar
+---
+The free shipping bar calculates the difference between a visitor's current
+shopping cart and a predetermined free shipping threshold. The bar is visible
+throughout the visit and dynamically updates as the visitor's cart gets closer
+to the free shipping threshold. This persistent reminder ensures the potential
+customer is always aware of the potential reward and encourages them to
+increase their order value to receive the reward.
+
+**Note:** The pre-built template used in this guide is only available to Privy
+accounts integrated with BigCommerce, Shopify, Squarespace, Weebly, and Wix
+storefronts.
+
+# Before you begin
+
+## Prepare your store
+
+The free shipping bar displays a value based on the items in a visitor's cart
+but does not automatically deliver free shipping. To ensure the free shipping
+is applied when the customer adds enough value to their cart (meets the
+threshold), you must configure your store's "free shipping" settings. To
+configure these settings, please reference the resources currently supported
+by the storefronts
+[BigCommerce](https://support.bigcommerce.com/s/article/Free-
+Shipping#shipping-method),
+[Shopify](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-
+your-shipping/setting-up-shipping-rates#create-free-shipping-rates),
+[Squarespace](https://support.squarespace.com/hc/en-
+us/articles/206327038-Free-shipping),
+[Weebly](https://help.printful.com/hc/en-us/articles/360014067339-How-do-I-
+configure-shipping-for-Weebly-), and
+[Wix](https://support.wix.com/en/article/wix-stores-setting-up-free-shipping-
+above-a-set-price).
+
+## Determine your currency
+
+By default, the free shipping bar shows values using the $ symbol. If the
+display should use a different currency symbol, such as £ or €, please update
+the text used for the "Cart is empty" and "Cart value is less than" stages
+with the desired symbol when creating the display. The display does not
+automatically detect your store's currency.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/04-05/92533436-0021-46dc-92c9-df31adbacb87/2024-04-05_12-45-29.png)
+
+# Create the display
+
+To create a free shipping bar display:
+
+  * Navigate to **Convert** > **All Displays** and click the **New Display** button. 
+  * Select the **Increase Order Value** on the right side menu on the _Templates_ dashboard.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66834536d593d719515cb3ad/file-
+DAv3qYMnVp.gif)
+
+  * Use the display designer to customize the display for when the visitor's cart is empty, is valued less than the threshold, and exceeds the threshold. The text, bar color, and an optional "checkout now" button are available for customization for each stage. The "checkout now" button is only enabled for the "greater than" stage.
+
+**Note:** The text for the "Cart is empty" stage includes a {{ goal }} merge
+tag. This tag displays the spending threshold that you've set. Meanwhile, the
+"Cart value is less than goal" text includes a {{ goal_minus_cart_value }}
+merge tag. The calculated difference between the visitor's cart value and the
+free shipping threshold will appear in this tag. Make sure to retain these
+tags. **If your store 's currency is not USD, please update the denomination
+sign used before these tags. **
+
+  * Once the design is complete, move on to the _Settings_ step to determine the cart value goal.
+
+# Target the right audience
+
+By default, a free shipping bar display appears to all visitors at all times
+until it is disabled. To change any of these default options, move to the
+_Target_ step, and customize the desired settings.
+
+  1. The **Triggers and Visibility** setting allows you to determine when and how often the free shipping bar appears to visitors. After making any changes, please select **Save**. 
+  2. The **Audience Targeting** setting allows you to target a more specific segment of your visitors instead of all visitors. If you update these settings to include various other [attributes, activities, and behaviors](https://privy.helpscoutdocs.com/article/70-use-audience-targeting-conditions), please select **Save**. 
+  3. The **Scheduling** setting determines how long the display will appear to visitors. Update the setting if you'd like the display to expire on a specific fixed date, then save. 
+  4. The **Coupon** setting (optional) allows you to offer an additional coupon code for a discount. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/668340dd1f3fa9421e288a41/file-
+wIOEbn6gr5.png)
+
+# Launch the display
+
+Once the display has been created and the target audience selected, click the
+**Publish** button at the upper right of the screen and confirm your decision
+in the prompt.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/668341e05173914f806c2750/file-
+lHppIYTSuE.png)
+
+The free shipping bar display is now live and will appear to your qualifying
+customers.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-12/f313b943-dace-4603-a0cb-618f1e481c96/Free_shipping_bar_in_action.gif)
+

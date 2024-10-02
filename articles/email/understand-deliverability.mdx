@@ -1,0 +1,97 @@
+---
+categories:
+- deliverability
+collection: email
+helpscout_url: https://help.privy.com/article/482-understand-deliverability
+keywords: []
+name: Understand Deliverability
+slug: understand-deliverability
+---
+A contact's email and text permissions determine whether or not they are
+reachable. Each status is ultimately determined by the contact's previous
+interactions with your brand. A contact's current permissions are available
+for review on the [Contacts](https://dashboard.privy-staging.com/contacts)
+dashboard and their profile.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-15/9a75b8f1-2d57-4855-8860-dd113be08b38/Locate_email_and_text_reachability.gif)
+
+**Note:** A contact must have an email address or phone number associated with
+their profile for an email or text permission to appear. A contact can have
+one without the other.
+
+# Email messages
+
+There are currently four possible email permissions:
+
+  * **Mailable** : The contact is eligible to receive emails. A contact typically becomes mailable by submitting a form with the proper [consent](https://privy.helpscoutdocs.com/article/206-understand-marketing-consent) or by being included in an [import](https://privy.helpscoutdocs.com/article/50-create-and-manage-contacts) designated for subscribed contacts. 
+  * **Unsubscribed** : The contact is not eligible to receive emails. A contact becomes unsubscribed by opting out via the email preferences link in your emails or by being included in an [import](https://privy.helpscoutdocs.com/article/50-create-and-manage-contacts) designated for unsubscribed contacts. 
+  * **Suppressed** : The contact is not eligible to receive emails because their email address is invalid or Privy had trouble getting the server to accept the email (e.g., Hard Bounce). 
+  * **Unset** : The contact has neither opted in nor opted out of receiving emails but will not be mailable until they have opted in. A contact typically becomes unset if they completed a purchase without also opting into marketing communications or were included in an import that is pending review by Privy's compliance team. Any newly imported contacts will remain in an unset status until approved. 
+
+## Managing email permissions
+
+**Resubscribing a contact** \- Unsubscribed contacts will be resubscribed when
+a signup event provides
+[consent](https://privy.helpscoutdocs.com/article/206-understand-marketing-
+consent). Suppressed contacts will not be resubscribed, as that is currently
+treated as a permanent state. If you believe a contact has been incorrectly
+marked as suppressed, please [contact the support
+team](mailto:support@privy.com).
+
+**Note:** If the information of a previously deleted contact is used during a
+signup event, the contact's initial email permissions will reflect their most
+recent permissions prior to their deletion.
+
+**Unsubscribing a contact** \- Contacts can unsubscribe themselves by clicking
+the email preferences link at the bottom of any email received from Privy.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/02-07/90936744-0145-4300-a2bf-
+ae3a8a73d683/Unsubscribe_link_in_email_1.png)
+
+Additionally, if a contact requests a removal, you can manually unsubscribe a
+contact by clicking the **Unsubscribe** button on their profile.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/02-07/fceb228e-5101-438e-aa8b-358d504df867/Unsubscribe_button_1.png)
+
+## Sharing permissions information
+
+**Syncing mailable and unset contacts -** When syncing a signup event to an
+external email service provider (ESP), Privy will send a marketing flag when
+possible. The provider can then use the information to update
+[consent](https://privy.helpscoutdocs.com/article/206-understand-marketing-
+consent) and reachability information on their end.
+
+**Scenario**| **Email Flag**  
+---|---  
+A subscription without an opt-in checkbox is submitted.| Accepts marketing  
+A subscription with an opt-in checkbox is submitted with the box checked. | Accepts marketing  
+A subscription with an opt-in checkbox is submitted without the box checked. |  Does not accept marketing  
+  
+If the contact's subscription status at the partner was "unsubscribed" when
+Privy sent the information, the sync might resubscribe the contact on the
+partner's end as well. Additionally, this sync may result in the recreation of
+a previously deleted contact. However, both of these behaviors depend on the
+specifics of the partner's API.
+
+**Syncing unsubscribed and suppressed contacts** \- Privy does not currently
+support real-time syncing of this information to or from partner email service
+providers (ESPs).
+
+# Text messages
+
+There are currently two possible text permissions:
+
+  * **Textable** : The contact is eligible to receive texts. A contact becomes textable by submitting a form with the text opt-in checkbox checked and then answering "YES" to the double opt-in message sent to their number. This action provides [explicit consent](https://privy.helpscoutdocs.com/article/206-understand-marketing-consent). 
+  * **Not Textable** : The contact is not eligible to receive texts. 
+
+## Managing text permissions
+
+**Unsubscribe a contact** \- Contacts can unsubscribe themselves by replying
+STOP. This disclaimer is included in all Privy texts automatically.
+
+**Resubscribe a contact** \- Unsubscribed contacts can resubscribe themselves
+by submitting a display that provides new explicit consent.
+

@@ -1,0 +1,108 @@
+---
+categories:
+- compliance
+collection: contacts
+helpscout_url: https://help.privy.com/article/550-hard-vs-soft-bounces
+keywords: []
+name: Hard vs. Soft Bounces
+slug: hard-vs-soft-bounces
+---
+When a recipient server blocks an incoming email, it’s called a bounce. When a
+bounce happens, the receiving server usually provides a message stating the
+reason for the bounce, allowing Privy to categorize them as soft or hard
+bounces.
+
+In this article, you’ll learn about some specific reasons why bounces can
+happen and their effect on your contact list.
+
+## Hard Bounces
+
+Hard bounces indicate that the email address cannot receive emails
+permanently. Some of the reasons for a hard bounce might be:
+
+  * The email address is invalid or nonexistent
+  * The recipient server is no longer active or has blocked emails permanently
+  * The recipient user had a firewall or a strict spam filter
+
+Once an email hard bounces, the recipient address will be automatically and
+immediately marked as “suppressed: non-mailable,” permanently removing the
+contact from your mailable contacts list.
+
+## Soft Bounces
+
+Soft bounces indicate a temporary issue that is preventing that address from
+receiving emails at that time. Servers will continue to attempt to deliver the
+email until a certain amount of time has passed without success before
+officially sending back a bounce message. Some of the reasons for a soft
+bounce might be:
+
+  * Mailbox exceeds storage quota (full inbox).
+  * Mailbox configuration is incorrect.
+  * Mailbox is inactive.
+  * Recipient's email server is offline.
+  * Recipient's email server has received excessive emails within a timeframe.
+  * Email size exceeds permissible limits.
+  * Domain name may be temporarily unavailable.
+  * Email content is blocked.
+  * Email does not adhere to recipient server policies.
+  * Email fails DMARC verification.
+
+|
+
+  * Email triggers recipient server's anti-spam measures.
+  * Email triggers recipient server's anti-virus measures.
+  * Email fails sender requirements of recipient server.
+  * Email cannot be relayed between servers.
+  * Email cannot be relayed due to unknown reasons.
+  * Recipient’s email server blocked your message due to sending reputation.
+
+  
+---|---  
+  
+Soft bounces will not cause the email address to be marked as non-mailable but
+can be persistent depending on the cause.
+
+## How to find and analyze your campaign bounce rates and reports
+
+Now that you have an idea of what the difference between hard and soft bounces
+is, you can better analyze your bounce rates and access the detailed error
+messages for more information about them.
+
+First, to find your bounce rate on a Newsletter campaign, you’ll just need to
+click on the desired newsletter, scroll down to the reporting area, and then
+filter by “Bounced”:
+
+Here you’ll be able to check individual contacts who have returned bounce
+messages, and by clicking on their email address, you’ll see the separate
+bounce error messages with more details:
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66a3c29f9638c36b868f1c85/file-
+JnIniLwrsr.gif)
+
+This allows you to correct any possible causes of bounces and gain insights on
+bounce issues that cannot be immediately resolved.
+
+## What is a good bounce rate, and how can it be improved?
+
+A good bounce rate will be 2% or lower. Anything between 2% and 5% is worth
+investigating, and anything over 5% is considered critical and requires
+immediate action for improvement.
+
+Major points to take into account when it comes to a high rate of bounces are:
+
+  * What are the major causes of bounces? You can assess this by looking at the bounce error messages in your email reports.
+  * Are my domain settings within Privy correctly configured? You can assess this by checking your account’s [domain settings page](https://dashboard.privy.com/settings/sending-domains). 
+
+One other very important thing to note is that since February 2024,
+[Google](https://support.google.com/a/answer/81126?hl=en) and
+[Yahoo](https://senders.yahooinc.com/best-practices/) have set specific
+requirements for email senders, including setting up authentication methods
+such as DMARC, SPF, and DKIM records to send emails to their users’ inboxes.
+These requirements can have a great impact on your deliverability and bounce
+rate, so make sure to keep an eye on that.
+
+We have an [article](https://help.privy.com/article/10-dmarc-dkim-spf-record-
+authentication) that goes into more detail about this, but you can also reach
+out to us for extra help by sending an email to
+[support@privy.com](mailto:support@privy.com)
+

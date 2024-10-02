@@ -1,0 +1,79 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/176-insert-custom-code-into-displays
+keywords:
+- Code
+- CSS
+- Custom
+- Custom Code
+- Design
+- Designer
+- HTML
+- HTML Block
+- HTML Element
+- Javascript
+- JS
+- Remove the X
+- hide close
+- remove close
+- remove x
+name: Insert Custom Code into Classic Displays
+slug: insert-custom-code-into-displays
+---
+Custom HTML, CSS, or JavaScript is insertable when designing a [Build your
+own](https://privy.helpscoutdocs.com/article/100-use-the-build-your-own-
+display-designer) display. Inserting the code allows users to influence the
+display's design and behavior beyond what is available by default.
+
+# Things to know
+
+  * Custom code is not available to Privy Trial or Basic Convert account users.
+  * Custom code is not available in displays created using [templates](https://privy.helpscoutdocs.com/article/97-overview-of-the-plays-dashboard). 
+  * Custom code is only recommended for users with proficiency in the topic or those with access to a developer. Without a complete understanding of your site, custom code targeting your display can impact your site pages. For this reason, Privy's support team cannot help you create or customize displays with code beyond the general guidance covered in this guide.
+
+# Insert the code
+
+To insert custom code into a
+[Classic](https://privy.helpscoutdocs.com/article/181-should-i-use-a-play-or-
+build-my-own-display) display:
+
+  * Navigate to **Convert** > **All Displays** and select or create a display.
+  * Select the first Design option to access the display editor in the Create step. 
+  * Select the **Add element** option from the sidebar, followed by the **Add HTML** option from the subsequent dropdown menu.
+  * Select the new **HTML** element from the sidebar's _Elements_ list.
+  * Add the desired HTML, CSS, or JavaScript code into the element's editing area.
+  * Select the **Save** option at the upper right when you are done with your changes. 
+
+In the example shown below, the custom CSS included in the element removed the
+"X" option from the bar display. This design change means the announcement
+cannot be dismissed.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-10/f7f12a56-b8a9-48e7-806c-9ca07a30b7c7/Custom_code_example.gif)
+
+# Common uses
+
+Remove the closing "X" from the corner of a display.
+
+    
+    
+    <style>
+    .privy-dismiss-content {
+    display: none;
+    }
+    </style>
+    
+
+Remove the shadow design from a display's button.
+
+    
+    
+    <style>
+    .privy-element.privy-button-element.privy-button-flat {
+    box-shadow: 0 0px !important;
+    }
+    </style>
+    
+

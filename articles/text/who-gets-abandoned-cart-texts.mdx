@@ -1,0 +1,77 @@
+---
+categories:
+- faq
+- automations
+collection: text
+helpscout_url: https://help.privy.com/article/350-who-gets-abandoned-cart-texts
+keywords: []
+name: Who Gets Abandoned Cart Texts?
+slug: who-gets-abandoned-cart-texts
+---
+Multiple factors determine whether or not a shopper will receive an abandoned
+cart text from Privy. For a text message to be sent, your shopper must meet
+all of the following criteria. Please review them carefully.
+
+**Note:**[Privy
+Text](https://www.privy.com/pricing?utm_source=knowledgebase&utm_medium=article)
+messages can only be sent to numbers registered in the United States and
+Canada (+1 country code) at this time.
+
+**They are a known and reachable contact** \- A shopper must be a known
+contact that exists in your Privy account and must be
+[eligible](https://privy.helpscoutdocs.com/article/139-understand-
+deliverability) to receive texts.
+
+  * A known contact has a contact profile in your Privy account that is available when searching the [Contacts](https://dashboard.privy.com/contacts) dashboard. The known contact must also be "cookied" by Privy to tie their actions to a specific contact profile. A tracking cookie is placed in their browser when they submit a Privy display or provide their email address and agree to receive marketing communications through the checkout flow for Shopify, Shopify Plus, and Weebly storefronts. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-23/70117371-527e-4081-80d2-a8a5e8ed6482/Text_opt-
+in_example.png)
+
+  * An eligible contact has "textable" permission and an SMS Opt-in value of True. A contact's text permissions are available for review on the [Contacts](https://dashboard.privy.com/contacts) dashboard and their profile. They only receive both values if they've submitted a display with the Text Opt-in Disclaimer and then confirmed their action via the automatic opt-in text message.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-23/e538f361-7b95-4469-8940-da0590b89f9a/Textable_example.png)
+
+**They had the appropriate cart value** \- If you have a connected
+BigCommerce, Shopify, or Wix store, Privy can detect the amount of value in a
+shopper’s cart during their visit. If the value in their cart is greater than
+or equal to the minimum value and does not exceed any set maximum threshold,
+the shopper will remain eligible to receive the abandoned cart text.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-23/155616a6-58f2-4fd9-b200-fbb62a5e0408/Cart_Value.png)
+
+**They had the appropriate products in their cart** \- If you have a connected
+Shopify store, Privy can detect the products in a shopper's cart via your
+store's [product IDs](https://privy.helpscoutdocs.com/article/192-use-product-
+segmentation). At least one of the products identified in this field must be
+in the shopper's cart for them to remain eligible for the text.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-23/3d8bf1f7-3165-4586-ad96-294a70782e85/Product_ID.png)
+
+**Enough time has passed since their visit** \- When a shopper visits your
+site, their activity is recorded within Privy. If their last visit occurred
+after the time you have set in the “last seen” setting, then they remain
+eligible to receive the abandoned cart text.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-23/da2e1142-648c-43d2-bb43-c8023b762b37/Time.png)
+
+**They have not already received an abandoned cart text for this visit** \-
+Phone carrier policies mandate that your shoppers can only receive one
+abandoned cart text per cart abandonment. If you create a series to remind
+shoppers 2 hours, 24 hours, and 48 hours after their visit, Privy will not
+send the second and third messages.
+
+A shopper is eligible for a new abandoned cart text if the following are true:
+
+  * The initial text that they qualified for has been sent, or they completed a purchase. 
+  * They return to your site at least 48 hours later. Privy enforces a 48-hour cooldown period between messages to allow recipients to engage with your message and to protect your text message-sending score. 
+  * They abandon their cart again. 
+
+If the cart associated with the new visit meets the criteria of one of your
+abandoned cart texts, such as its value or required contents, then the cycle
+starts again.
+

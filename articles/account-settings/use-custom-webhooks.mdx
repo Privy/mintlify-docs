@@ -1,0 +1,99 @@
+---
+categories:
+- integrations
+collection: account-settings
+helpscout_url: https://help.privy.com/article/163-use-custom-webhooks
+keywords:
+- Web Hook
+- Web Hooks
+- Webhooks
+- Webhook
+- Custom
+name: Use Custom Webhooks
+slug: use-custom-webhooks
+---
+If you're a developer, you can configure webhooks to send from Privy to an
+external system for signup and order events.
+
+# Configuration and examples
+
+To add, edit, or remove webhooks:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the **Integrations** option from the dropdown menu. 
+  * In the sidebar, select **Webhooks** under the  _Integrations_ section. 
+
+Here is an example webhook payload for a signup event:
+
+    
+    
+    {
+        "id": 999999,
+    
+        "email": "test@example.com",
+    
+        "first_name": "Test",
+    
+        "last_name": "User",
+    
+        "custom_fields": null,
+    
+        "created_at": null,
+    
+        "updated_at": null,
+    
+        "display": {
+            "id": 1,
+            "title": "Newsletter signup"
+        }
+    } 
+    
+
+If the signup has custom fields, the custom_fields will appear as a (single-
+level) nested object:
+
+    
+    
+    {
+    
+        "id": 999999,
+    
+        "email": "test@example.com",
+    
+        "first_name": "Test",
+    
+        "last_name": "User",
+    
+        "custom_fields": {
+    
+            "favorite_color": "blue"
+    
+         },
+    
+        "created_at": null,
+    
+        "updated_at": null,
+    
+        "display": {
+    
+            "id": 1,
+    
+            "title": "Newsletter signup"
+        }
+    }
+    
+
+# Endpoint requirements
+
+Your webhook endpoint must be a publicly accessible URL that resolves to an IP
+address in one of the public ranges. For example, you cannot use any URL that
+resolves to 127.0.0.1 or equivalent.
+
+We recommend using HTTP basic authentication to add a layer of security to
+your webhook endpoint (e.g., https://name:password@example.com/post ).
+
+Your server will need to reply with an HTTP 200 response to let you know
+you've received the webhook. If it does not respond with an HTTP 200, Privy
+will not return the server's HTTP response code or response body to you for
+inspection.
+

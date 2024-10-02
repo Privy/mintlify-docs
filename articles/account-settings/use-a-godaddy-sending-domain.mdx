@@ -1,0 +1,131 @@
+---
+categories:
+- integrations
+collection: account-settings
+helpscout_url: https://help.privy.com/article/472-use-a-godaddy-sending-domain
+keywords: []
+name: Use a GoDaddy Sending Domain
+slug: use-a-godaddy-sending-domain
+---
+The default address used to send emails from your account is a shared Privy
+address. However, to [improve your email
+deliverability](https://www.privy.com/blog/how-to-improve-email-
+deliverability) and build trust with your email recipients, this address
+should be updated to reflect your specific domain and brand. This document
+will walk you through setting up your DNS records with GoDaddy. If you use a
+different provider, please reference [this
+resource](https://privy.helpscoutdocs.com/article/33-use-a-custom-sending-
+domain) instead.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/5337f606-507f-40fb-982a-1b993584fc80/Default_vs_Custom_sending_domain_1.png)
+
+Please ensure that you meet the following requirements before proceeding:
+
+  * You must own a domain name - addresses from free providers like Gmail or Yahoo won't work.
+  * You must have the ability to update the DNS records of your domain.
+  * You must be hosting a website at the root of the domain. 
+
+# Add the domain
+
+To add a new sending domain:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the**Business Information** option from the dropdown menu. 
+  * In the sidebar, select **Sending Domain** under the  _Email Settings_ section. 
+  * Click the **\+ Add Sending Domain** button in the upper right. 
+  * In the prompt, enter your domain name (e.g., example.com) and click the **Save** button. The provided domain must be a root domain, not a subdomain (e.g., mail.example.com). 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667ee29ee1989867dcefe8b9/file-
+wVXsXweBSF.gif)
+
+# Update your DNS information
+
+After completing the previous steps, DNS records are generated for your
+domain. The records are automatically presented to you after saving the domain
+for the first time. However, if you have navigated away from the page, the
+records can be easily accessed by returning to your [Sending
+Domain](https://dashboard.privy.com/settings/sending-domains) settings,
+locating the domain, and clicking the **DNS Records** button.
+
+Once you've accessed the records:
+
+  * Head over to GoDaddy and navigate to the [DNS Management](https://www.godaddy.com/help/view-my-dns-settings-19182) section for your domain. Click **Add** to add a new DNS record.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/cb0c4991-270b-4797-8dcf-d9bb3d539513/Add_a_GoDaddy_DNS_record.png)
+
+  * Add each record displayed in Privy, making sure to match **Type** with **Type** , **Host** with**Name** , and **Data** with **Value**. There is a mix of CNAME and TXT record values. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/fa8de397-7e4d-43f6-a070-4170033497b3/Example_TXT_record.png)
+
+  * Once all of the records are added, return to the records in Privy and click the **Verify and Set Default** button next to the domain. This action will check if the DNS records were updated correctly and set the domain as the default for your emails going forward.
+
+**Note:** It can take up to 48 hours for the DNS records to propagate and
+properly verify.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/014d1852-6900-4704-8596-6f0e7173edff/Verify_domain_1.gif)
+
+# Send emails with the domain
+
+After verifying your sending domain, you can update the default "from" address
+for emails sent from your account. If you don't update these settings, emails
+will be sent using "offers" as the username paired with your custom sending
+domain. To update this setting:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the**Business Information** option from the dropdown menu. 
+  * In the sidebar, select **Sender Options** under the  _Email Settings_ section.
+  * Input the desired address before the "@" symbol in the 
+
+ _Default From Email_ field.
+
+  * Ensure the desired custom domain appears to the right of the "@" symbol.
+  * Click the **Save Changes** button to confirm your selections. 
+
+Completion of this process will update all emails that you create moving
+forward. Check out this example from our friends at Space Age Trading Cards,
+who decided to combine "launches" with their custom sending domain to create
+their default From Email address.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/96d9a9f7-475b-42d6-aeb4-b1de5efdbff2/Customize_the_default_from_address-1.png)
+
+To update this setting for emails set up before the change:
+
+  * Go into the email editor and click on the **From** option under the _Sender Info_ section.
+  * Enter the desired address information and select a verified domain from the dropdown menu.
+  * Click **Save**.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-19/01bcd674-4f2e-421f-bdc5-a39ba8d83086/Edit_an_existing_emails_From_Address-1.png)
+
+# Troubleshoot common issues
+
+## Pending verification
+
+In most cases, the records should be verified almost immediately when entered
+into the host correctly. However, some changes will require up to 48 hours to
+take effect. If your records have not been verified after 48 hours, please do
+the following:
+
+  * Review the "Why won't my DNS records verify?" [guide](https://privy.helpscoutdocs.com/article/87-why-havent-my-dns-records-verified).
+  * Attempt the verification process again.
+  * Contact your web host for assistance.
+  * Explore the Privy Partner and Privy Support resources listed below.
+
+# Additional resources
+
+## Privy Support
+
+Leave the Support Team a voicemail containing your DNS-related question at
+619-431-4373. The team will return your call between 9 AM and 5 PM EST -
+excluding weekends and holidays.
+
+**Note:** This phone number is only for DNS questions. All other inquiries
+should be directed to Privy's Support Team via
+[email](mailto:support@privy.com) or via the chat widget at the bottom right
+of this screen.
+

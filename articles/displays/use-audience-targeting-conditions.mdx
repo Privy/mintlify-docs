@@ -1,0 +1,229 @@
+---
+categories:
+- build-your-own
+- plays
+collection: displays
+helpscout_url: https://help.privy.com/article/504-use-audience-targeting-conditions
+keywords: []
+name: Use Audience Targeting
+slug: use-audience-targeting-conditions
+---
+Privy's audience targeting rules are a collection of conditions that allow you
+to target individuals with specific displays so that you can show the right
+message to the right person at the right time. Multiple conditions can be
+applied to a single display to target specific audience segments like first-
+time mobile visitors or customers from the USA who have visited your site more
+than three times.
+
+**Note** : To see a display, a visitor that matches your audience targeting
+conditions must also meet the display's [trigger
+settings](https://privy.helpscoutdocs.com/article/229-use-display-triggers)
+(e.g., Show on a timer), so it's important to plan your _When To Show_ and
+_Who To Show It To_ settings together.
+
+# Add Audience Targetting Conditions to a Template
+
+To access the audience targeting conditions available to you, create a new
+Template display or edit an existing Template via the
+[Convert](https://dashboard.privy.com/campaigns) dashboard and navigate to the
+**Settings** step in the display builder. Select the **Audience Targeting**
+section and then the **Add Targeting Condition** button.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/6682ff39e1989867dcefea10/file-s6nFs1xDBm.gif)
+
+From here, you will be able to add a wide range of conditions using **AND**
+logic and **OR** logic. These conditions are evaluated in blocks denoted by a
+green outline, and the relationships between the conditions in each block are
+determined by the **Match ALL** and **Match ANY** dropdown menu.
+
+Setting a block to Match ALL requires that all conditions in the block relate
+to one another using AND logic. For example, this logic can be used to target
+contacts from the state of Massachusetts who have placed at least one order.
+
+Meanwhile, setting a block to Match ANY requires that all conditions in the
+block relate to one another using OR logic. For example, this logic can be
+used to target contacts from Massachusetts or New York.
+
+Furthermore, additional conditional blocks can be added using the +Add
+operator outside of the original block. A combination of blocks means you can
+create a reasonably complex targeting ruleset so that you show the right
+message to the right person at the right time.
+
+# Audience targeting options
+
+The following audience targeting conditions are available:
+
+## Customer Attributes
+
+**Country:** Target visitors based on the country reported by the contact's IP
+address.
+
+**Custom fields:** Target contacts based on their custom field values, which
+are provided via an import or when submitting a display. [This
+guide](https://help.privy.com/article/118-overview-of-form-fields) explains
+how to leverage custom fields in your targeting conditions.
+
+**Language:** Target visitors based on the default language set in their
+browser. The values for this condition are language codes following the [BCP
+47](https://www.techonthenet.com/js/language_tags.php) standard and written
+without the region subtag —for example, en for English, fr for French, or es
+for Spanish.
+
+**Postal Code:** This condition targets contacts based on their postal code
+area. It currently supports postal codes from the United States (5-Digit), the
+United Kingdom (Outward Code), Canada (3-Digit FSA), and Australia (4-Digit).
+Each unique postal code must be entered on its own line.
+
+**Region:** Target contacts based on their geographic region. This condition
+currently supports states from the United States, counties from the United
+Kingdom, provinces from Canada, and states/territories from Australia.
+
+## Shopping Activity
+
+**Cart Product IDs:** Target visitors based on the product IDs identified in
+their cart. This condition is available for accounts integrated with Shopify
+or BigCommerce.
+
+**Cart Value:** Target visitors based on the current value of your
+BigCommerce, Shopify, Squarespace, or Weebly cart.
+
+**Cart Variant IDs:** Target visitors based on the product variant IDs
+identified in their cart. This condition is available for accounts integrated
+with Shopify or BigCommerce.
+
+**Order count:** Target contacts based on the number of orders they have
+placed in your Shopify or Weebly store.
+
+## Website Behavior
+
+**Display seen:** Target visitors based on the displays that they've seen.
+
+**Display Seen (this session):** Target visitors based on the displays they've
+seen in this session. A session is a group of interactions with your website
+within a given time frame. It expires after 30 minutes of inactivity.
+
+**Display signed up:** Target visitors based on the displays they've
+submitted.
+
+**Display signed up (this session):** Target visitors based on the displays
+they've submitted for this session. A session is a group of interactions with
+your website within a given time frame. A session expires after 30 minutes of
+inactivity.
+
+**Current URL:** Target visitors based on the URL, including the domain, that
+the visitor is on. Learn more about leveraging the Current URL condition in
+[this guide](https://help.privy.com/article/436-use-current-url-in-targeting-
+rules).
+
+**Day of week:** Target visitors based on the day of their visit.
+
+**Device category:** Target visitors based on their device to view your site
+(Desktop vs. Mobile). Tablets are considered part of the mobile device
+category.
+
+**Initial traffic type:** Target visitors based on the channel they used to
+reach your site for the first time (e.g., direct, paid, social, etc.). A
+visitor's channel is determined by the UTM parameter(s) included in the link
+that led them to your site.
+
+**Initial URL (all time):** Target visitors based on the URL of the first page
+that they landed on when visiting your site.
+
+**Initial URL (this session):** Target visitors based on the URL of the first
+page that they landed on when visiting your site this session. A session
+expires after 30 minutes of inactivity.
+
+**Pageviews (all time):** Target visitors based on the total number of
+pageviews across all of their tracked sessions.
+
+**Pageviews (this session):** Target visitors based on the total number of
+pageviews across the current tracked session.
+
+**Referring URL:** Target visitors based on the page they were on immediately
+before viewing the current page. This URL could be from one of your site pages
+or an external page.
+
+**Sessions Count:** Target visitors based on the number of unique times
+they've visited your website. A session is a group of interactions with your
+website within a given time frame. A session expires after 30 minutes of
+inactivity.
+
+**Time of day:** Target visitors based on the time of their visit.
+
+**Traffic type:** Target visitors based on the channel they used to reach your
+site (e.g., Direct, Paid, Social, etc.). A visitor's channel is determined by
+the UTM parameter(s) included in the link that led them to your site.
+
+## Other
+
+**Custom JavaScript:** This allows you to create your own targeting rules
+using JavaScript. This option is only recommended for advanced users and
+outside Privy Support's scope.
+
+**User identity:** Targets visitors based on whether they are known or
+unknown. A "Known" visitor has submitted their information via a display or
+store checkout, been tagged with a tracking cookie, and become a contact. An
+"Unknown" visitor has not provided their information and remains unidentified.
+They may or may not be associated with an anonymous tracking cookie.
+
+# Add Audience Targetting Conditions to a Classic Display
+
+To access the audience targeting conditions available to you, create a new
+display or edit an existing display via the
+[Convert](https://dashboard.privy.com/campaigns) dashboard and navigate to the
+**Target** step in the display builder. Select the **Who To Show It To**
+section and then the **Add targeting condition** button.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/87dd971a-ed59-493a-9452-0f3d7856576e/Add_targeting_conditions.png)
+
+# Example use cases
+
+Audience targeting conditions can accommodate a wide range of scenarios
+depending on the complexity of your display's ruleset and the custom fields in
+your account. This flexibility means an all-encompassing list of use cases is
+impossible; however, a few notable scenarios that aren't already included in
+existing display plays (e.g., Welcome, Cross-Sell, Abandoned Cart) are
+outlined in more detail below.
+
+## Location-based
+
+If your announcements only apply to customers in certain areas, such as those
+that include brick-and-mortar locations, targeting by **country** , **region**
+, or **postal code** can help you deliver your display to the relevant areas.
+
+**Note:** Location-based targeting rules are based on the visitor's network
+address. Although uncommon for the typical consumer, the detected location may
+be incorrect or unknown if the visitor is using a virtual private network
+(VPN) or other configuration that obscures their location.
+
+## Channel referral
+
+If you are leveraging different channels (e.g., Ads or Social) to drive site
+traffic, you can create displays that acknowledge where the visitor arrived
+from by utilizing the **Initial URL (this session)** condition. This approach
+will make each visitor's experience a bit more personal and will help ensure
+that the visitor knows they've arrived at the right place.
+
+## Loyalty recognition
+
+If you are hoping to create a profitable business, you are undoubtedly looking
+to create loyal customers, as they are typically the most valuable. A great
+way to build loyalty is to acknowledge and reward multiple orders by utilizing
+the **Order Count** targeting condition.
+
+**Note:** Shoppers must be known to be eligible for this display. A shopper is
+known if they are logged into your store, have clicked a button in one of your
+Privy emails to reach your store, or have previously signed up via a display
+and haven't cleared their browser cookies.
+
+## User Identity
+
+If you have announcements or promotions that only apply to new or existing
+customers, the **User Identity** condition can help you deliver your display
+to the appropriate visitors. A "Known" visitor has submitted their information
+via a display or store checkout, been tagged with a tracking cookie, and
+become a contact. An "Unknown" visitor has not provided their information and
+remains unidentified. Both conditions are easily combined with other
+conditions to create unique experiences for new or returning customers.
+

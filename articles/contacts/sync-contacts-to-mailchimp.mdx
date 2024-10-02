@@ -1,0 +1,106 @@
+---
+categories:
+- importing-contacts
+collection: contacts
+helpscout_url: https://help.privy.com/article/517-sync-contacts-to-mailchimp
+keywords: []
+name: Sync Contacts to Mailchimp
+slug: sync-contacts-to-mailchimp
+---
+To sync the contacts captured by your Privy Convert displays to your Mailchimp
+account, you must link (integrate) the two accounts and add automation rules
+to your displays.
+
+# Link the accounts
+
+To link your Privy account with your Mailchimp account:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the**Integrations** option from the dropdown menu.
+  * Scroll down to the _Available Integrations_ section.
+  * Select the **Mailchimp** option, enter your credentials in the prompt, and select **Login**. 
+  * Follow the prompts to allow the proper permissions and select your account. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/9b7b3954-5573-4429-8fd3-1078ce45dce7/Available_integrations.png)
+
+All set! Mailchimp should now appear as a linked account in the _Authorized
+Accounts_ section. Next, add some automation rules.
+
+# Add an automation rule
+
+To add an automation rule to a display so that the collected contacts sync to
+Mailchimp:
+
+  * Navigate to **Convert** >**All Displays**. 
+  * Select the display you'd like to sync and navigate to the **Follow-up** step of the display builder. The selected display must include a form to sync contacts. 
+  * Click the **Sync signups** button, select Mailchimp from the dropdown menu, configure the presented options, and **Save**. If you enable the **Require Double Opt-in** setting, please note that the synced contacts will receive a confirmation email. They must click the verification link in that email before they are added to your mailable Mailchimp audience. [Learn more](https://mailchimp.com/help/about-double-opt-in/). 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/028fb8d8-ebb2-4317-8567-5384a70998c6/Sync_signups.png)
+
+This display's signups will now sync to Mailchimp. Click on the **Sync
+signups** button again to sync contacts to additional services or lists. Check
+out [this guide](https://privy.helpscoutdocs.com/article/108-use-display-
+automation-rules) for more information on automation rules and how to
+troubleshoot common sync issues. A section on troubleshooting Mailchimp-
+specific issues is available below.
+
+**Note:** These settings must be set for each display individually.
+
+# Troubleshoot issues
+
+Here are a few issues you may encounter when setting up or using the Mailchimp
+integration.
+
+### **Expired or disconnected error**
+
+The integration's connection may expire or disconnect for a wide range of
+reasons. To ensure that Privy and the external service are still properly
+integrated:
+
+  * Navigate to **Account Settings** > **Integrations**. 
+  * Locate the **Linked Accounts** section. 
+  * Select the **Test Account** option. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/51c09499-edfe-47e1-80a0-57f7d63163ea/Test_a_MailChimp_integration.png)
+
+This will trigger a reading (e.g., Connection Successful) that will help guide
+your next steps.
+
+### **Permissions error**
+
+You can only connect a Mailchimp account to Privy if you are the account's
+Owner or Admin. To review these requirements and make any necessary changes,
+please review [this resource](https://mailchimp.com/help/manage-user-levels-
+in-your-account/) from Mailchimp. Once an Owner or Admin is available, they
+can attempt to link the accounts again.
+
+### **Sync errors**
+
+If you see an error when exporting or syncing to an audience (list) in
+Mailchimp like:
+
+  * FNAME must be provided – Please enter a value
+  * MMERGE10 must be provided – Please enter a value
+
+It means that you are syncing Privy contacts to an audience (list) in
+Mailchimp that has required fields that aren't being provided during the Privy
+signup. To fix this, follow these steps:
+
+  * Navigate to your **Audience** dashboard in Mailchimp.
+  * Select the audience (list) you have chosen to export or sync to in Privy.
+  * Click the **Manage Audience** dropdown menu and then click **Settings**. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/d7c6fa2d-1200-45fb-84f0-2b481debac10/Manage_Mailchimp_audience_settings.png)
+
+  * Locate and select the **Audience fields and *|MERGE|* tags** option. 
+  * On the next page, you'll see the fields associated with this audience (list), as well as a checkbox next to any field that is REQUIRED. Uncheck all required fields except the email field. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/ff4acc43-1937-471d-a6d7-6b6d78b3a849/Disable_required_Mailchimp_fields.png)
+
+That's it! Future signups won't be rejected for not having these fields.
+

@@ -1,0 +1,83 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/75-target-audience-by-shopify-login
+keywords:
+- Advanced
+- Audience Targeting
+- Shopify Tags
+- Shopify Targeting
+name: Target Audience by Shopify Login
+slug: target-audience-by-shopify-login
+---
+Privy's audience targeting rules are a collection of conditions that allow you
+to target individuals with specific displays so that you can display the right
+message, to the right person, at the right time. This guide reviews how to
+leverage some custom JavaScript to show a display to individuals who are or
+are not logged in during their visit.
+
+**Note:** You must use a Classic Display in order to target users by Shopify
+login
+
+# Target logged-in visitors
+
+To add a targeting condition that will only show the display to visitors who
+are logged into their Shopify account for your store:
+
+  * Navigate to the **Convert** > **All Displays** via the main navigation. 
+  * Select or create a display and navigate to the **Target** step in the display builder.
+  * Select the **Who To Show It To** section and then the **Add targeting condition** button. 
+  * Select the **Custom JavaScript** option from the _Property_ dropdown menu. 
+  * Paste the code listed below into the _Value_ field. 
+
+    
+    
+    if (window.__st) {
+    
+    return (__st.cid != null); 
+    
+    }
+    
+    return false;
+    
+
+  * Click the **Save** button to lock in your new targeting conditions. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66a7eccbd39e504a2aed1f7d/file-
+iZA8l7AOPL.gif)
+
+That's it! Your display will now only include visitors who are logged into
+their store accounts.
+
+# Target logged-out visitors
+
+To add a targeting condition that will only show the display to visitors who
+are logged out of their Shopify account for your store:
+
+  * Navigate to the **Convert** > **All Displays** via the main navigation. 
+  * Select or create a display and navigate to the **Target** step in the display builder.
+  * Select the **Who To Show It To** section and then the **Add targeting condition** button. 
+  * Select the **Custom JavaScript** option from the _Property_ dropdown menu. 
+  * Paste the code listed below into the Value field. 
+
+    
+    
+    if (window.__st) {
+    
+    return (__st.cid == null);
+    
+    }
+    
+    return true;
+    
+
+  * Click the **Save** button to lock in your new targeting conditions. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-24/47b0dcde-6823-4749-9fe0-e38930416283/Target_logged-
+out.gif)
+
+That's it! Your display will now only include visitors who are logged out of
+their store accounts.
+

@@ -1,0 +1,74 @@
+---
+categories:
+- integrations
+collection: account-settings
+helpscout_url: https://help.privy.com/article/331-resolve-an-unauthorized-error
+keywords: []
+name: Resolve an 'Unauthorized' Error
+slug: resolve-an-unauthorized-error
+---
+An 'Unauthorized' error indicates that Privy cannot connect to a linked
+account with the provided credentials. Any of the following scenarios can
+trigger this error type:
+
+  * Updating the password or email address used to access the linked account.
+  * Deleting or editing an API key in the linked account.
+  * Revoking the permissions granted to Privy by the linked account.
+  * Uninstalling Privy from the linked account.
+  * The end of a trial period.
+
+If any of these situations have occurred, displays that were previously synced
+to the linked account via the display's  _Follow-Up_ settings will fail until
+the issue is resolved. Additionally, if the error is tied to your e-commerce
+platform, displays will likely no longer be visible on your site. This is
+because store apps (e.g., Shopify) are typically responsible for incorporating
+the Privy code into your site content. If the code was installed manually,
+displays would continue to appear.
+
+# Check a connection
+
+If one of your linked accounts is experiencing an 'Unauthorized" error, you
+will likely see a prompt on the dashboard, the _Follow-Up_ step of the display
+builder, or when creating a coupon. That said, if you suspect an issue and
+haven't seen an error message, you can manually test an account's connection.
+To test a linked account's connection to Privy:
+
+  * Select the **Account** dropdown menu at the top-right. 
+  * Select the **Integrations** option from the dropdown menu. 
+  * In the _Authorized Accounts_ section, select the **Test Account** button. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66b3861848915f570c6a911f/file-
+vH5wCvWRf0.png)
+
+If the connection is valid, a Connection Successful message will appear. If
+the connection is broken, then a Connection Failed message will appear. To
+restore a failed connection, follow the steps below.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-11/c0b695a4-4675-498e-b71f-94a9fd5ece26/Test_connections.png)
+
+# Identify the cause
+
+Identify the most likely issue by reviewing the wording of any provided error
+messages and/or the list of likely scenarios listed in this guide's
+introduction. If none of these seem to fit your situation, check out [Privy's
+Status Page](https://status.privy.com/) and the affected linked account's
+status page to ensure there aren't broader platform issues on either side.
+
+# Resolve the error
+
+To resolve an 'Unauthorized' error and restore the connection between Privy
+and the linked account:
+
+  * Navigate to the [Authorized Accounts](https://dashboard.privy.com/settings/accounts) section of your Privy settings. 
+  * Select the **Delete**() button next to the affected account and refresh the page. 
+  * After a page refresh, locate the desired provider, select it, and provide updated credentials. 
+
+The selected provider should now appear as a linked account in the
+_Authorized Accounts_ section. With a new connection established, please make
+sure to review the displays that previously synced to this account and ensure
+the **Sync Integrations** settings are properly configured.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66842a1ddd0f8c60bb3fdd68/file-
+XaCwLnTuzr.gif)
+

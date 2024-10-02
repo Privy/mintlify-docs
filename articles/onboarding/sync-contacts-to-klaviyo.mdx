@@ -1,0 +1,89 @@
+---
+categories:
+- getting-started
+collection: onboarding
+helpscout_url: https://help.privy.com/article/71-sync-contacts-to-klaviyo
+keywords:
+- Klaviyo
+- Klaviyo Cookie
+- Sync
+- Sync Signups
+- Sync to List
+- klaviyo integration
+- sync to klaviyo
+name: Sync Contacts to Klaviyo
+slug: sync-contacts-to-klaviyo
+---
+To sync the contacts captured by your Privy Convert displays to your Klaviyo
+account, you must link (integrate) the two accounts and add automation rules
+to your displays.
+
+# Link the accounts
+
+To link your Privy account with your Klaviyo account:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the**Integrations** option from the dropdown menu. 
+  * Scroll down to the _Available Integrations_ section and select the **Klaviyo** option. 
+  * Create a **new API Key** in your Klaviyo account
+  * Enter your credentials and [API Key](https://www.klaviyo.com/account#api-keys-tab) in the prompt and then select **Link Account**. 
+
+Note: When creating the Public API Key we recommend selecting the option
+"Grant applications full access for every API scope.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/62d71acc-4f5d-47be-9a28-1d5c3fed8c9f/Available_integrations_1.png)
+
+All set! Klaviyo should now appear as a linked account in the _Authorized
+Accounts_ section. Next, let's add some automation rules.
+
+# Add an automation rule
+
+**Note:** These settings must be set for each display individually.
+
+To add an automation rule to a display so that the collected contacts sync to
+Klaviyo:
+
+  * Navigate to **Convert** >**All Displays**.
+  * Select the display you'd like to sync and navigate to the **Settings** step of the display builder. The selected display must include a form to sync contacts. 
+  * Click the **Advanced Settings** button at the bottom left of the page, Scroll to the **Sync Integration** section, select**Klaviyo** from the dropdown menu, configure the presented options, and **Save**. 
+
+**Note:** Privy contacts can only sync to Klaviyo lists, not to [Klaviyo
+segments](https://help.klaviyo.com/hc/en-us/articles/115005061447-The-
+Difference-Between-Segments-and-Lists). Please be aware that this integration
+is not a two-way sync, meaning that information can sync from Privy to Klaviyo
+but cannot sync back from Klaviyo to Privy.
+
+**Warning:** To successfully sync contacts with a phone number to Klaviyo, the
+number must be formatted using the [E.164
+format](https://en.wikipedia.org/wiki/E.164) on the contact's profile in
+Privy. When collecting US-based or Canada-based numbers, the +1 country code
+is not required, as Privy will validate the number and automatically add this
+information if it is missing. All other numbers must include the country code
+(e.g., +44 for the UK). Privy will add the plus sign (+) if it is omitted.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667eedb35173914f806c25fb/file-
+QyofZTE4Nn.gif)
+
+This display's signups will now sync to Klaviyo. Click on the **Sync signups**
+button again to sync contacts to additional services or lists. Check out [this
+guide](https://privy.helpscoutdocs.com/article/108-use-display-automation-
+rules) for more information on automation rules and how to troubleshoot common
+sync issues.
+
+# Is more information available?
+
+Yes. You can also tag a visitor with a [Klaviyo session
+cookie](https://help.klaviyo.com/hc/en-us/articles/360034666712-About-Cookies-
+in-Klaviyo#klaviyo-tracking-cookies1) after capturing an email with a Privy
+Convert display. This cookie allows you to trigger cart abandonment and browse
+abandonment emails directly from Klaviyo. To enable this feature:
+
+  * In Privy, click the **Account** option from the navigation. Your business name appears there. 
+  * Select the **Business Information** option from the dropdown menu. 
+  * Select **Customizations** from the sidebar and scroll down to the _Other Customizations_ section. 
+  * Check the**Enable Klaviyo Javascript integration** setting and then click **Save Changes**. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/19b2ff06-b9e0-4073-a8f4-dff006e4da79/Enable_Klavyio_Javascript_Integration.gif)
+

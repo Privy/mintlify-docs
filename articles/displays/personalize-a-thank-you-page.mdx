@@ -1,0 +1,51 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/188-personalize-a-thank-you-page
+keywords:
+- Custom
+- Custom Attributes
+- Thank You
+- Thank You Page
+- Attributes
+- Multiple Choice
+- Thank You Window
+name: Personalize a Classic 'Thank You' Page
+slug: personalize-a-thank-you-page
+---
+Following signup, you may want the display's thank-you page to include some of
+the provided information to reinforce the contact's selection or serve as a
+reminder. This personalization is possible by including merge tags in the
+content of your thank-you page. Learn more about adding personalization to
+[emails](https://privy.helpscoutdocs.com/article/69-personalize-your-emails)
+and [onsite displays](https://privy.helpscoutdocs.com/article/178-personalize-
+your-displays).
+
+# Example display
+
+In this example, visitors must submit their email address and favorite
+Hogwarts House to receive a special discount. To create a display like this
+one:
+
+  * Navigate to **Convert** > **All Displays** and select the display you want to edit. 
+  * Go to the builder's **Settings** steps, select the **Form fields** card, add the desired compatible field, and **Save**. The property name and field options below were used for the "Hogwarts House" example. It is important to note the property name, as it will later be referenced in our merge tag. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/4a2fc4e4-42f6-4e08-95fc-89d4c0144ea6/Field_options.png)
+
+  * Next, select the **Design** card shown at the end of the list. If the option isn't available, make sure a display is selected and that the _After Signup Action_ is set to the **Show Thank You page** option. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/d21c1061-0ac4-4573-9d14-745daf8c5aae/Thank_You_Page_Design.png)
+
+  * In the thank-you page editor, add the **{{ contact.custom_fields.* }}** code snippet to pull in the desired information of custom fields and **{{ contact.* }}** to pull in the desired information of default customer attribute fields. Replace the asterisk with the field's property name. For the "Hogwarts House" example, the snippet would be {{ contact.custom_fields.hogwarts_house }}. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/03b5dc74-7272-4ee5-9033-b67751e8cbdc/Insert_the_merge_tag.png)
+
+  * Configure the rest of the displays and **Publish**. The final result will look something like this:
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-26/2c075427-bf55-47a1-b8fb-216ed80596fd/Personalization_in_action_1.gif)
+

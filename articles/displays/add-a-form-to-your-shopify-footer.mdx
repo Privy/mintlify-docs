@@ -1,0 +1,95 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/511-add-a-form-to-your-shopify-footer
+keywords: []
+name: Add a Form to Your Shopify Footer
+slug: add-a-form-to-your-shopify-footer
+---
+If you're already using displays to grow your contact list, you should also
+consider replacing the embedded form (e.g., Newsletter) in the footer of your
+Shopify store with one from Privy. This replacement ensures that all your
+contacts, wherever they sign up on your site, sync with your Privy account and
+its linked accounts.
+
+**Note:** To add an embedded form to the body of your Shopify store, follow
+[these steps](https://privy.helpscoutdocs.com/article/90-add-a-form-to-your-
+shopify-page) instead.
+
+**Note:** You can follow the **Configuration** steps only if you want to use a
+"text block" to add the Privy form on your Shopify footer.
+
+You can always use a "Custom Liquid Section" to add the embedded form to the
+Shopify footer without following the **Configuration** steps.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/66c8a4e16eb51e63b8f9f61e/file-
+nnS8kdCvxm.png)
+
+# Configuration
+
+Once you've [created](https://privy.helpscoutdocs.com/article/95-create-an-
+embedded-form) your Privy form, replace your Shopify form by following these
+steps:
+
+  * Navigate to the **Online Store** > **Themes** section of your Shopify account.
+  * Select the **Actions** button and then the **Edit code** option from the drop-down menu. 
+  * Use the search bar to locate and open the **footer.liquid** file.
+  * Use CTRL-F or CMD-F to locate"type":"richtext", in the {% schema %} section. 
+  * Replace "richtext" with "textarea" and select the **Save** button at the top right. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/cabca7b1-f5fd-45ea-b7bd-1f85a50d2541/Edit_footer_code.gif)
+
+  * In another browser tab, open your Privy account and navigate to the [Convert](https://dashboard.privy.com/displays) dashboard.
+  * Locate and select the desired Embedded form and open the **Create** section.
+  * Click the **Get Embed Code** button on the _Embedded Form Design_ card. 
+  * Copy the entire embed code from the prompt. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/417486ee-3354-49c1-8e63-fb92086971c7/Copy_an_embedded_code.gif)
+
+  * Return to your Shopify tab and select the **Themes** option from the sidebar. 
+  * On the _Themes_ dashboard, click on the **Customize** button. 
+  * In the _Sections_ sidebar, select the **Footer** section and then add a **Text** element. 
+  * Paste your Privy form's embed code into the _Text_ element. Drag and drop the element to edit its placement. Moving the element higher will move it left, while lowering it will move the form to the right. Select the **Save** button in the upper right after each change to reload and preview the form.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/f6c1ea91-94f0-4b0b-9806-cb10ce8f7558/Embed_form.gif)
+
+Congratulations! Your Privy embedded form is now in the footer of your Shopify
+site. If you're not using [Privy
+Email](https://privy.helpscoutdocs.com/article/46-get-started-privy-email),
+ensure that your embedded form syncs your signups to any other system. Update
+these settings in the **Follow-up** section of the form builder.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/0b633fa9-ab71-47dc-85a6-0448ec4eab32/Sync_signups_from_footer_form.png)
+
+# Troubleshooting
+
+If you're encountering issues with your embedded forms on Shopify, please
+attempt the following:
+
+### Disable reCAPTCHA
+
+To disable the reCAPTCHA for your Privy forms:
+
+  * Navigate to the [**Customizations**](https://dashboard.privy.com/settings/customizations) sections of your _Business Settings_. 
+  * Scroll down and locate the _Invisible reCAPTCHA_ section. 
+  * Disable the **Enable Invisible reCAPTCHA** checkbox. 
+  * Click the **Save** button.
+
+Please contact support via email or chat if this doesn't correct the issue.
+
+**Note** : When reCAPTCHA is disabled via your account settings, Privy
+effectively vouches for your registration process and will attempt to waive
+all reCAPTCHA requirements. However, if behavioral analysis suspects that a
+user may be a bot or that spam activities are occurring, reCAPTCHA can still
+fire in the background. This aspect of reCAPTCHA cannot be disabled as it is
+currently one of the best ways to protect Privy merchants from suspicious or
+abusive activity.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-13/5bae6552-546a-46eb-9b9d-84b85c503aec/Disable_reCAPTCHA.gif)
+

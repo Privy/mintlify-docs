@@ -1,0 +1,89 @@
+---
+title: 'Set up your domain'
+description: 'TBD'
+icon: "globe"
+---
+# How to Set Up Your Domain Records for Privy
+
+Setting up your domain records correctly is crucial for Privy to function properly with your website. This guide will walk you through the process step-by-step.
+
+## Why is domain setup important?
+
+Proper domain setup ensures:
+- Accurate tracking of visitor behavior
+- Correct attribution of conversions
+- Seamless integration between Privy and your website
+- Enhanced security for your customers
+
+## Prerequisites
+
+Before you begin, make sure you have:
+- A Privy account
+- Access to your domain's DNS settings (usually through your domain registrar or hosting provider)
+
+## Step-by-Step Guide
+
+### 1. Log into your Privy account
+
+- Go to the Privy website and log in to your account
+- Navigate to 'Settings' in the main menu
+
+### 2. Access Domain Settings
+
+- In the Settings menu, find and click on 'Domain Settings'
+- You should see a section for 'CNAME Record'
+
+### 3. Copy your unique CNAME record
+
+- In the Domain Settings, you'll find your unique CNAME record
+- It will look something like this: `abcd1234.privy.com`
+- Copy this record - you'll need it for the next step
+
+### 4. Access your domain's DNS settings
+
+- Log into your domain registrar or hosting provider's website
+- Find the section for managing DNS records
+- This might be called 'DNS Management', 'Name Server Management', or something similar
+
+### 5. Add the CNAME record
+
+- In your DNS management area, look for an option to add a new record
+- Select 'CNAME' as the record type
+- For the 'Host' or 'Name' field, enter: `_privy`
+- For the 'Value' or 'Points to' field, paste the CNAME record you copied from Privy
+- Save the new record
+
+### 6. Verify the setup
+
+- Return to your Privy account
+- In the Domain Settings, look for a 'Verify' or 'Check Setup' button
+- Click this button to have Privy confirm that the CNAME record is correctly set up
+
+### 7. Wait for propagation
+
+- DNS changes can take up to 48 hours to fully propagate across the internet
+- However, it often happens much faster, sometimes within a few minutes to a few hours
+
+## Troubleshooting
+
+If you're having issues with your domain setup:
+
+1. Double-check that you've entered the CNAME record correctly
+2. Ensure you've used `_privy` as the host name
+3. Wait at least 24 hours before assuming there's a problem, as DNS propagation can take time
+4. If issues persist, contact your domain registrar to ensure there are no conflicts with existing records
+
+## Additional Notes
+
+- Some domain providers may require a trailing dot (.) at the end of the CNAME value. If you're unsure, check with your provider's documentation or support.
+- If you're using Cloudflare or another CDN, make sure that CNAME flattening is disabled for this record.
+
+## Getting Help
+
+If you're still having trouble after following these steps:
+
+1. Check Privy's knowledge base for additional troubleshooting tips
+2. Contact Privy support through the chat widget in your dashboard
+3. Email support@privy.com with details of the issue you're experiencing
+
+Remember, correct domain setup is crucial for Privy's functionality. Taking the time to set this up properly will ensure you get the most out of the platform.

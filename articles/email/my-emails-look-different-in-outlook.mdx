@@ -1,0 +1,137 @@
+---
+categories:
+- faq
+collection: email
+helpscout_url: https://help.privy.com/article/74-my-emails-look-different-in-outlook
+keywords:
+- Email
+- Email Design
+- Emails Looks Different
+- Outlook
+- Email doesn't look right
+- Different when sent
+- Different in inbox
+- different when received
+- received
+name: My Emails Look Different in Outlook
+slug: my-emails-look-different-in-outlook
+---
+Privy email templates and emails created with the drag-and-drop editor are
+designed to be consistent and responsive across as many popular email clients
+as possible. However, one common provider that presents issues for many users
+is Outlook. All versions of Outlook since Outlook 2007 use Microsoft Word to
+render the HTML and CSS of emails. This approach to rendering is better suited
+for print design and differs significantly from other popular email providers,
+such as Gmail. Because of these differences, an email may look slightly off
+when opened in Outlook compared to what you initially designed and previewed
+in Privy or test send to other email clients like Gmail.
+
+Optimizing an email specifically for Outlook can take a lot of time and skew
+how it is rendered across other email clients and devices. Most users should
+only consider investing the time and energy required if they know that a large
+portion of their recipients use Outlook.
+
+# Common differences and fixes
+
+The design differences that present themselves to a recipient depend on their
+version of Outlook and their settings, such as default image blocking, but
+typically stem from these Outlook limitations:
+
+  * There is no support for background images in divs and table cells
+  * There is no support for CSS float or position
+  * No support for text-shadow
+  * Limited support for padding and margin
+  * Limited support for CSS width and height
+  * Issues rendering nested elements and background colors
+
+With these limitations in mind, you can work around some of the most
+noticeable design issues listed below. However, you should not expect your
+email to look uniform across all email clients.
+
+### Image padding or margin is being ignored.
+
+Outlook ignores set padding and margins around images. As a result, any
+wrapped text will be pushed against the image. There are a couple of ways
+around this:
+
+  * Use a photo-editing tool to add a border around your image that is the same color as your email background, then upload the image into your email. Because the padding is part of the image, Outlook cannot ignore it. 
+  * Incorporate the image into your email via an HTML block and add vertical space (vspace) and horizontal space (hspace) to the image's tag. For example:
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/85c787f1-da91-46d9-ba7b-c2d11422bfd7/Image_Spacing_HTML.png)
+
+​You'll still want to set margins for the image because some email clients do
+not recognize "vspace" and "hspace" for styling purposes.
+
+### An animated GIF isn't working.
+
+Outlook does not support animated GIFs. Instead, it displays the first frame
+of the GIF in the recipient's email. Please make sure the most important
+information appears in the first frame.
+
+### Images aren't loading.
+
+This issue is typically due to the recipient's personal or business settings.
+Outlook is often configured to [block automatic picture
+downloads](https://support.microsoft.com/en-us/office/block-or-unblock-
+automatic-picture-downloads-in-email-
+messages-15e08854-6808-49b1-9a0a-50b81f2d617a) for security purposes. This
+setting must change on the recipient's end for the images in your email to
+render properly.
+
+### Images are being clipped or rescaled.
+
+Some versions of Outlook restrict the maximum image height to 1728 pixels. To
+prevent Outlook from automatically clipping the top or bottom of your image,
+make sure that the image you upload to your email is under 1728 pixels high.
+
+If you cannot decrease your image's size and need its entire contents, the
+best alternative is to crop the image into sections and place them into
+multiple Image blocks in your email. To learn more about Privy's
+recommendations for creative assets included in your content, click
+[here](https://privy.helpscoutdocs.com/article/80-guidelines-for-creative-
+assets).
+
+### Images aren't the correct size.
+
+Outlook doesn't recognize the HTML that constrains images. If you use HTML to
+resize an image uploaded to an email, it may display at the original size when
+opened in Outlook. Try to resize your images to the desired width and height
+before you upload them to Privy. To learn more about Privy's recommendations
+for creative assets included in your content, click
+[here](https://privy.happyfox.com/kb/article/21-guidelines-for-creative-
+assets/).
+
+### A background image doesn't load.
+
+This issue isn't unique to Outlook, and there isn't a quick fix to force the
+background image in an email template to display. Always make sure to set a
+background color as a backup.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/2d78076b-9880-40f9-816e-fa7aa7745499/My_emails_outlook_-
+_bkgrnd_color.png)
+
+### There's extra white space.
+
+White space is sometimes inserted above an image because Outlook renders HTML
+using Microsoft Word. This rendering technique is similar to the preview you
+see when printing content in that it is broken into a series of unique pages.
+If an image falls between what Outlook sees as two separate pages, extra space
+is inserted above the image to force it down to the next page.
+
+Eliminating the extra white space requires reorganizing your content. Because
+reorganization can require extensive layout and content changes, consider
+making a copy of the email first. To create a copy, navigate to the applicable
+email dashboard, locate the email, and select the **Duplicate** option.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-14/0c84a380-948c-4559-a27b-131643bfa7ed/My_email_Outlook_-
+_duplicate.png)
+
+When reorganizing your content, you want to determine where Outlook is marking
+the page break. If an image is beneath the white space, try moving the image
+to another area in your layout and sending a test email to see if this fixes
+the issue. Continue reorganizing and testing your email until the unwanted
+white space is eliminated.
+

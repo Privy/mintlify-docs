@@ -1,0 +1,132 @@
+---
+categories:
+- faq
+collection: onboarding
+helpscout_url: https://help.privy.com/article/28-insert-a-coupon-into-your-content
+keywords:
+- coupon
+- discount
+- display
+name: Insert a Coupon into Your Content
+slug: insert-a-coupon-into-your-content
+---
+The discounts and special promotions offered via coupons are a great way to
+entice new visitors to subscribe or to reward loyal customers for returning.
+Privy empowers you to include coupons in your onsite displays and campaigns.
+Please ensure you know how to [create a coupon
+](https://privy.helpscoutdocs.com/article/72-create-and-manage-coupon-
+codes)before continuing.
+
+# Insert a Coupon into a Template
+
+A coupon code must be associated with a display to show it to visitors. Here's
+how:
+
+  * From the [Convert](https://dashboard.privy.com/displays) dashboard, edit or click "**New Display**."
+  * Select the **Settings** step in the display builder. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667c3f8b5940934e140f5320/file-
+ZjXTmuLtBO.png)
+
+  * Locate and select the **Coupon** section. 
+  * Select [a coupon](https://privy.helpscoutdocs.com/article/72-create-and-manage-coupon-codes) from the dropdown menu, then click **Save & Close**. Users who are integrated with Shopify but have no coupons in their account will see some recommended quick options. These are optional; a custom coupon can be created and used instead. 
+
+**Note:** Coupon codes are typically offered to visitors after signup. If
+you'd like to present a coupon directly in the display without requiring a
+form submission, you can use a [master
+coupon](https://privy.helpscoutdocs.com/article/156-master-coupon-vs-unique-
+coupon) and manually type out your discount code (e.g., 20% Off) into the
+display's content.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667c3fbc1f3fa9421e288703/file-
+FQDJlYL7yH.png)
+
+## Add a Coupon to a Template's Thank You Page
+
+To include a coupon code in a "Build your own" display's thank-you page:
+
+  * Select the **Thank You Page** step in the display builder. 
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667c426c5940934e140f5323/file-
+uD5K47ZXmw.png)
+
+  * Include the **{{ signup.coupon_code }}** merge tag and appropriate positioning text so that it is easy for the viewer to understand what they are seeing. 
+  * Select the **Save & Close** option in the upper right to finish configuring the display's various options, or select the **Publish** option to immediately make the display available to qualifying visitors. 
+
+# Include a coupon code in a Classic Display
+
+  * Select the **Create** step in the Display Builder
+  * Locate and select the **Coupon** section. 
+  * Select [a coupon](https://privy.helpscoutdocs.com/article/72-create-and-manage-coupon-codes) from the dropdown menu. Users who are integrated with Shopify but have no coupons in their account will see some recommended quick options. These are optional; a custom coupon can be created and used instead. 
+  * Click **Save.**
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/6606da67f4bb664508693b91/images/667c4c48e1989867dcefe6d6/file-
+zeO2mC6jTp.gif)
+
+## A Display's After Signup Email
+
+To include a coupon code in a display after signup email:
+
+  * Select the **Follow-up** step in the display builder. 
+  * Locate and select the **Subject line** from the _After Signup Email_ section. 
+  * Once in the editor, either: 
+    * Incorporate the **{{ signup.coupon_code }}** merge tag into the content of your email - making sure to include appropriate positioning text so that it is easy for the recipient to understand what they are receiving. Select the **Coupon code** option from the editor's **Merge Tags** dropdown menu to make the process easier.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/990be3da-7a71-4559-90df-a8f11050e7bf/Insert_a_coupon_code_merge_tag_into_an_after_signup_email.png)
+
+  * Drag and drop the **Coupon** element from the sidebar into your email and select the desired coupon from the prompt. Also, make sure to include appropriate positioning text to make it easy for the recipient to understand what they are receiving.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/065f8c5e-63ec-4daf-
+bdad-7d44ec5ab465/Add_a_coupon_elemento_to_the_after_signup_email.gif)
+
+  * When you finish customizing the email, click **Save** at the top right. If you decide to test the email, please note that any coupons displayed in the test version aren't functional. Applying them to one of your carts will not yield a discount. 
+
+[After signup emails](https://help.privy.com/article/545-set-up-an-after-
+signup-email) are enabled by default on active displays, meaning that they
+will immediately start sending to new signups if the following criteria are
+met:
+
+  * The display contains an email field and a [coupon code](https://privy.helpscoutdocs.com/article/72-create-and-manage-coupon-codes). 
+  * The account has a _Website URL_ address set on its [Business Information](https://dashboard.privy.com/settings/business-info) page. 
+  * The display type is not [Phone Capture](https://help.privy.com/article/326-create-a-phone-capture-display) or [Two-Step](https://privy.helpscoutdocs.com/article/93-create-a-two-step-display). 
+
+**Note:** Accounts created before May 26, 2022, won't automatically enable
+after signup emails. Instead, you must manually switch the **Published**
+toggle to the ON position.
+
+Privy will now email the coupon code associated with the display to those who
+sign up.
+
+**Note:** The text message option also requires a [Privy
+Text](https://www.privy.com/pricing) subscription. Additionally, a contact's
+phone number must be collected through a Privy form with the phone field, the
+contact must have checked the text opt-in checkbox, and the contact must have
+confirmed their desire to receive messages via double opt-in to receive texts
+from Privy.
+
+## A display's after-signup text
+
+To include a coupon code in a display's after-signup text:
+
+  * Select the **Follow-up** step in the display builder. 
+  * Locate the **Send text message** button and click it. 
+  * Select the **Preview text** that is generated in the _After Signup Text_ section. 
+  * Once in the editor, include the **{{ coupon_code }}** merge tag and appropriate positioning text so that it is easy for the recipient to understand what they are receiving.
+  * When you finish customizing the text, click **Save Changes** at the bottom right.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/4727214c-ddc6-45bc-
+aee4-13042d8ddfd0/Insert_a_coupon_code_into_an_after_signup_text.gif)
+
+  * Back on the _Follow-up_ screen, toggle the **Published** setting to the ON position.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-12/9ff4d838-09b5-448d-bb55-8e89b0ad234a/Enable_an_after_signup_text.png)
+
+  * After configuring the display's various options, use the **Publish** option at the top right of the _Follow-Up_ step**.**
+
+Privy will now send the individuals who sign up a text message with the coupon
+code associated with the display.
+

@@ -1,0 +1,79 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/362-use-form-validations-in-displays
+keywords: []
+name: Use Form Validations in Classic Displays
+slug: use-form-validations-in-displays
+---
+Form validations allow you to determine who is eligible to submit a display
+and how many submissions a display will accept. Validations are essential when
+a display is tied to a limited giveaway or meant only to target new customers.
+
+# Validation options
+
+The validation options available for forms are:
+
+  1. **Limit one signup per contact** : This validation prevents your contact from signing up more than once with the same email address or phone number. If a contact attempts to signup again, they will receive a "You're already signed up!" warning prompt, and the signup will be rejected. 
+  2. **New contacts only** : This validation only allows someone to sign up for the display if their email or phone number is not already associated with a contact profile in your Privy account. A contact profile is generated with this information if the contact has previously submitted another display, the contact was created manually via the Contacts dashboard, or the contact was imported. If existing contacts attempt to signup, they will receive a "Sorry, this is only available to first-time customers." warning prompt, and the signup will be rejected. 
+  3. **Automatically end the display after () signups** : This validation ends the display after X number of signups. Once the limit is reached, your display will no longer display on your website or storefront. 
+
+**Note:** All displays will limit contacts to one signup (submission) by
+default.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-24/4f6e19ec-5fc0-4cd4-93c2-8a9583fbf44f/Validation_options.png)
+
+# Manage a display's validations
+
+To change the validation applied to a display:
+
+  * Navigate to the **Convert** > **All Displays** via the main navigation. 
+  * Select or [create a display](https://privy.helpscoutdocs.com/article/34-change-a-displays-type) that includes a form. 
+  * Navigate to the **Create** step of the display builder and select the **Validations** card. 
+  * Configure the desired validation rules and **Save**. 
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2024/01-24/8ac51299-6e19-4ee6-8099-374feecf3814/Edit_display_validations.gif)
+
+# Example use-cases
+
+Check out a brief example leveraging each of the available validation rules
+below:
+
+## Limit one signup per contact
+
+All displays limit contacts to one signup (submission) by default. However,
+you may want to disable this setting when it's expected that contacts would
+submit the display multiple times. For example, a landing page offering a
+guide or white paper related to one of your products or services.
+
+## New contacts only
+
+This validation only allows someone to sign up for the display if their email
+or phone number is not already associated with a contact profile in your Privy
+account. The setting is particularly useful when you'd like to ensure an offer
+is only claimed by new contacts.
+
+For example, you may use [audience
+targeting](https://privy.helpscoutdocs.com/article/70-use-audience-targeting-
+conditions) to restrict a display to visitors who have never seen a previous
+display and assume that only new customers would meet these conditions.
+However, that is not the case. It would be possible for an existing (known)
+contact to submit the display if they aren't tagged with a Privy cookie. This
+can happen if a contact clears their cookies or visits from a new browser.
+Additionally, someone who was manually created or imported would not be
+associated with a cookie if they haven't subsequently visited your site and
+submitted a display.
+
+Regardless of the situation, the "New contacts only" rule prevents non-cookied
+known contacts from claiming the offer by rejecting the submission based on
+the provided contact information.
+
+## Automatically end the display after
+
+This validation ends the display after X number of signups. The setting is
+perfect for offers limited by quantity—for example, a free item giveaway for
+the first 100 signups.
+

@@ -1,0 +1,81 @@
+---
+categories:
+- build-your-own
+collection: displays
+helpscout_url: https://help.privy.com/article/537-automatically-apply-coupon-codes
+keywords: []
+name: Automatically Apply Coupon Codes
+slug: automatically-apply-coupon-codes
+---
+If you've decided to offer a discount to encourage conversion or reward
+customer loyalty, it's also worth considering making the redemption process as
+easy as possible. A "coupon" link does just that. It automatically applies the
+associated discount to the customer's cart, simplifying the checkout
+procedures, enhancing the customer's experience, and allowing the customer to
+buy quickly.
+
+Note: This functionality is only available for accounts with a Shopify
+integration. For now, the Classic Display builder must be used in order to
+apply coupon codes automatically.
+
+  
+
+We are working on adding this functionality to the current Display Builder.
+
+#  Create a link
+
+Your discount link must follow the URL format outlined below:
+
+    
+    
+    https://my-store.com/discount/{{signup.coupon_code}}?redirect=/cart
+    
+
+Please make sure to replace **my-store.com** with your domain.
+
+# Use the link
+
+Now that you have the link ready to go, it can be used to automatically apply
+the coupon after an individual submits a display or after they click a
+hyperlinked piece of display content.
+
+## Apply after a sign-up
+
+To apply a code immediately upon the submission of a display:
+
+  * Navigate to **Convert** > **All Displays**. 
+  * Select or create a display to associate with the "coupon" link. 
+  * Go to the **Create** step of the display builder and locate the **After Signup Action** section. This section is only available if a display has been added to the display. 
+  * Choose the **Redirect to URL** option and paste the URL you have created.
+  * Select the **Save Changes** button and finish configuring the display as usual.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-21/0862f83d-2b56-4d5d-b935-95176f153a5d/Apply_discount_on_redirect.gif)
+
+The display will now redirect the individual to their cart and apply the
+discount automatically at checkout.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-21/5bddcf2a-ff4b-4707-8d86-54f582ca9ef1/Redirect_in_action.gif)
+
+## Apply after a click
+
+To apply a code immediately following a click:
+
+  * Navigate to **Convert** > **All Displays**.
+  * Select or create a display to associate with the "coupon" link. 
+  * Go to the **Create** step of the display builder and locate the **Thank You Page Design** section. This section is only available if a display with form fields has been added to the display, and the display's  _After Signup_ action is set to **Show Thank You Page**. 
+  * In the editor, select the **{{coupon_code }}** liquid variable that Privy uses to populate your coupon code into your thank-you page. Then click on the hyperlink option to link the highlighted liquid variable text.
+  * In the prompt, paste the URL you created earlier and confirm by clicking **Insert Link**.
+  * Design the rest of the thank-you page, select the **Save** button at the top-right, and finish configuring the display as usual.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-21/e03421fb-177d-4a2d-9536-8645166dfcad/Apply_a_coupon_on_click.gif)
+
+Following a click, the link will redirect the individual to their cart and
+automatically apply the discount at checkout.
+
+![](https://hf-files-
+oregon.s3.amazonaws.com/hdpprivy_kb_attachments/2023/12-21/2d56ef3e-18f9-423d-aebe-5849491b8884/On-
+click_in_action.gif)
+
