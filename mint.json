@@ -48,6 +48,7 @@
       "name": "Guides",
       "url": "guides"
     }
+   
   ],
   
   "navigation": [
@@ -62,6 +63,13 @@
         "docs/getting-started/send-your-first-email",
         "docs/getting-started/create-your-first-popup",
         "docs/getting-started/activate-your-first-automation"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/get_started.mdx",
+        "guides/automations/abandoned_carts.mdx"
       ]
     },
     {
