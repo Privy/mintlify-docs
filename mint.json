@@ -20,15 +20,16 @@
     }
   },
   
- "theme": "prism",
-"layout": "topnav",
+ "theme": "venus",
+"layout": "sidenav",
   
   "topbar": {
     "style": "default"
   },
   "sidebar": {
-    "items": "card"
+    "items": "border"
   },
+  
   "topbarLinks": [
     {
       "name": "Contact Support",
@@ -43,17 +44,126 @@
     "thumbsRating": true,
     "raiseIssue": true
   },
-  "tabs": [
+  "topAnchor": {
+    "name": "Learn",
+    "icon": "house"
+    
+  },
+  "anchors": [
+    
+    {
+      "name": "Get Started",
+      "icon": "play",
+      "url": "docs/getting-started",
+      "color": "#583eea"
+    },
     {
       "name": "Guides",
-      "url": "guides"
-    }
-   
-  ],
-  
-  "navigation": [
+      "icon": "book",
+      "url": "http://www.google.com",
+      "color": "#583eea"
+    },
     {
-      "group": "Getting Started",
+      "name": "What's New",
+      "icon": "lightbulb",
+      "url": "https://www.privy.com/blog",
+      "color": "#583eea"
+    }
+
+  ],
+  "navigation": [
+    
+    {
+      "group": "Learn",
+      "pages": [
+        "home",
+        {
+          "group": "Account Settings",
+          "pages": [
+            "articles/account-settings/account-management-faq",
+            "articles/account-settings/ada-compliance-with-privy",
+            "articles/account-settings/add-a-form-to-your-wix-page",
+            "articles/account-settings/add-or-remove-users",
+            "articles/account-settings/add-recart-messenger-to-your-privy-account",
+            "articles/account-settings/basic-convert-plan-overview",
+            "articles/account-settings/billing-payments-refunds-faq",
+            "articles/account-settings/browsers-supported-by-privy",
+            "articles/account-settings/cancel-a-privy-plan",
+            "articles/account-settings/change-your-accounts-timezone",
+            "articles/account-settings/compare-privy-to-google-analytics",
+            "articles/account-settings/connect-privy-and-slack",
+            "articles/account-settings/how-to-enable-google-analytics",
+            "articles/account-settings/install-a-facebook-event-code",
+            "articles/account-settings/install-privy-on-bigcommerce",
+            "articles/account-settings/install-privy-on-hubspot",
+            "articles/account-settings/install-privy-on-shift4shop-formerly-3dcart",
+            "articles/account-settings/install-privy-on-shopify",
+            "articles/account-settings/install-privy-on-squarespace",
+            "articles/account-settings/install-privy-on-weebly",
+            "articles/account-settings/install-privy-on-wix",
+            "articles/account-settings/install-privy-on-wordpress-org",
+            "articles/account-settings/install-privy-with-tag-manager",
+            "articles/account-settings/install-tracking-codes-pixels",
+            "articles/account-settings/integrate-privy-with-attentive"
+          ]
+        },
+        {
+          "group": "Contacts",
+          "pages": [
+            "articles/contacts/add-privy-tags-to-your-contacts",
+            "articles/contacts/california-consumer-privacy-act",
+            "articles/contacts/general-data-protection-regulation-gdpr",
+            "articles/contacts/hard-vs-soft-bounces",
+            "articles/contacts/how-does-privy-process-gdpr-and-ccpa-requests",
+            "articles/contacts/how-to-export-your-contacts",
+            "articles/contacts/import-and-manage-contacts",
+            "articles/contacts/list-hygiene-clean-your-email-list",
+            "articles/contacts/list-hygiene-remove-bots",
+            "articles/contacts/list-hygiene-upload-to-unsubscribe",
+            "articles/contacts/sync-contacts-to-mailchimp",
+            "articles/contacts/sync-contacts-to-postscript",
+            "articles/contacts/sync-contacts-to-shopify",
+            "articles/contacts/understand-contact-auto-rejection",
+            "articles/contacts/understand-double-opt-in-doi",
+            "articles/contacts/understand-marketing-consent",
+            "articles/contacts/unsubscribe-contacts",
+            "articles/contacts/view-and-filter-contact-profiles"
+          ]
+        },
+        {
+          "group": "Displays",
+          "pages": [
+            "articles/displays/add-a-form-to-your-shopify-footer",
+            "articles/displays/add-a-form-to-your-shopify-page",
+            "articles/displays/add-coupons-to-a-spin-to-win",
+            "articles/displays/add-images-to-displays-and-emails",
+            "articles/displays/analyze-display-clicks",
+            "articles/displays/analyze-display-performance",
+            "articles/displays/automatically-apply-coupon-codes",
+            "articles/displays/can-i-exclude-a-list-from-a-display",
+            "articles/displays/change-a-displays-background",
+            "articles/displays/change-a-displays-type",
+            "articles/displays/change-your-landing-page-url",
+            "articles/displays/cookies-set-in-a-visitors-browser",
+            "articles/displays/create-a-banner-display",
+            "articles/displays/create-a-bar-display",
+            "articles/displays/create-a-cart-saver-display",
+            "articles/displays/create-a-countdown-timer-with-signup",
+            "articles/displays/create-a-cross-sell-display",
+            "articles/displays/create-a-custom-shaped-display",
+            "articles/displays/create-a-follow-us-display",
+            "articles/displays/create-a-free-shipping-bar",
+            "articles/displays/create-a-landing-page",
+            "articles/displays/create-a-spin-to-win-display",
+            "articles/displays/create-a-two-step-display",
+            "articles/displays/create-a-welcome-discount-display",
+            "articles/displays/create-an-effective-thank-you-page"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Get Started",
      
       "pages": [
         "docs/getting-started/start-here",
@@ -63,80 +173,6 @@
         "docs/getting-started/send-your-first-email",
         "docs/getting-started/create-your-first-popup",
         "docs/getting-started/activate-your-first-automation"
-      ]
-    },
-    {
-      "group": "Guides",
-      "pages": [
-        "guides/get_started.mdx",
-        "guides/automations/abandoned_carts.mdx"
-      ]
-    },
-    {
-      "group": "Email and SMS Campaigns",
-      "pages": [
-        "docs/email-and-sms-campaigns/creating-templates",
-        "docs/email-and-sms-campaigns/view-templates",
-        "docs/email-and-sms-campaigns/setup-domain-and-sending-information"
-      ]
-    },
-    {
-      "group": "Pop-ups and Displays",
-      "pages": [
-        "docs/popups-and-displays/index"
-      ]
-    },
-    {
-      "group": "Automations",
-      "pages": [
-        {
-          "group": "Available Flows",
-          "pages": [
-            "docs/automations/welcome-series",
-            "docs/automations/abandoned-cart",
-            "docs/automations/customer-winback",
-            "docs/automations/purchase-follow-up"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Contact Management",
-      "pages": [
-        "docs/contact-management/add-contacts",
-        "docs/contact-management/list-management",
-        "docs/contact-management/list-hygiene",
-        "docs/contact-management/contact-properties",
-        "docs/contact-management/custom-fields",
-        "docs/contact-management/contact-activity-timeline"
-      ]
-    },
-    {
-      "group": "Segments",
-      "pages": [
-        "docs/contact-management/segments/dynamic-segments",
-        "docs/contact-management/segments/static-segments"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "docs/integrations/index"
-      ]
-    },
-    {
-      "group": "Account Settings and Billing",
-      "pages": [
-        "docs/account-settings-and-billing/index"
-      ]
-    },
-    {
-      "group": "Compliance",
-      "pages": [
-        "docs/compliance/index",
-        "docs/compliance/ada-compliance",
-        "docs/compliance/deliverability",
-        "docs/compliance/spam"
       ]
     }
   ],
