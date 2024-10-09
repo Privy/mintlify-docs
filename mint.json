@@ -60,7 +60,7 @@
     {
       "name": "Guides",
       "icon": "book",
-      "url": "http://www.google.com",
+      "url": "guides",
       "color": "#583eea"
     },
     {
@@ -158,6 +158,21 @@
             "articles/displays/create-a-two-step-display",
             "articles/displays/create-a-welcome-discount-display",
             "articles/displays/create-an-effective-thank-you-page"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/all-guides",
+        {
+          "group": "Automations",
+          "pages": [
+  
+            "guides/automations/intro_automations",
+            "guides/automations/advanced_automations",
+            "guides/automations/abandoned_carts"
           ]
         }
       ]
