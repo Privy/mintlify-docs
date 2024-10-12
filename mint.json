@@ -34,12 +34,16 @@
   
   "topbarLinks": [
     {
+      "name": "Pricing",
+      "url": "https://www.privy.com/pricing"
+    },
+    {
       "name": "Contact Support",
       "url": "mailto:support@privy.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Login",
     "url": "https://dashboard.privy.com"
   },
   "feedback": {
