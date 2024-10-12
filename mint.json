@@ -11,12 +11,12 @@
     "light": "#a194f7",
     "dark": "#583eea",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#583eea",
+      "to": "#583eea"
     },
     "background": {
       "dark": "#0b0a0f",
-      "light": "#f6f5f3"
+      "light": "#fbf9f9"
     }
   },
   
@@ -46,7 +46,8 @@
   },
   "topAnchor": {
     "name": "Learn",
-    "icon": "house"
+    "icon": "house",
+    "iconType": "duotone"
     
   },
   "anchors": [
@@ -54,19 +55,28 @@
     {
       "name": "Get Started",
       "icon": "play",
-      "url": "docs/getting-started",
+      "iconType": "duotone",
+      "url": "docs/get-started",
       "color": "#583eea"
     },
     {
       "name": "Guides",
       "icon": "book",
-      "url": "guides",
+      "url": "docs/guides",
+      "iconType": "duotone",
       "color": "#583eea"
     },
     {
       "name": "What's New",
-      "icon": "lightbulb",
+      "icon": "sparkles",
+      "iconType": "duotone",
+
       "url": "https://www.privy.com/blog",
+      "color": "#583eea"
+    },
+    {
+      "name": "Helpscout Articles",
+      "url": "docs/helpscout",
       "color": "#583eea"
     }
 
@@ -76,103 +86,21 @@
     {
       "group": "Learn",
       "pages": [
-        "home",
-        {
-          "group": "Account Settings",
-          "pages": [
-            "articles/account-settings/account-management-faq",
-            "articles/account-settings/ada-compliance-with-privy",
-            "articles/account-settings/add-a-form-to-your-wix-page",
-            "articles/account-settings/add-or-remove-users",
-            "articles/account-settings/add-recart-messenger-to-your-privy-account",
-            "articles/account-settings/basic-convert-plan-overview",
-            "articles/account-settings/billing-payments-refunds-faq",
-            "articles/account-settings/browsers-supported-by-privy",
-            "articles/account-settings/cancel-a-privy-plan",
-            "articles/account-settings/change-your-accounts-timezone",
-            "articles/account-settings/compare-privy-to-google-analytics",
-            "articles/account-settings/connect-privy-and-slack",
-            "articles/account-settings/how-to-enable-google-analytics",
-            "articles/account-settings/install-a-facebook-event-code",
-            "articles/account-settings/install-privy-on-bigcommerce",
-            "articles/account-settings/install-privy-on-hubspot",
-            "articles/account-settings/install-privy-on-shift4shop-formerly-3dcart",
-            "articles/account-settings/install-privy-on-shopify",
-            "articles/account-settings/install-privy-on-squarespace",
-            "articles/account-settings/install-privy-on-weebly",
-            "articles/account-settings/install-privy-on-wix",
-            "articles/account-settings/install-privy-on-wordpress-org",
-            "articles/account-settings/install-privy-with-tag-manager",
-            "articles/account-settings/install-tracking-codes-pixels",
-            "articles/account-settings/integrate-privy-with-attentive"
-          ]
-        },
-        {
-          "group": "Contacts",
-          "pages": [
-            "articles/contacts/add-privy-tags-to-your-contacts",
-            "articles/contacts/california-consumer-privacy-act",
-            "articles/contacts/general-data-protection-regulation-gdpr",
-            "articles/contacts/hard-vs-soft-bounces",
-            "articles/contacts/how-does-privy-process-gdpr-and-ccpa-requests",
-            "articles/contacts/how-to-export-your-contacts",
-            "articles/contacts/import-and-manage-contacts",
-            "articles/contacts/list-hygiene-clean-your-email-list",
-            "articles/contacts/list-hygiene-remove-bots",
-            "articles/contacts/list-hygiene-upload-to-unsubscribe",
-            "articles/contacts/sync-contacts-to-mailchimp",
-            "articles/contacts/sync-contacts-to-postscript",
-            "articles/contacts/sync-contacts-to-shopify",
-            "articles/contacts/understand-contact-auto-rejection",
-            "articles/contacts/understand-double-opt-in-doi",
-            "articles/contacts/understand-marketing-consent",
-            "articles/contacts/unsubscribe-contacts",
-            "articles/contacts/view-and-filter-contact-profiles"
-          ]
-        },
-        {
-          "group": "Displays",
-          "pages": [
-            "articles/displays/add-a-form-to-your-shopify-footer",
-            "articles/displays/add-a-form-to-your-shopify-page",
-            "articles/displays/add-coupons-to-a-spin-to-win",
-            "articles/displays/add-images-to-displays-and-emails",
-            "articles/displays/analyze-display-clicks",
-            "articles/displays/analyze-display-performance",
-            "articles/displays/automatically-apply-coupon-codes",
-            "articles/displays/can-i-exclude-a-list-from-a-display",
-            "articles/displays/change-a-displays-background",
-            "articles/displays/change-a-displays-type",
-            "articles/displays/change-your-landing-page-url",
-            "articles/displays/cookies-set-in-a-visitors-browser",
-            "articles/displays/create-a-banner-display",
-            "articles/displays/create-a-bar-display",
-            "articles/displays/create-a-cart-saver-display",
-            "articles/displays/create-a-countdown-timer-with-signup",
-            "articles/displays/create-a-cross-sell-display",
-            "articles/displays/create-a-custom-shaped-display",
-            "articles/displays/create-a-follow-us-display",
-            "articles/displays/create-a-free-shipping-bar",
-            "articles/displays/create-a-landing-page",
-            "articles/displays/create-a-spin-to-win-display",
-            "articles/displays/create-a-two-step-display",
-            "articles/displays/create-a-welcome-discount-display",
-            "articles/displays/create-an-effective-thank-you-page"
-          ]
-        }
+        "docs/learn/home",
+        "docs/learn/mintlify-examples"
       ]
     },
     {
       "group": "Guides",
       "pages": [
-        "guides/all-guides",
+        "docs/guides/all-guides",
         {
           "group": "Automations",
           "pages": [
   
-            "guides/automations/intro_automations",
-            "guides/automations/advanced_automations",
-            "guides/automations/abandoned_carts"
+            "docs/guides/automations/intro_automations",
+            "docs/guides/automations/advanced_automations",
+            "docs/guides/automations/abandoned_carts"
           ]
         }
       ]
@@ -181,14 +109,263 @@
       "group": "Get Started",
      
       "pages": [
-        "docs/getting-started/start-here",
-        "docs/getting-started/import-contacts",
-        "docs/getting-started/register-for-sms",
-        "docs/getting-started/setup-domain",
-        "docs/getting-started/send-your-first-email",
-        "docs/getting-started/create-your-first-popup",
-        "docs/getting-started/activate-your-first-automation"
+        "docs/get-started/getting-started/start-here",
+        "docs/get-started/getting-started/import-contacts",
+        "docs/get-started/getting-started/register-for-sms",
+        "docs/get-started/getting-started/setup-domain",
+        "docs/get-started/getting-started/send-your-first-email",
+        "docs/get-started/getting-started/create-your-first-popup",
+        "docs/get-started/getting-started/activate-your-first-automation"
       ]
+    },
+    {
+    "group": "Helpscout Articles",
+    "pages": [
+      {
+        "group": "Account Settings",
+        "pages": [
+          "docs/helpscout/account-settings/account-management-faq",
+          "docs/helpscout/account-settings/ada-compliance-with-privy",
+          "docs/helpscout/account-settings/add-a-form-to-your-wix-page",
+          "docs/helpscout/account-settings/add-or-remove-users",
+          "docs/helpscout/account-settings/add-recart-messenger-to-your-privy-account",
+          "docs/helpscout/account-settings/basic-convert-plan-overview",
+          "docs/helpscout/account-settings/billing-payments-refunds-faq",
+          "docs/helpscout/account-settings/browsers-supported-by-privy",
+          "docs/helpscout/account-settings/cancel-a-privy-plan",
+          "docs/helpscout/account-settings/change-your-accounts-timezone",
+          "docs/helpscout/account-settings/compare-privy-to-google-analytics",
+          "docs/helpscout/account-settings/connect-privy-and-slack",
+          "docs/helpscout/account-settings/how-to-enable-google-analytics",
+          "docs/helpscout/account-settings/install-a-facebook-event-code",
+          "docs/helpscout/account-settings/install-privy-on-bigcommerce",
+          "docs/helpscout/account-settings/install-privy-on-hubspot",
+          "docs/helpscout/account-settings/install-privy-on-shift4shop-formerly-3dcart",
+          "docs/helpscout/account-settings/install-privy-on-shopify",
+          "docs/helpscout/account-settings/install-privy-on-squarespace",
+          "docs/helpscout/account-settings/install-privy-on-weebly",
+          "docs/helpscout/account-settings/install-privy-on-wix",
+          "docs/helpscout/account-settings/install-privy-on-wordpress-org",
+          "docs/helpscout/account-settings/install-privy-with-tag-manager",
+          "docs/helpscout/account-settings/install-tracking-codes-pixels",
+          "docs/helpscout/account-settings/integrate-privy-with-attentive",
+          "docs/helpscout/account-settings/integrate-privy-with-smile-io",
+          "docs/helpscout/account-settings/manage-multiple-businesses",
+          "docs/helpscout/account-settings/manage-your-company-branding",
+          "docs/helpscout/account-settings/manage-your-profile-preferences",
+          "docs/helpscout/account-settings/manage-your-recaptcha-settings",
+          "docs/helpscout/account-settings/privy-security-practices-and-policies",
+          "docs/helpscout/account-settings/remove-the-privy-branding-privy-logo",
+          "docs/helpscout/account-settings/resolve-an-unauthorized-error",
+          "docs/helpscout/account-settings/review-your-results-in-hubspot",
+          "docs/helpscout/account-settings/send-privy-sign-ups-to-sailthru",
+          "docs/helpscout/account-settings/shopify-billing",
+          "docs/helpscout/account-settings/submit-feedback-about-privy",
+          "docs/helpscout/account-settings/sync-contacts-to-adroll",
+          "docs/helpscout/account-settings/sync-contacts-to-sendgrid",
+          "docs/helpscout/account-settings/sync-coupons-to-your-esp",
+          "docs/helpscout/account-settings/update-your-email-footer-address",
+          "docs/helpscout/account-settings/use-a-domain-com-sending-domain",
+          "docs/helpscout/account-settings/use-a-godaddy-sending-domain",
+          "docs/helpscout/account-settings/use-a-namecheap-sending-domain",
+          "docs/helpscout/account-settings/use-a-privy-subaccount",
+          "docs/helpscout/account-settings/use-a-shopify-sending-domain",
+          "docs/helpscout/account-settings/use-a-wix-sending-domain",
+          "docs/helpscout/account-settings/use-custom-fonts",
+          "docs/helpscout/account-settings/use-custom-webhooks",
+          "docs/helpscout/account-settings/use-privy-and-octane-ai",
+          "docs/helpscout/account-settings/will-privy-slow-down-my-site"
+        ]
+      },
+      {
+        "group": "Contacts",
+        "pages": [
+          "docs/helpscout/contacts/add-privy-tags-to-your-contacts",
+          "docs/helpscout/contacts/california-consumer-privacy-act",
+          "docs/helpscout/contacts/general-data-protection-regulation-gdpr",
+          "docs/helpscout/contacts/hard-vs-soft-bounces",
+          "docs/helpscout/contacts/how-does-privy-process-gdpr-and-ccpa-requests",
+          "docs/helpscout/contacts/how-to-export-your-contacts",
+          "docs/helpscout/contacts/import-and-manage-contacts",
+          "docs/helpscout/contacts/list-hygiene-clean-your-email-list",
+          "docs/helpscout/contacts/list-hygiene-remove-bots",
+          "docs/helpscout/contacts/list-hygiene-upload-to-unsubscribe",
+          "docs/helpscout/contacts/sync-contacts-to-mailchimp",
+          "docs/helpscout/contacts/sync-contacts-to-postscript",
+          "docs/helpscout/contacts/sync-contacts-to-shopify",
+          "docs/helpscout/contacts/understand-contact-auto-rejection",
+          "docs/helpscout/contacts/understand-double-opt-in-doi",
+          "docs/helpscout/contacts/understand-marketing-consent",
+          "docs/helpscout/contacts/unsubscribe-contacts",
+          "docs/helpscout/contacts/view-and-filter-contact-profiles"
+        ]
+      },
+      {
+        "group": "Displays",
+        "pages": [
+          "docs/helpscout/displays/add-a-form-to-your-shopify-footer",
+          "docs/helpscout/displays/add-a-form-to-your-shopify-page",
+          "docs/helpscout/displays/add-coupons-to-a-spin-to-win",
+          "docs/helpscout/displays/add-images-to-displays-and-emails",
+          "docs/helpscout/displays/analyze-display-clicks",
+          "docs/helpscout/displays/analyze-display-performance",
+          "docs/helpscout/displays/automatically-apply-coupon-codes",
+          "docs/helpscout/displays/can-i-exclude-a-list-from-a-display",
+          "docs/helpscout/displays/change-a-displays-background",
+          "docs/helpscout/displays/change-a-displays-type",
+          "docs/helpscout/displays/change-your-landing-page-url",
+          "docs/helpscout/displays/cookies-set-in-a-visitors-browser",
+          "docs/helpscout/displays/create-a-banner-display",
+          "docs/helpscout/displays/create-a-bar-display",
+          "docs/helpscout/displays/create-a-cart-saver-display",
+          "docs/helpscout/displays/create-a-countdown-timer-with-signup",
+          "docs/helpscout/displays/create-a-cross-sell-display",
+          "docs/helpscout/displays/create-a-custom-shaped-display",
+          "docs/helpscout/displays/create-a-follow-us-display",
+          "docs/helpscout/displays/create-a-free-shipping-bar",
+          "docs/helpscout/displays/create-a-landing-page",
+          "docs/helpscout/displays/create-a-spin-to-win-display",
+          "docs/helpscout/displays/create-a-two-step-display",
+          "docs/helpscout/displays/create-a-welcome-discount-display",
+          "docs/helpscout/displays/create-an-effective-thank-you-page",
+          "docs/helpscout/displays/create-an-embedded-form",
+          "docs/helpscout/displays/create-an-exit-intent-display",
+          "docs/helpscout/displays/create-an-influencer-display",
+          "docs/helpscout/displays/create-an-out-of-stock-display",
+          "docs/helpscout/displays/create-and-manage-form-fields",
+          "docs/helpscout/displays/disable-displays-in-checkout",
+          "docs/helpscout/displays/duplicate-a-display",
+          "docs/helpscout/displays/edit-an-existing-display",
+          "docs/helpscout/displays/embed-a-video-into-a-display",
+          "docs/helpscout/displays/hide-a-campaign-thank-you-page",
+          "docs/helpscout/displays/how-to-gate-content-with-privy",
+          "docs/helpscout/displays/https-to-http-referrer-loss",
+          "docs/helpscout/displays/insert-custom-code-into-displays",
+          "docs/helpscout/displays/link-an-image-in-your-display",
+          "docs/helpscout/displays/manage-display-tabs",
+          "docs/helpscout/displays/my-after-signup-email-isnt-sending",
+          "docs/helpscout/displays/pass-attributes-to-destination-urls",
+          "docs/helpscout/displays/personalize-a-thank-you-page",
+          "docs/helpscout/displays/redirect-visitors-after-a-signup",
+          "docs/helpscout/displays/run-an-a-b-test-on-a-display",
+          "docs/helpscout/displays/schedule-a-display",
+          "docs/helpscout/displays/set-up-an-after-signup-text",
+          "docs/helpscout/displays/target-audience-by-shopify-login",
+          "docs/helpscout/displays/translate-a-display",
+          "docs/helpscout/displays/use-a-cta-to-trigger-a-display",
+          "docs/helpscout/displays/use-a-qr-code-with-your-display",
+          "docs/helpscout/displays/use-a-tiered-cart-saver-strategy",
+          "docs/helpscout/displays/use-audience-targeting-conditions",
+          "docs/helpscout/displays/use-current-url-in-targeting-rules",
+          "docs/helpscout/displays/use-display-automation-rules",
+          "docs/helpscout/displays/use-display-triggers",
+          "docs/helpscout/displays/use-form-validations-in-displays",
+          "docs/helpscout/displays/use-hidden-form-fields",
+          "docs/helpscout/displays/use-liquid-in-conversion-javascript"
+        ]
+      },
+      {
+        "group": "Email",
+        "pages": [
+          "docs/helpscout/email/add-an-order-summary-to-emails",
+          "docs/helpscout/email/add-images-to-displays-and-emails",
+          "docs/helpscout/email/add-preview-text-to-an-email",
+          "docs/helpscout/email/analyze-email-performance",
+          "docs/helpscout/email/create-and-manage-email-templates",
+          "docs/helpscout/email/edit-an-email-image",
+          "docs/helpscout/email/edit-an-existing-email",
+          "docs/helpscout/email/how-to-style-the-unsubscribe-link",
+          "docs/helpscout/email/insert-a-coupon-into-your-email",
+          "docs/helpscout/email/my-contact-didnt-get-my-email",
+          "docs/helpscout/email/my-emails-look-different-in-outlook",
+          "docs/helpscout/email/personalize-your-emails",
+          "docs/helpscout/email/privy-email-compliance",
+          "docs/helpscout/email/resend-an-unopened-newsletter",
+          "docs/helpscout/email/send-a-customer-winback-email",
+          "docs/helpscout/email/send-a-welcome-series",
+          "docs/helpscout/email/send-abandoned-cart-emails",
+          "docs/helpscout/email/send-contacts-a-birthday-email",
+          "docs/helpscout/email/send-newsletter-emails",
+          "docs/helpscout/email/send-purchase-follow-up-emails",
+          "docs/helpscout/email/set-up-an-after-signup-email",
+          "docs/helpscout/email/understand-deliverability",
+          "docs/helpscout/email/understand-email-engagement",
+          "docs/helpscout/email/understanding-non-human-interactions-in-email-marketing",
+          "docs/helpscout/email/use-an-html-email-template",
+          "docs/helpscout/email/use-custom-and-smart-segments-in-email",
+          "docs/helpscout/email/use-product-blocks-in-newsletters",
+          "docs/helpscout/email/use-product-segmentation",
+          "docs/helpscout/email/use-the-drag-and-drop-email-editor",
+          "docs/helpscout/email/use-utm-tags-in-privy-emails",
+          "docs/helpscout/email/web-safe-fonts-faq"
+        ]
+      },
+      {
+        "group": "Onboarding",
+        "pages": [
+          "docs/helpscout/onboarding/advanced-automations-to-drive-revenue",
+          "docs/helpscout/onboarding/automations-101-what-automations-are-right-for-me",
+          "docs/helpscout/onboarding/contacts-vs-signups",
+          "docs/helpscout/onboarding/create-and-manage-coupon-codes",
+          "docs/helpscout/onboarding/deliverability-101-understanding-and-monitoring-deliverability",
+          "docs/helpscout/onboarding/deliverability-best-practices",
+          "docs/helpscout/onboarding/dmarc-dkim-spf-record-authentication",
+          "docs/helpscout/onboarding/does-privy-work-with-spas",
+          "docs/helpscout/onboarding/enable-daily-and-weekly-updates",
+          "docs/helpscout/onboarding/get-started-privy-email",
+          "docs/helpscout/onboarding/get-started-with-campaigns",
+          "docs/helpscout/onboarding/get-started-with-privy-text",
+          "docs/helpscout/onboarding/get-started-with-privy",
+          "docs/helpscout/onboarding/getting-started-with-privy-coupons",
+          "docs/helpscout/onboarding/guidelines-for-creative-assets",
+          "docs/helpscout/onboarding/how-privy-calculates-pageviews",
+          "docs/helpscout/onboarding/how-to-warm-up-a-sending-domain",
+          "docs/helpscout/onboarding/insert-a-coupon-into-your-content",
+          "docs/helpscout/onboarding/install-privy-on-your-site",
+          "docs/helpscout/onboarding/integrate-privy-with-an-email-service-provider",
+          "docs/helpscout/onboarding/launch-your-first-display",
+          "docs/helpscout/onboarding/master-coupon-vs-unique-coupon",
+          "docs/helpscout/onboarding/overview-of-form-fields",
+          "docs/helpscout/onboarding/overview-of-privy-reports",
+          "docs/helpscout/onboarding/overview-of-the-new-privy-dashboard",
+          "docs/helpscout/onboarding/overview-of-the-plays-dashboard",
+          "docs/helpscout/onboarding/overview-privy-integrations",
+          "docs/helpscout/onboarding/privy-display-types",
+          "docs/helpscout/onboarding/privy-glossary",
+          "docs/helpscout/onboarding/privys-get-started-checklist",
+          "docs/helpscout/onboarding/segmenting-emails-101-what-segments-are-right-for-me",
+          "docs/helpscout/onboarding/should-i-use-a-play-or-build-my-own-display",
+          "docs/helpscout/onboarding/six-key-conversion-metrics-to-track",
+          "docs/helpscout/onboarding/support-faq",
+          "docs/helpscout/onboarding/sync-contacts-to-klaviyo",
+          "docs/helpscout/onboarding/troubleshoot-common-login-issues",
+          "docs/helpscout/onboarding/understanding-privys-attribution-model",
+          "docs/helpscout/onboarding/use-a-custom-sending-domain",
+          "docs/helpscout/onboarding/use-a-discount-free-strategy",
+          "docs/helpscout/onboarding/use-the-build-your-own-display-designer",
+          "docs/helpscout/onboarding/what-does-privy-consider-an-order",
+          "docs/helpscout/onboarding/who-gets-abandoned-cart-emails",
+          "docs/helpscout/onboarding/why-can-t-i-see-my-display",
+          "docs/helpscout/onboarding/why-havent-my-dns-records-verified",
+          "docs/helpscout/onboarding/why-is-there-info-stuck-in-my-form-fields"
+        ]
+      },
+      {
+        "group": "Text",
+        "pages": [
+          "docs/helpscout/text/create-a-click-to-text-display",
+          "docs/helpscout/text/create-a-phone-capture-display",
+          "docs/helpscout/text/insert-a-coupon-into-your-text",
+          "docs/helpscout/text/privy-email-and-sms-compliance",
+          "docs/helpscout/text/send-a-broadcast-text",
+          "docs/helpscout/text/send-abandoned-cart-texts",
+          "docs/helpscout/text/sms-best-practices-with-privy-text",
+          "docs/helpscout/text/sms-consent-collection",
+          "docs/helpscout/text/toll-free-message-verification-for-privy-text",
+          "docs/helpscout/text/who-gets-abandoned-cart-texts"
+        ]
+      }
+    ]
     }
   ],
   "footerSocials": {
