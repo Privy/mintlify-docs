@@ -6,6 +6,8 @@
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
+  "backgroundImage": " https://mintlify.s3-us-west-1.amazonaws.com/dub/images/background.png",
+ 
   "colors": {
     "primary": "#583eea",
     "light": "#a194f7",
@@ -16,7 +18,7 @@
     },
     "background": {
       "dark": "#0b0a0f",
-      "light": "#fbf9f9"
+      "light": "#f8f7f9"
     }
   },
   
