@@ -116,16 +116,35 @@
      
       "pages": [
         "docs/get-started/getting-started/start-here",
-        "docs/get-started/install-privy-on-your-site",
-        "docs/get-started/getting-started/integrations-overview",
-        "docs/get-started/getting-started/import-contacts",
-        "docs/get-started/getting-started/register-for-sms",
-        "docs/get-started/getting-started/setup-domain",
-        "docs/get-started/getting-started/create-your-first-display",
-        "docs/get-started/getting-started/send-your-first-email",
-        "docs/get-started/getting-started/send-your-first-text",
-        "docs/get-started/getting-started/activate-your-first-automation",
-        "docs/get-started/getting-started/review-your-performance"
+        {
+          "group": "Account Setup",
+          "pages": [
+
+            "docs/get-started/install-privy-on-your-site",
+            "docs/get-started/getting-started/integrations-overview",
+            "docs/get-started/getting-started/import-contacts",
+            "docs/get-started/getting-started/register-for-sms",
+            "docs/get-started/getting-started/setup-domain"
+          ]
+          
+          "pages": [
+
+            "docs/get-started/getting-started/create-your-first-display"
+
+          ]
+
+          "group": "Email + Text"
+          "pages": [
+            "docs/get-started/getting-started/activate-your-first-automation",
+            "docs/get-started/getting-started/send-your-first-email",
+            "docs/get-started/getting-started/send-your-first-text",
+          ]
+
+          "pages": [
+            "docs/get-started/getting-started/review-your-performance"
+          ]
+        }
+
       ]
     },
     {
