@@ -64,41 +64,11 @@
     "iconType": "duotone"
     
   },
-  "anchors": [
-    
-    {
-      "name": "Get Started",
-      "icon": "play",
-      "iconType": "duotone",
-      "url": "docs/get-started",
-      "color": "#583eea"
-    },
-    {
-      "name": "Guides",
-      "icon": "book",
-      "url": "docs/guides",
-      "iconType": "duotone",
-      "color": "#583eea"
-    },
-    {
-      "name": "What's New",
-      "icon": "sparkles",
-      "iconType": "duotone",
-
-      "url": "https://www.privy.com/blog",
-      "color": "#583eea"
-    },
-    {
-      "name": "Helpscout Articles",
-      "url": "docs/helpscout",
-      "color": "#583eea"
-    }
-
-  ],
+  
   "navigation": [
     
     {
-      "group": "Learn",
+      "group": "Getting Started",
       "pages": [
         "docs/learn/home",
         "docs/learn/mintlify-examples"
@@ -120,39 +90,41 @@
       ]
     },
     {
-      "group": "Get Started",
+      "group": "Reference",
      
       "pages": [
         "docs/get-started/getting-started/start-here",
         {
-          "group": "Account Setup",
+          "group": "Account Settings",
           "pages": [
-
             "docs/get-started/install-privy-on-your-site",
             "docs/get-started/getting-started/integrations-overview",
             "docs/get-started/getting-started/import-contacts",
             "docs/get-started/getting-started/register-for-sms",
             "docs/get-started/getting-started/setup-domain"
           ]
-          
+        },
+        {
+          "group": "Displays",
           "pages": [
-
-            "docs/get-started/getting-started/create-your-first-display"
-
+             "docs/get-started/getting-started/create-your-first-display"
           ]
-
-          "group": "Email + Text"
+        },
+        {
+          "group": "Email + Text",
           "pages": [
             "docs/get-started/getting-started/activate-your-first-automation",
             "docs/get-started/getting-started/send-your-first-email",
-            "docs/get-started/getting-started/send-your-first-text",
+            "docs/get-started/getting-started/send-your-first-text"
           ]
-
+        },
+        {
+          "group": "Review Performance",
           "pages": [
             "docs/get-started/getting-started/review-your-performance"
+          
           ]
         }
-
       ]
     },
     {
