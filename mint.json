@@ -7,6 +7,14 @@
   },
   "favicon": "/favicon.svg",
   "backgroundImage": "/images/background.png",
+  "font": {
+    "headings": {
+      "family": "Figtree"
+    },
+    "body": {
+      "family": "Figtree"
+    }
+  },
  
   "colors": {
     "primary": "#583eea",
