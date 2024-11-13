@@ -71,7 +71,8 @@
       "group": "Getting Started",
       "pages": [
         "docs/learn/home",
-        "docs/learn/mintlify-examples"
+        "docs/get-started/getting-started/start-here"
+        
       ]
     },
     {
@@ -93,7 +94,7 @@
       "group": "Reference",
      
       "pages": [
-        "docs/get-started/getting-started/start-here",
+       
         {
           "group": "Account Settings",
           "pages": [
