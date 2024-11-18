@@ -91,7 +91,7 @@
       ]
     },
     {
-      "group": "Reference",
+      "group": "Learn",
      
       "pages": [
        
@@ -108,7 +108,7 @@
         {
           "group": "Displays",
           "pages": [
-             "docs/get-started/getting-started/create-your-first-display"
+             "docs/learn/displays/create-a-display"
           ]
         },
         {
