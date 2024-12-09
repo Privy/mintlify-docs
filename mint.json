@@ -110,8 +110,8 @@
           "pages": [
              "docs/learn/displays/displays-overview",
              "docs/learn/displays/create-a-display",
-             "docs/learn/displays/settings/settings-overview",
-             "docs/learn/displays/reporting/reporting-overview",
+             "docs/learn/displays/settings-overview",
+             "docs/learn/displays/reporting-overview",
              "docs/learn/displays/classic-designer/classic-designer-overview"
           ]
         },
