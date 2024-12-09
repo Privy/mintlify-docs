@@ -42,6 +42,74 @@ You have the option to choose one or more of the following visibility settings:
   Unchecking "Limit display appearance" means there will be no limit to how often a display will trigger in a session for your audience.
 </Warning>
 
-<Note>
-  Callout Content
-</Note>
+### Audience Targeting
+
+Privy allows you to target displays by Customer Attributes, Shopping Activity, Website Behavior, and more. You can explore all available properties in depth below:
+
+<AccordionGroup>
+  <Accordion title="Customer Attributes" defaultOpen={false} icon="user-group">
+    * **Country:** Target visitors based on the Country reported by the visitor's IP Address.
+
+    * **Custom Fields:** Target contacts based on their Custom Field values, which can provided via an import or by signing up for a display. Learn more about Custom Fields.
+
+    * **Language:** Target visitors based on the default language set in their browser. The values for this condition are language codes following the [BCP 47](https://www.techonthenet.com/js/language_tags.php) standard and written without the region subtag —for example, en for English, fr for French, or es for Spanish. 
+
+    * **Postal Code:** Target contacts based on their postal code area. We support postal codes from the United States (5-Digit), the United Kingdom (Outward Code), Canada (3-Digit FSA), and Australia (4-Digit). Each unique postal code must be entered on its own line. 
+
+    * **Region:** Target contacts based on their geographic region. This condition currently supports states from the United States, counties from the United Kingdom, provinces from Canada, and states/territories from Australia. 
+  </Accordion>
+
+  <Accordion title="Shopping Activity" defaultOpen={false} icon="cart-shopping">
+    * **Cart Product IDs:** Target visitors based on whether or not specific Product ID(s) have been identified in their cart. *Available for accounts integrated with Shopify or BigCommerce.* 
+
+    * **Cart Value:** Target visitors based on the current value in their cart. *Available for accounts integrated with BigCommerce, Shopify, Squarespace, or Weebly.*
+
+    * **Cart Variant IDs:** Target visitors based on whether or not certain product Variant IDs have been identified in their cart. *Available for accounts integrated with Shopify or BigCommerce.* 
+
+    * **Order Count:** Target contacts based on the number of orders they have placed with you. *Available for accounts integrated with Shopify or Weebly.*
+  </Accordion>
+
+  <Accordion title="Website Behavior" defaultOpen={false} icon="arrow-pointer">
+    * **Display Seen:** Target visitors based on the displays that they have or have not seen. 
+
+    * **Display Seen (this session):** Target visitors based on the displays they have or have not seen in this session. *A session is a group of interactions with your website within a given time frame. It expires after 30 minutes of inactivity.*
+
+    * **Display Signed Up:** Target visitors based on which displays they have or have not signed up for. 
+
+    * **Display Signed Up (this session):** Target visitors based on the displays they have or have not signed up for in this session. *A session is a group of interactions with your website within a given time frame. It expires after 30 minutes of inactivity.*
+
+    * **Current URL:** Target visitors based on the URL that the visitor is currently on.
+
+    * **Day of week:** Target visitors based on the day of their visit. 
+
+    * **Device category:** Target visitors based on whether they are accessing your site on a Desktop or Mobile device. *Tablets are considered part of the mobile device category.* 
+
+    * **Initial traffic type:** Target visitors based on the channel they used to reach your site for the first time (e.g., direct, paid, social, etc.). *A visitor's channel is determined by the UTM parameter(s) included in the link that led them to your site.* 
+
+    * **Initial URL (all time):** Target visitors based on the URL of the first page that they landed on when first visiting your site.
+
+    * **Initial URL (this session):** Target visitors based on the URL of the first page that they landed on when visiting your site this session. *A session expires after 30 minutes of inactivity.*
+
+    * **Pageviews (all time):** Target visitors based on the total number of pageviews across all of their tracked sessions. 
+
+    * **Pageviews (this session):** Target visitors based on the total number of pageviews across the current tracked session. 
+
+    * **Referring URL:** Target visitors based on the page they were on immediately before viewing the current page. *This URL could be from one of your site pages or an external page.*
+
+    * **Sessions Count:** Target visitors based on the number of unique times they've visited your website.
+
+    * **Time of day:** Target visitors based on the time of their visit. 
+
+    * **Traffic type:** Target visitors based on the channel they used to reach your site (e.g., Direct, Paid, Social, etc.). A visitor's channel is determined by the UTM parameter(s) included in the link that led them to your site. 
+  </Accordion>
+
+  <Accordion title="Other" defaultOpen={false} icon="code">
+    * **Custom JavaScript:** This allows you to create your own targeting rules using JavaScript. *This option is only recommended for advanced users and outside Privy Support's scope.*
+
+    * **User identity:** Targets visitors based on whether they are known or unknown.&#x20;
+
+      * A "Known" visitor has submitted their information via a display or store checkout, been tagged with a tracking cookie, and become a contact.&#x20;
+
+      * An "Unknown" visitor has not provided their information and remains unidentified. They may or may not be associated with an anonymous tracking cookie. 
+  </Accordion>
+</AccordionGroup>
