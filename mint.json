@@ -76,21 +76,6 @@
       ]
     },
     {
-      "group": "Guides",
-      "pages": [
-        "docs/guides/all-guides",
-        {
-          "group": "Automations",
-          "pages": [
-  
-            "docs/guides/automations/intro_automations",
-            "docs/guides/automations/advanced_automations",
-            "docs/guides/automations/abandoned_carts"
-          ]
-        }
-      ]
-    },
-    {
       "group": "Learn",
      
       "pages": [
@@ -183,6 +168,21 @@
             "docs/learn/compliance/contact-auto-rejection",
             "docs/learn/compliance/gdpr",
             "docs/learn/compliance/ccpa"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "docs/guides/all-guides",
+        {
+          "group": "Automations",
+          "pages": [
+  
+            "docs/guides/automations/intro_automations",
+            "docs/guides/automations/advanced_automations",
+            "docs/guides/automations/abandoned_carts"
           ]
         }
       ]
