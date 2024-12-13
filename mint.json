@@ -96,16 +96,6 @@
       "pages": [
        
         {
-          "group": "Account Settings",
-          "pages": [
-            "docs/get-started/install-privy-on-your-site",
-            "docs/get-started/getting-started/integrations-overview",
-            "docs/get-started/getting-started/import-contacts",
-            "docs/get-started/getting-started/register-for-sms",
-            "docs/get-started/getting-started/setup-domain"
-          ]
-        },
-        {
           "group": "Displays",
           "pages": [
              "docs/learn/displays/displays-overview",
@@ -116,18 +106,50 @@
           ]
         },
         {
-          "group": "Email + Text",
+          "group": "Automations",
           "pages": [
-            "docs/get-started/getting-started/activate-your-first-automation",
-            "docs/get-started/getting-started/send-your-first-email",
-            "docs/get-started/getting-started/send-your-first-text"
+            "docs/learn/automations/automations-overview",
+            "docs/learn/automations/abandoned-cart-email",
+            "docs/learn/automations/welcome-email",
+            "docs/learn/automations/customer-winback",
+            "docs/learn/automations/purchase-follow-up",
+            "docs/learn/automations/abandoned-cart-text",
+            "docs/learn/automations/after-signup-email-text",
+            "docs/learn/automations/automations/reporting"
+          ]
+        },
+        {
+          "group": "Email Campaigns",
+          "pages": [
+            "docs/learn/email-campaigns/send-an-email-campaign",
+            "docs/learn/email-campaigns/segmentation",
+            "docs/learn/email-campaigns/email-templates",
+            "docs/learn/email-campaigns/email-campaign/reporting"
+          ]
+        },
+        {
+          "group": "SMS Campaigns",
+          "pages": [
+            "docs/learn/sms-campaigns/send-a-text-campaign.mdx",
+            "docs/learn/sms-campaigns/text-campaign-reporting"
           ]
         },
         {
           "group": "Review Performance",
           "pages": [
             "docs/get-started/getting-started/review-your-performance"
-          
+          ]
+        },
+        {
+          "group": "Content",
+          "pages": [
+            "docs/learn/content/coupon-codes",
+            "docs/learn/content/personalization-tags",
+            "docs/learn/content/adding-images-to-emails",
+            "docs/learn/content/product-blocks",
+            "docs/learn/content/order-summaries-in-email",
+            "docs/learn/content/web-safe-fonts",
+            "docs/learn/content/use-custom-fonts"
           ]
         }
       ]
