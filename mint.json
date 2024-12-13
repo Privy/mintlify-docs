@@ -151,6 +151,39 @@
             "docs/learn/content/web-safe-fonts",
             "docs/learn/content/use-custom-fonts"
           ]
+        },
+        {
+          "group": "Contacts",
+          "pages": [
+            "docs/learn/contact-management/import-and-manage-contacts",
+            "docs/learn/contact-management/view-and-filter-contacts",
+            "docs/learn/contact-management/tag-contacts",
+            "docs/learn/contact-management/unsubscribe-contacts",
+            "docs/learn/contact-management/export-contacts",
+            "docs/learn/contact-management/list-hygiene"
+          ]
+        },
+        {
+          "group": "Deliverability",
+          "pages": [
+            "docs/learn/deliverability/understanding-deliverability",
+            "docs/learn/deliverability/understanding-email-authentication",
+            "docs/learn/deliverability/use-a-custom-sending-domain",
+            "docs/learn/deliverability/warming-up-sending-domain",
+            "docs/learn/deliverability/hard-vs-soft-bounces"
+          ]
+        },
+        {
+          "group": "Compliance",
+          "pages": [
+            "docs/learn/compliance/privy-email-compliance",
+            "docs/learn/compliance/privy-text-compliance",
+            "docs/learn/compliance/understand-marketing-consent",
+            "docs/learn/compliance/toll-free-verification",
+            "docs/learn/compliance/contact-auto-rejection",
+            "docs/learn/compliance/gdpr",
+            "docs/learn/compliance/ccpa"
+          ]
         }
       ]
     },
