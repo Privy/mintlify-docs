@@ -124,13 +124,13 @@
             "docs/learn/email-campaigns/send-an-email-campaign",
             "docs/learn/email-campaigns/segmentation",
             "docs/learn/email-campaigns/email-templates",
-            "docs/learn/email-campaigns/email-campaign/reporting"
+            "docs/learn/email-campaigns/email-campaign-reporting"
           ]
         },
         {
           "group": "SMS Campaigns",
           "pages": [
-            "docs/learn/sms-campaigns/send-a-text-campaign.mdx",
+            "docs/learn/sms-campaigns/send-a-text-campaign",
             "docs/learn/sms-campaigns/text-campaign-reporting"
           ]
         },
