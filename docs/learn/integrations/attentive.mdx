@@ -48,18 +48,58 @@ An example of the standard Attentive legal disclosure is shown below, along with
 By signing up, you agree to receive recurring automated promotional and personalized marketing messages from Wicked Wicks Candle at the email and number used at signup. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel texts. Msg frequency varies. Msg & data rates may apply. View our Terms & Privacy Policy.
 ```
 
-
-
 ### 2. Add a Sync Rule in your Settings
 
-Once you've added a Phone Number form field and your SMS marketing consent disclosure, head to the **Settings** step of your display. Click *Show Advanced Settings***** and then select the **Sync Integrations** card.
+Once you've added a Phone Number form field and your SMS marketing consent disclosure, head to the **Settings** step of your display. Click *Show Advanced Settings*\*\*\*\* and then select the **Sync Integrations** card.
 
 Click **Add Integration** and select your Attentive account from the menu. Input your Attentive Source ID and then click **Save**.
-
-
 
 <Note>
   The Attentive API Source ID is required to complete the display setup. If you do not already have this, please contact your Attentive representative to request it.
 </Note>
 
 Once you're happy with your display's appearance and settings, click **Publish** and all phone numbers collected will sync to your Attentive account for further SMS marketing.
+
+## Troubleshooting
+
+If you are encountering issues with your Privy \<> Attentive integration, please consider the following:
+
+### Signups
+
+* Signups only sync to Attentive if the submission includes a single phone number collected via the default Phone (contact\_phone) field. 
+
+* Fields with blank values will not sync.
+
+* Fields with multiple values collected via multi-select checkboxes will not sync. 
+
+* The integration does not support transactional opt-ins.
+
+### Eligibility for text and email
+
+* When a phone number is synced to Attentive, that number will be 'subscribed' to the 'TEXT' channel for the type of messages associated with their 'Source ID'.
+
+  * If the contact is a new subscriber, they'll receive a double opt-in text from Attentive.
+
+  * If the contact is an existing subscriber, they may receive a text from Attentive informing them they're already subscribed.
+
+* When an email address is synced to Attentive, that email address will be 'subscribed' to the 'EMAIL' channel for the type of messages associated with their 'Source ID.'
+
+### Sync Errors
+
+* Syncs are reported as a 'success' as long as the phone field and/or email field were successfully shared during the attempt. 
+
+* Errors that occur when syncing custom fields are ignored.
+
+## Removing the Integration
+
+1. Click on your business name in the upper right corner of your Privy Dashboard.
+
+2. Select **Integrations** from the menu that appears.
+
+3. Locate your Attentive integration under the *Authorized Integrations* section and select the **Delete** icon.
+
+4. In Attentive, navigate to the [Connected Apps](https://ui.attentivemobile.com/settings/connected-apps) section of your account settings and select the **Revoke Application** option next to Privy. Confirm your decision in the prompt. 
+
+
+
+The integration and all of its associated permissions have been removed.
