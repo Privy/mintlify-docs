@@ -169,6 +169,25 @@
             "docs/learn/compliance/gdpr",
             "docs/learn/compliance/ccpa"
           ]
+        },
+        {
+          "group": "Integrations",
+          "pages": [
+            "docs/learn/integrations/overview-integrations",
+            "docs/learn/integrations/integrations-faq",
+            "docs/learn/integrations/shopify",
+            "docs/learn/integrations/bigcommerce",
+            "docs/learn/integrations/wix",
+            "docs/learn/integrations/wordpress",
+            "docs/learn/integrations/squarespace",
+            "docs/learn/integrations/weebly",
+            "docs/learn/integrations/klaviyo",
+            "docs/learn/integrations/mailchimp",
+            "docs/learn/integrations/attentive",
+            "docs/learn/integrations/postscript",
+            "docs/learn/integrations/smile",
+            "docs/learn/integrations/tagmanager"
+          ]
         }
       ]
     },
