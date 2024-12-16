@@ -15,6 +15,9 @@
       "family": "Figtree"
     }
   },
+  "seo": {
+    "indexHiddenPages": true
+  },
  
   "colors": {
     "primary": "#583eea",
