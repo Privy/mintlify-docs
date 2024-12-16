@@ -1,4 +1,65 @@
 ---
 title: "Sync Contacts to Attentive"
 sidebarTitle: "Attentive"
+description: "Collect SMS contacts with Privy and automatically sync them to Attentive."
 ---
+
+The Privy integration with Attentive allows contact information collected by Privy to be used for SMS Marketing in Attentive.
+
+<Info>
+  **Note:** This guide reviews configuring version 2.0 of the Privy - Attentive integration. If you integrated with Attentive before August 19, 2021, you must follow these updated steps to access the expanded features outlined below. Otherwise, you will remain on the legacy integration, which only supports the sharing of phone numbers via compatible displays. 
+</Info>
+
+## Features of the integration
+
+The integration currently supports: 
+
+* The auto-sync of all Privy display submissions that include a phone number collected using the default Phone field from Privy to Attentive. 
+
+* Syncing of all default customer attribute fields included in a Privy display submission.
+
+* Syncing of all custom fields included in a Privy display (except for those using the multi-select checkbox format). 
+
+## Setting up your integration
+
+1. Click on your business name in the upper right corner of your Privy Dashboard.
+
+2. Select **Integrations** from the menu that appears.
+
+3. Locate and select **Attentive** from the *Available Integrations* area.
+
+4. If you aren't already logged into your Attentive Account, log in and select **Continue**.
+
+5. In Attentive, select the **Authorize** option. If your Privy credentials are associated with multiple Privy accounts, please select the **Link** option next to the account you'd like to connect.
+
+6. Once linked, your Attentive account will appear in the *Authorized Accounts* section of your Privy Integrations page, along with an option to test the account's connection.
+
+## Syncing Sign Ups to Attentive
+
+Once your integration is all set up, you're ready to start collecting phone numbers and syncing them to your Attentive account. Here's how to set that up:
+
+### 1. Collect Phone Numbers with SMS Consent
+
+To sync new sign ups to Attentive, you need to make sure that you are collecting a phone number along with the required SMS marketing consent disclosure on your display.
+
+An example of the standard Attentive legal disclosure is shown below, along with its required placement. Please consult with your Attentive representative to ensure your legal language meets your specific needs. You can read Attentive's guide to SMS Compliance here.
+
+```
+By signing up, you agree to receive recurring automated promotional and personalized marketing messages from Wicked Wicks Candle at the email and number used at signup. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel texts. Msg frequency varies. Msg & data rates may apply. View our Terms & Privacy Policy.
+```
+
+
+
+### 2. Add a Sync Rule in your Settings
+
+Once you've added a Phone Number form field and your SMS marketing consent disclosure, head to the **Settings** step of your display. Click *Show Advanced Settings***** and then select the **Sync Integrations** card.
+
+Click **Add Integration** and select your Attentive account from the menu. Input your Attentive Source ID and then click **Save**.
+
+
+
+<Note>
+  The Attentive API Source ID is required to complete the display setup. If you do not already have this, please contact your Attentive representative to request it.
+</Note>
+
+Once you're happy with your display's appearance and settings, click **Publish** and all phone numbers collected will sync to your Attentive account for further SMS marketing.
