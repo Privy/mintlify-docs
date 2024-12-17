@@ -88,12 +88,16 @@
           "pages": [
              "docs/learn/displays/displays-overview",
              "docs/learn/displays/create-a-display",
+             "docs/learn/displays/form-fields-and-elements",
              "docs/learn/displays/settings-overview",
              "docs/learn/displays/reporting-overview",
+             "docs/learn/displays/ab-test-displays",
              "docs/learn/displays/classic-designer/classic-designer-overview",
              "docs/learn/displays/classic-designer/spin-to-win",
              "docs/learn/displays/classic-designer/landing-page",
-             "docs/learn/displays/classic-designer/embedded-form"
+             "docs/learn/displays/classic-designer/embedded-form",
+             "docs/learn/displays/classic-designer/banner-display",
+             "docs/learn/displays/classic-designer/bar-display"
           ]
         },
         {
