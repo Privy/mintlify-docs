@@ -1,4 +1,71 @@
 ---
 title: "Install Privy on Shopify"
 sidebarTitle: "Shopify"
+description: "Set up Privy on your Shopify store to meaningfully engage with your customers."
 ---
+
+Installing the Privy app for Shopify store adds a unique Privy code which allows you to show your displays, track visitor behavior (e.g., display views), and acquire order information for segmentation or targeting, all without the need for coding or development skills.
+
+## Features of the integration
+
+Privy will not modify your store theme or change any store settings when installed through the app store. Installing Privy through the Shopify app store will enable the following:
+
+* **Privy Displays:** displays will show on your store's site & their data will automatically appear in Shopify's marketing reports.
+
+* **Automatic Contact Syncs:**&#x20;
+
+  * New sign ups from Privy sync to Shopify, and customers marked as "accepts marketing" in Shopify will sync to Privy.&#x20;
+
+  * All existing mailable contacts from Shopify will automatically import into Privy. 
+
+  * Changes to customer records in Shopify will automatically create or update contacts with the corresponding email address in Privy. *Deletions are not replicated in either direction.*
+
+* **Coupon Codes:** Creation and management of Shopify coupon codes within Privy.
+
+* **Product Catalog:** Products + Collections in Shopify automatically sync to Privy and can be used for audience targeting, segmentation, and email content.
+
+* **Cart + Order Activity:** Contacts' cart values and order events sync automatically to Privy and can be used for audience targeting, segmentation, and automations.
+
+<Warning>
+  These features are only available via the Privy app in Shopify. Performing a **manual installation** only enables displays to show on your store's site and allows basic tracking information to be collected about visitors. Due to these limitations, a manual install is not recommended for most users. 
+</Warning>
+
+## How to install the app
+
+To install the Privy app for Shopify:
+
+1. Visit [Privy's listing](https://apps.shopify.com/privy) in the Shopify App Store. 
+
+2. Click the **Add app** button. 
+
+3. If you're not already logged into Shopify, enter your store URL and click **Log in**. 
+
+4. On the app's install page, click the **Install app** button. If applicable, log into your Privy account and select which account you'd like to link. If you are already logged in and do not have multiple accounts, you'll automatically be redirected to your Privy homepage.
+
+
+
+That's it! Your Privy code is now installed on your store, and applicable active displays will appear immediately.
+
+## Manual Install
+
+The automatic installation of the Privy app for Shopify is recommended for most users. Please confirm that standard installation does not fit your situation before proceeding with a manual install. 
+
+1. From your Shopify dashboard, select the **Online Store** option from the sidebar. 
+
+2. On the Themes dashboard, click the **Actions** dropdown menu and select the **Edit code** option. 
+
+3. In the *Layout* section of the editor's sidebar, click on **theme.liquid**.
+
+4. Copy and paste [your Privy code](https://dashboard.privy.com/settings/widget) below the meta and link data in the \<head> tag. 
+
+5. In the upper right of the editor, click the **Save** button.
+
+
+
+Great work! Privy has been manually installed in your store. Any applicable active displays will appear immediately. 
+
+## Troubleshooting
+
+### The Privy code is missing
+
+Sometimes, the Privy code does not appear in a store theme even though Privy's app is installed. In that case, it's possible that the current theme does not include the **`{{ content_for_header }}`** liquid variable. This variable is included in Shopify's default themes but can be removed intentionally or accidentally in custom themes. Privy requires this to inject the Privy code into your store.
