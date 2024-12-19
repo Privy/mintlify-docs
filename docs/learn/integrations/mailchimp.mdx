@@ -1,4 +1,89 @@
 ---
 title: "Sync Contacts to Mailchimp"
 sidebarTitle: "Mailchimp"
+description: "Integrate with Mailchimp to sync all new sign ups from Privy."
 ---
+
+To sync the contacts captured by your Privy displays to your Mailchimp account, you must first integrate the two accounts, then add sync rules to your displays. 
+
+## Setting up the integration
+
+To link your Privy account with your Mailchimp account:
+
+1. Click on your business name in the upper right corner of your dashboard. Select the **Integrations** option from the dropdown menu.
+
+2. Select **Mailchimp** from the *Available Integrations.*&#x20;
+
+3. Enter your credentials in the prompt, and select **Login**. 
+
+4. Follow the prompts to allow the proper permissions and select your account. 
+
+All set! Mailchimp should now appear as a linked account in the *Authorized Accounts* section.
+
+## Add a sync rule to your display
+
+To add a sync rule to a display so that the collected contacts sync to Mailchimp:
+
+* Navigate to **Convert** > **All Displays**. 
+
+* Select the display you'd like to sync and navigate to your **Settings** in the display builder.
+
+* Click to expand the **Advanced Settings** in the bottom left of your screen. Click on the **Sync Integrations** card.&#x20;
+
+* Click "Add Integration" and select Mailchimp from the dropdown menu. Configure the presented options, and **Save**.&#x20;
+
+If you enable the **Require Double Opt-in** setting, please note that the synced contacts will receive a confirmation email. They must click the verification link in that email before they are added to your mailable Mailchimp audience. [Learn more](https://mailchimp.com/help/about-double-opt-in/). 
+
+This display's sign ups will now sync to Mailchimp.
+
+## Troubleshooting
+
+If you run into any of the following issues with your Mailchimp integration, here are some solutions:
+
+### Expired or Disconnected error
+
+The integration's connection may expire or disconnect for a wide range of reasons. To ensure that Privy and the external service are still properly integrated: 
+
+* Navigate to **Account Settings** > **Integrations**. 
+
+* Locate the **Linked Accounts** section. 
+
+* Select the **Test Account** option. 
+
+This will trigger a reading (e.g., Connection Successful) that will help guide your next steps.
+
+### Permissions error
+
+You can only connect a Mailchimp account to Privy if you are the account's Owner or Admin. To review these requirements and make any necessary changes, please review [this resource](https://mailchimp.com/help/manage-user-levels-in-your-account/) from Mailchimp. Once an Owner or Admin is available, they can attempt to link the accounts again.
+
+### Sync errors
+
+If you see an error when exporting or syncing to an audience (list) in Mailchimp like: 
+
+* FNAME must be provided – Please enter a value
+
+* MMERGE10 must be provided – Please enter a value
+
+It means that you are syncing Privy contacts to an audience (list) in Mailchimp that has required fields that aren't being provided during the Privy signup. To fix this, follow these steps:
+
+* Navigate to your **Audience** dashboard in Mailchimp.
+
+* Select the audience (list) you have chosen to export or sync to in Privy.
+
+* Click the **Manage Audience** dropdown menu and then click **Settings**. 
+
+ 
+
+* Locate and select the **Audience fields and \*|MERGE|\* tags** option. 
+
+* On the next page, you'll see the fields associated with this audience (list), as well as a checkbox next to any field that is REQUIRED. Uncheck all required fields except the email field. 
+
+That's it! Future signups won't be rejected for not having these fields.
+
+## Removing the integration
+
+If you need to disconnect your Privy and Mailchimp accounts, follow these steps:
+
+1. Click on your business name in the upper right corner of your Privy Dashboard. Select **Integrations** from the menu that appears.
+
+2. Locate your Mailchimp integration under the *Authorized Integrations* section and select the **Delete** icon.

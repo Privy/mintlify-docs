@@ -18,6 +18,10 @@ To link your Privy account with your Klaviyo account:
 
 4. Enter your credentials and [API Key](https://www.klaviyo.com/account#api-keys-tab) in the prompt and then select **Link Account**. 
 
+<Note>
+  When creating the Public API Key we recommend selecting the option "Grant applications full access for every API scope.
+</Note>
+
 <img height="200" src="/images/integrations/klaviyo-available-integrations.png" />
 
 All set! Klaviyo should now appear as a linked account in the *Authorized Accounts* section.
@@ -34,9 +38,21 @@ To add a sync rule to a display so that the collected contacts sync to Klaviyo:
 
 4. Select **Klaviyo** from the dropdown menu, configure the presented options, and **Save**.
 
+<Warning>
+  Privy contacts can only sync to Klaviyo lists, not to [Klaviyo segments](https://help.klaviyo.com/hc/en-us/articles/115005061447-The-Difference-Between-Segments-and-Lists). Please be aware that this integration is not a two-way sync, meaning that information can sync from Privy to Klaviyo but cannot sync back from Klaviyo to Privy. 
+</Warning>
+
 <img height="200" src="/images/integrations/klaviyo-sync-rule.gif" />
 
 This display's signups will now sync to Klaviyo!
+
+<Warning>
+  Sync rules must be set up for each individual display.
+</Warning>
+
+<Warning>
+  **Warning:** To successfully sync contacts with a phone number to Klaviyo, the number must be formatted using the [E.164 format](https://en.wikipedia.org/wiki/E.164) on the contact's profile in Privy. When collecting US-based or Canada-based numbers, the +1 country code is not required, as Privy will validate the number and automatically add this information if it is missing. All other numbers must include the country code (e.g., +44 for the UK). Privy will add the plus sign (+) if it is omitted. 
+</Warning>
 
 ## Enabling Klaviyo session cookies in Privy
 
@@ -51,6 +67,8 @@ You can also tag a visitor with a [Klaviyo session cookie](https://help.klaviyo
 <img height="200" src="/images/integrations/klaviyo-session-cookie.gif" />
 
 ## Removing the integration
+
+If you need to disconnect your Privy and Klaviyo accounts, follow these steps:
 
 1. Click on your business name in the upper right corner of your Privy Dashboard. Select **Integrations** from the menu that appears.
 
