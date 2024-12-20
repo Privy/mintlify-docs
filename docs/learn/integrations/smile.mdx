@@ -1,4 +1,79 @@
 ---
 title: "Integrate Privy and Smile.io"
 sidebarTitle: "Smile.io"
+description: "Connect Privy with Smile to meaningfully engage with your rewards members."
 ---
+
+The Privy integration with Smile.io allows you to engage and reward your loyalty program members in various ways, including:
+
+<Icon icon="gift" /> Reward members for submitting Convert displays (e.g., Newsletter Signup)
+
+<Icon icon="bullseye-arrow" /> Target members with displays/newsletters based on Smile attributes (e.g., Points Balance)
+
+<Icon icon="hand-wave" /> Personalize your member emails by including Smile attributes in the email copy 
+
+## Setting up the integration
+
+To enable the Privy \<> Smile.io integration:
+
+1. Click on your business name in the upper right corner of your dashboard. Select **Integrations** from the dropdown menu.
+
+2. Select **Smile.io** from the *Available Integrations*.
+
+3. Log into Smile.io and **Authorize** the integration.
+
+
+
+Once you authorize the integration, Privy will import your Smile.io customers in the background. Import times vary depending on the number of existing Smile.io customers. It may take up to several days for a large customer set. New customers will be automatically synced in real time.
+
+## Smile.io Custom Fields
+
+These synced Customers will gain the following Custom Fields, which are usable within Privy for segmenting and personalizing emails + texts, as well as targeting displays.
+
+* **smileio\_points\_balance**: The number of reward points the Customer has at this time. 
+
+* **smileio\_vip\_tier**: The VIP Tier of the Customer, which is configured in your [Smile.io account](https://app.smile.io/reward-programs/vip/tiers). 
+
+* **smileio\_referral\_url**: The Customer's referral URL.
+
+* **smileio\_state**: The [Membership State](https://help.smile.io/en/articles/4036221-different-types-of-customers-in-smile) of the Customer. The value will be member, candidate, or excluded/disabled.
+
+* **smileio\_updated\_at**: A timestamp that indicates when the Customer was last updated. 
+
+## Reward Members for sign ups
+
+To reward members when they signup for a display, you just need to add a sync rule to your display: 
+
+1. Navigate to the **Convert** > **All Displays** and select the desired display.
+
+2. Navigate to your **Settings** in the display editor. 
+
+3. Click to **Show Advanced Settings**, scroll to select the **Sync Integrations** card, and then choose **Smile.io** from the *Account* dropdown menu and **Sign up for an offer** from the *Activity* dropdown menu. **Save**. 
+
+
+
+Members who submit the display will now receive the points associated with the 'Sign up for an offer' activity in your Smile account. This activity is automatically added when you integrate Privy with Smile, and the reward amount is customizable via the Points section of your Smile account. 
+
+
+
+## Target displays with Smile.io data
+
+You can target specific displays to appear only for specific audiences based on their Smile Membership Status, VIP Tier, or Points Balance. Here's how to set up this audience targeting:
+
+1. Navigate to the **Convert** > **All Displays** dashboard. Select an existing display, or create a new display.
+
+2. Head to your **Settings** in the display editor. Click on the **Audience Targeting** card and select "Add targeting condition".
+
+3. Click the dropdown menu listed under the *Property* header and select the **Custom fields** option from the *Customer Attributes* section. Two additional dropdown menus will appear. 
+
+   * In the *Field* dropdown menu, search for and select the desired Smile property.
+
+   * In the *Field Type* dropdown menu, select the field's corresponding format. For example, the VIP Tier Name values would be text, while the Points Balance would be a number. 
+
+   * Next, choose the operator and the value that you'd like the rule to evaluate. 
+
+4. Finalize any additional rules and select **Save**.
+
+
+
+Great work! This display will now only appear to contacts who meet these criteria.
