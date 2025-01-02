@@ -22,7 +22,7 @@ To enable the Privy \<> Smile.io integration:
 
 <img height="200" src="/images/integrations/smile-available-integrations.png" />
 
-3. Log into Smile.io and **Authorize** the integration.
+1. Log into Smile.io and **Authorize** the integration.
 
 <img height="200" src="/images/integrations/smile-authorize.png" />
 
@@ -98,7 +98,9 @@ And voila! Once launched, the variable in your display will populate to reflect 
 
 <img height="200" src="/images/integrations/smile-live-personalized-display.png" />
 
-The fields will only be populated if Privy can identify the site visitor + that visitor has values for the fields. Therefore, it's recommended that you also add Audience Targeting to ensure a value is known. For example, a rule like 'smileio\_state' 'text' 'is' 'member' will ensure the display only appears to visitors in your Smile program. 
+<Warning>
+  The fields will only be populated if Privy can identify the site visitor + that visitor has values for the fields. Therefore, it's recommended that you also add Audience Targeting to ensure a value is known. For example, a rule like 'smileio\_state' 'text' 'is' 'member' will ensure the display only appears to visitors in your Smile program. 
+</Warning>
 
 ## Use Smile.io data in your emails
 
@@ -128,4 +130,6 @@ And voila! Once sent, your Merge Tag will populate to reflect the data associate
 
 <img height="200" src="/images/integrations/smile-personalized-email.png" />
 
-These fields will only populate if the recipient has values for the fields. Therefore, it's recommended that you use email segmentation that ensures a value is known. For example, the email above should be segmented to any contacts with a Smile points balance greater than 1 to ensure a value will populate.
+<Warning>
+  These fields will only populate if the recipient has values for the fields. Therefore, it's recommended that you use email segmentation that ensures a value is known. For example, the email above should be segmented to any contacts with a Smile points balance greater than 1 to ensure a value will populate.
+</Warning>
