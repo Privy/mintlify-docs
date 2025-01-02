@@ -1,4 +1,81 @@
 ---
 title: "Install Privy on Shift4Shop (formerly 3dcart)"
 sidebarTitle: "Shift4Shop"
+description: "Start growing your list with Privy displays on your Shift4Shop site."
 ---
+
+A unique Privy code must be installed on your Shift4Shop website to display your campaigns and track your website events (e.g., displat views).
+
+<Note>
+  These instructions may vary from theme to theme. If you need additional assistance, please contact Shift4Shop Support. 
+</Note>
+
+## Copy the code
+
+To manually install your code, you first need to copy it from your Privy account's settings:
+
+* Click on your business name in the upper right corner of your dashboard. Select the **Business Settings** option from the dropdown menu. 
+
+* In the sidebar, select **Privy Code** under the *Business Settings* section. 
+
+* Locate and select the **Default** or **Asynchronous** tab to reveal its details. The default code is the preferred method to install Privy and will allow it to load in-line with everything else on your site. Meanwhile, the asynchronous code will load Privy last. 
+
+* Copy the selected code. 
+
+
+
+## Install the code
+
+* Log into your Shift4Shop online [store manager](https://www.shift4shop.com/login-page.html). 
+
+* Using the left-hand navigation menu, go to **Settings** >**Design** >**Themes & Styles**.
+
+* Look for the *Edit Template* section and click on the **Open Template Editor** button.
+
+
+
+* You will see a listing of the templates used by your store's selected theme. Within the list of templates, you should see one labeled *frame.html*. Click on the **frame.html** template to open it up in the Template Editor.
+
+* Within the HTML coding look for the closing head tag which will look like this:
+
+`</head>`
+
+* Place the copied Privy code immediately before the closing \</head> tag. 
+
+* Click **Save** at the top right of the page to commit your changes. 
+
+
+
+## Verify the installation
+
+The Privy code allows you to display your campaigns and monitor your website's events (e.g., display views). If your campaigns aren't displaying properly or event information is missing, verify that the code has been installed and that it's firing correctly:
+
+* In Privy, click the **Account** option from the navigation. Your business name appears there. 
+
+* Select the **Business Information** option from the dropdown menu. 
+
+* In the sidebar, select **Privy Code** under the *Business Settings* section. 
+
+* In the *Installation Guides* section, locate and copy your account identifier. 
+
+* Open a page on your website and right-click anywhere on the page.
+
+* In the dropdown menu, select **View page source** or **View source**.
+
+* Use **CTRL-F** or **CMD-F** to search for the identifier that you copied.
+
+
+
+* If the code appears, verify that it has been copied and pasted correctly from your settings.
+
+If the Privy code does not appear or is incorrect, follow the install instructions to install it properly. If your code appears and has been copied and pasted correctly, verify that it's firing: 
+
+* Open a page on your website and right-click anywhere on the page.
+
+* In the dropdown menu, select **Inspect Element** or **Inspect**. A toolbar will appear at the bottom or side of your screen.
+
+* Click the **Network** tab, then refresh your page. 
+
+* Click the **Name** column to sort the elements alphabetically, then look for widge&#x74;*.js*. 
+
+* Next to *widget.js,* you should see *304 Not Modified* or *200 OK* in the *Status* column.
