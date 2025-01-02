@@ -1,0 +1,63 @@
+---
+title: "Enable Google Analytics"
+sidebarTitle: "Google Analytics"
+description: "Track new sign ups and display views with Google Analytics."
+---
+
+<Note>
+  **Note:** To use this feature, you must already have Google Analytics installed on your website, and it must be a Universal Analytics property. The installation cannot be done via Google Tag Manager. If you have any questions about installing Google Analytics, please visit [Google Analytics Support](https://support.google.com/analytics/answer/1008080). 
+</Note>
+
+## Enable Google Analytics
+
+To enable the Google Analytics integration in your account:
+
+* Select the **Account** option from the navigation bar. Your business name appears here. 
+
+* Select the **Business Information** option from the dropdown menu. 
+
+* In the sidebar, select **Customizations** under the *Business Settings* section.
+
+* Scroll down until you reach the *Other Customizations* section. 
+
+* Enable the **Enable Google Analytics** setting and **Save**.
+
+<Icon icon="circle-question" /> **I didn't need to sign in?** 
+
+Correct. Instead, Privy automatically detects the Google Analytics trackers on the pages that also include your Privy Convert displays. Whenever a Privy event is triggered, it will be fired for all of the detected Google Analytics trackers. For example, if you have trackers with tracking IDs of "UA-XXXXXXXX-1" and "UA-XXXXXXXX-2" installed on a page, Privy events will be fired for both.
+
+<Info>
+  **Note:** Firing events on a subset of trackers installed on a page with Privy is not yet supported.
+</Info>
+
+## What information is available?
+
+Once the integration is enabled, the following events will be available in Google Analytics: 
+
+* Viewed displays (event action "viewed-campaign")
+
+* New signups for a display (event action "new-signup") 
+
+If you would like to customize the events or data beyond these default options, you will need to [install](https://privy.helpscoutdocs.com/article/165-install-tracking-codes-pixels) a custom tracking code manually. 
+
+## How do I review the data?
+
+<Info>
+  **Note:** This information is not currently available for review in Google Analytics 4. To create a compatible Universal Analytics property in an account that uses GA4, please follow [these steps](https://support.google.com/analytics/answer/10269537?hl=en). 
+</Info>
+
+To review your Privy data in Google Analytics:
+
+* Log into your [Google Analytics](https://analytics.google.com/) account and navigate to the view associated with the property (e.g., website) that includes your Privy code and displays your Privy displays. 
+
+* Select **Behavior** > **Events** > **Overview** from the sidebar. 
+
+* In the right pane, make sure that the **Event Category** is selected under the *Top Events* table header.
+
+* Under the *Event Category* table header, select **Privy**. This will reload the table to reveal the total number of Privy-related events. If no events with the category of "Privy" are visible, you may need to expand your report's time frame (top right of the page), or no events have been tracked for your displays yet.
+
+
+
+* To review the events by type, select the **Event Action** link under the *Event Category* table header instead and then either viewed-campaign or new-signup. 
+
+* Clicking into an event action will allow you to see the display ID associated with each event. Insert the ID into this URL https://dashboard.privy.com/displays/\{Insert ID here} to open the display in your Privy account.
