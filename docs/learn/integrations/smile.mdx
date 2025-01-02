@@ -20,7 +20,11 @@ To enable the Privy \<> Smile.io integration:
 
 2. Select **Smile.io** from the *Available Integrations*.
 
+<img height="200" src="/images/integrations/smile-available-integrations.png" />
+
 3. Log into Smile.io and **Authorize** the integration.
+
+<img height="200" src="/images/integrations/smile-authorize.png" />
 
 Once you authorize the integration, Privy will import your Smile.io customers in the background. Import times vary depending on the number of existing Smile.io customers. It may take up to several days for a large customer set. New customers will be automatically synced in real time.
 
@@ -48,6 +52,8 @@ To reward members when they signup for a display, you just need to add a sync ru
 
 3. Click to **Show Advanced Settings**, scroll to select the **Sync Integrations** card, and then choose **Smile.io** from the *Account* dropdown menu and **Sign up for an offer** from the *Activity* dropdown menu. **Save**. 
 
+<img height="200" src="/images/integrations/smile-sync-rule.png" />
+
 Members who submit the display will now receive the points associated with the 'Sign up for an offer' activity in your Smile account. This activity is automatically added when you integrate Privy with Smile, and the reward amount is customizable via the Points section of your Smile account. 
 
 ## Use Smile.io data in your displays
@@ -72,7 +78,7 @@ You can target specific displays to appear only for specific audiences based on 
 
 Great work! This display will now only appear to contacts who meet these criteria.
 
-
+<video autoPlay muted loop playsInline className="smile-audience-targeting" src="/images/integrations/smile-audience-targeting.mp4" />
 
 ### Personalize displays using Smile.io custom fields
 
@@ -85,6 +91,12 @@ To reference Smile data for personalization purposes, type/paste the appropriate
 * **Referral URL**: \{\{ contact.custom\_fields.smileio\_referral\_url }}
 
 * **Membership State**: \{\{ contact.custom\_fields.smileio\_state }}
+
+<img height="200" src="/images/integrations/smile-personalize-display.png" />
+
+And voila! Once launched, the variable in your display will populate to reflect the data associated with the visitor's profile in Smile:
+
+<img height="200" src="/images/integrations/smile-live-personalized-display.png" />
 
 The fields will only be populated if Privy can identify the site visitor + that visitor has values for the fields. Therefore, it's recommended that you also add Audience Targeting to ensure a value is known. For example, a rule like 'smileio\_state' 'text' 'is' 'member' will ensure the display only appears to visitors in your Smile program. 
 
@@ -104,14 +116,16 @@ Along with targeting your displays, you can also create Custom Segments to send 
 
 5. Add any other desired segment categories and click **Create** to finalize your Segment!
 
-
+<video autoPlay muted loop playsInline className="segment-by-smile-data" src="/images/integrations/smile-email-segment.mp4" />
 
 ### Personalize emails using Smile.io custom fields
 
 To inject personalized data from Smile.io into your email, such as a contact's point balance, use the **Merge Tag** function when typing your content:
 
-
+<video autoPlay muted loop playsInline className="email-personalized-with-smile-data" src="/images/integrations/smile-email-personalization.mp4" />
 
 And voila! Once sent, your Merge Tag will populate to reflect the data associated with the recipient's profile in Smile:
+
+<img height="200" src="/images/integrations/smile-personalized-email.png" />
 
 These fields will only populate if the recipient has values for the fields. Therefore, it's recommended that you use email segmentation that ensures a value is known. For example, the email above should be segmented to any contacts with a Smile points balance greater than 1 to ensure a value will populate.
