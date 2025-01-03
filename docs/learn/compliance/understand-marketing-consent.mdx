@@ -2,4 +2,41 @@
 title: "Understanding Marketing Consent"
 sidebarTitle: "Marketing Consent"
 icon: "person-circle-check"
+description: "Learn the importance of collecting implicit or explicit consent for marketing communication."
 ---
+
+An **opt-in** is generally defined as a situation where customers provide their personal information (e.g., email address or phone number) to an organization with the expectation that they'll receive marketing communications as a result. The consent given can be implicit or explicit. It's important to understand the differences between these two types of consent, as laws such as [CAN-SPAM](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business), [CCPA](https://oag.ca.gov/privacy/ccpa), and [GDPR](https://gdpr.eu/) have changed the way customer data and communications are handled.
+
+## Implicit consent
+
+Implicit consent is given when individuals provide their information for a business purpose but have not explicitly stated that they want to receive marketing communications. For example, a customer may fill out a "Contact Us" form or complete a purchase through your store.
+
+## Explicit consent
+
+Explicit consent is given when you ask an individual for permission to send them marketing materials, and they agree. The future recipient must manually opt-in by taking action. The submission of a form that includes an email address or phone number field is not sufficient for explicit consent. However, the inclusion of an unchecked checkbox that the individual must click is acceptable. 
+
+### Collecting explicit consent for email
+
+Privy supports an optional email opt-in checkbox that allows a customer to provide explicit consent for email communications when paired with the email field. For compliance reasons, the checkbox should be optional and unchecked by default. 
+
+### Collecting explicit consent for text
+
+Privy supports an optional text opt-in checkbox that allows customers to provide explicit consent for text communications when paired with the phone field. Any display that includes an opt-in text field will default to display the *Disclaimer text only*, which will set expectations about receiving future communications from your store. However, explicit consent would require the *Disclaimer text with a checkbox* to be selected under the *Format* options.
+
+
+
+## Consent and Imports
+
+A contact's consent is implied when importing contacts as subscribed [via a spreadsheet](https://s3.amazonaws.com/privy.com/support/example_privy_import.csv).
+
+## Consent's impact on reachability
+
+Privy recommends obtaining explicit consent, regardless of your local regulations, as it provides you (the sender) more protection concerning privacy and compliance regulations. Additionally, it provides transparency for your customers (the recipient) concerning their future relationship with your marketing communications. That said, it is not required for all channels, so it is important to understand how Privy approaches each sign-up scenario: 
+
+
+
+Ultimately, a sign-up event makes an individual mailable or textable unless the contact is suppressed or explicit consent was asked for and not provided. Contacts with the 'unset' state have neither opted in nor opted out of receiving emails and will not be mailable or textable until they've opted-in. Learn more about Privy's reachability statuses here. 
+
+<Info>
+  **Note:** A lack of consent in a sign-up event is not treated the same as revoking consent. A contact who is already mailable/textable won't become unmailable/untextable if they fail to check future opt-in checkboxes.
+</Info>
