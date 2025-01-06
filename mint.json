@@ -206,17 +206,41 @@
       ]
     },
     {
-    "group": "Guides",
-    "pages": [
-      {
-        "group": "Automations",
-        "pages": [
-          "docs/guides/automations/intro_automations",
-          "docs/guides/automations/advanced_automations",
-          "docs/guides/automations/abandoned_carts"
+      "group": "Strategy Guides",
+     
+      "pages": [
+       
+        {
+          "group": "List Growth",
+          "pages": [
+             "docs/guides/list-growth/discount-free-strategy"
           ]
-      }
-     ]
+        },
+        {
+          "group": "Automations",
+          "pages": [
+            "docs/guides/automations/intro-automations"
+          ]
+        },
+        {
+          "group": "Campaigns",
+          "pages": [
+            "docs/guides/campaigns/campaign_strategies"
+          ]
+        },
+        {
+          "group": "Segmentation",
+          "pages": [
+            "docs/guides/segmentation/segments-101"
+          ]
+        },
+        {
+          "group": "Deliverability",
+          "pages": [
+            "docs/guides/deliverability/deliverability-101"
+          ]
+        }
+      ]
     },
     {
     "group": "Helpscout Articles",
