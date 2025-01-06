@@ -161,6 +161,7 @@
         {
           "group": "Deliverability",
           "pages": [
+            "docs/learn/deliverability/overview",
             "docs/learn/deliverability/understanding-deliverability",
             "docs/learn/deliverability/understanding-email-authentication",
             "docs/learn/deliverability/use-a-custom-sending-domain",
