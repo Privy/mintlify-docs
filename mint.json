@@ -171,6 +171,7 @@
         {
           "group": "Compliance",
           "pages": [
+            "docs/learn/compliance/overview",
             "docs/learn/compliance/privy-email-compliance",
             "docs/learn/compliance/privy-text-compliance",
             "docs/learn/compliance/understand-marketing-consent",
