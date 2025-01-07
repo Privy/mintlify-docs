@@ -33,8 +33,6 @@ Before you upload a contacts file, you must have your data structured appropriat
 
 Here's an example of how the format should appear in your file:
 
-
-
 **Once your file is ready, please also note that:** 
 
 * Contacts are only considered mailable or textable if they are identified as such during the import process and are also subsequently approved by the Privy Compliance team.
@@ -58,8 +56,6 @@ To upload your properly formatted contacts file: 
 * Click **Choose File** to locate the CSV file on your computer. Once you have selected the file, click **Next** in the lower right corner. 
 
 * On the *Match your Columns* page, you will match the file's column headers with customer attributes (fields) in Privy. Use the dropdown menus to select an existing attribute or click **Create New Field** to create a new custom field to store the information. After matching all of the fields and identifying one of them as the required email field, click **Next**.  
-
-
 
 * On the *Choose Status* page, select whether the file is a list of 'Subscribed' or 'Unsubscribed' contacts. Confirm your selection by typing out the status and then click **Next**.
 
@@ -93,8 +89,6 @@ To check if one of [your linked accounts](https://dashboard.privy.com/settings/
 
 You can check the status of your imports at any time via your [Email Imports](https://dashboard.privy.com/settings/email-imports) page.
 
-
-
 ## Create contacts manually
 
 * In your Privy account, select **Contacts** from the main navigation. 
@@ -108,8 +102,6 @@ The contact's profile is created immediately and should be available after a pag
 <Tip>
   For importing extensive lists, we strongly recommend using our CSV import option. This is the ideal choice when bringing in numerous contacts, as it allows our Compliance team to review larger imports and helps in preserving the health of your contact list. 
 </Tip>
-
-
 
 <Warning>
   **A previously unsubscribed contact cannot be resubscribed via these steps.** While mailable is the default state of new contacts, an error message will appear when attempting to apply the subscribed status to an unsubscribed contact. Instead, the contact will remain unsubscribed until they opt back in via your checkout process or an onsite display with the same email address.
@@ -125,13 +117,13 @@ The Shopify, Shopify Plus, and Weebly integrations automatically create or updat
 
 <Icon icon="circle-question" /> **What if an existing contact opts in during the checkout process?**
 
-Privy will not create any duplicate contacts — the existing contact profile will be updated, and new order activity will be added to the existing profile.
+**Deduplication:** Privy will not create any duplicate contacts — the existing contact profile will be updated, and new order activity will be added to the existing profile.
 
 **Email permission status:** If a contact checks the subscribe box as part of the order process, they will be marked as [mailable](https://privy.helpscoutdocs.com/article/139-understand-deliverability) unless they previously became ineligible due to hard bounces or by marking your emails as spam. If a contact does not check the box, their eligibility within Privy will remain unchanged. If the provided address is associated with a previously deleted profile, a new profile will be created using the contact's last known eligibility state.&#x20;
 
 <Icon icon="circle-question" /> **What if a new contact places an order without accepting email marketing?**
 
-New contacts who provide their email address without selecting the subscribe option will be included in your contact list with an "**unset-nonmailable**" status. This designation indicates that the contact hasn't made a clear choice to opt in or opt out of receiving emails. They will not be eligible to receive emails until they explicitly opt in during a subsequent sign up or order.
+New contacts who provide their email address without selecting the subscribe option will be included in your contact list with an "**unset-non mailable**" status. This designation indicates that the contact hasn't made a clear choice to opt in or opt out of receiving emails. They will not be eligible to receive emails until they explicitly opt in during a subsequent sign up or order.
 
 ## Removing contacts
 
@@ -161,8 +153,6 @@ To delete a large amount of Contacts and all their data within Privy:
 
 Next, expand the **"with # contacts"** menu on the upper right side of your Contacts table and select the **Delete** option on the dropdown.
 
-
-
 ### Delete contacts manually
 
 To delete individual contacts in Privy:
@@ -171,4 +161,4 @@ To delete individual contacts in Privy:
 
 * Use the search option to search for the specific contact email. Click on the contact once it's found.
 
-* In the contact profile, click on the Delete contact option in the upper right corner.
+* In the contact's profile, click on the Delete contact option in the upper right corner.
