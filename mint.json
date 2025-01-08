@@ -150,6 +150,7 @@
         {
           "group": "Contacts",
           "pages": [
+            "docs/learn/contact-management/overview",
             "docs/learn/contact-management/import-and-manage-contacts",
             "docs/learn/contact-management/view-and-filter-contacts",
             "docs/learn/contact-management/tag-contacts",
