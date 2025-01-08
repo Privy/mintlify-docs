@@ -49,13 +49,13 @@ Dive into what each of these DNS records stands for and its purpose below:
   * DMARC provides instructions to receiving servers about how to handle incoming mail. To get delivered, messages need to pass DKIM and SPF alignment checks according to the requirements set by the DMARC policy. Messages that do not pass DMARC checks can be allowed, rejected, or placed in the spam folder.
 </Card>
 
-## How to set up DMARC, SPF, and DKIM records for your domain
+## How to set up these records
 
 Setting up SPF, DKIM, and DMARC records can be a complex and time-consuming process and improper configuration can result in several errors. Because of this, and due to liability reasons, we recommend consulting with an IT team expert or your host domain support team to make and use online tools to analyze and ensure your SPF, DKIM, and DMARC policies are set up correctly.
 
 That being said, here is a brief overview of what this process looks like:
 
-### Setting up SPF Records
+### Set up SPF Records
 
 These records are TXT records on your domain that authorize specific servers to send mail using your domain name. This is how an SPF record may look:
 
@@ -69,7 +69,7 @@ These records are TXT records on your domain that authorize specific servers to 
   * Get a list of the IP addresses, email servers, or domains authorized to send emails on your behalf.
 </Accordion>
 
-### Setting up DKIM Records
+### Set up DKIM Records
 
 A DKIM record is a specially formatted DNS TXT record and it stores the public key the receiving email server will use to verify a message’s signature. A DKIM includes a name, version, key type, and the public key itself, and is often made available by the provider that is sending your email. A DKIM record is a form of TXT record in the DNS zone file containing the DKIM public key. The public key is an asymmetric key that decrypts the signature signed by the private key. A simple DKIM signature is composed of several parts and may look like this:
 
@@ -83,7 +83,7 @@ A DKIM record is a specially formatted DNS TXT record and it stores the public k
   * Generate your signature and test your emails to ensure proper configuration.
 </Accordion>
 
-### Setting up a DMARC Policy
+### Set up DMARC Record
 
 A DMARC record may look like this:
 
@@ -101,7 +101,7 @@ A DMARC record may look like this:
   * Generate and publish your DMARC record in TXT format in your DNS database.
 </Accordion>
 
-## Helpful Resources
+### Helpful Resources
 
 To get some more detailed information about how you can create and manage these records, please check out the articles for some of the most popular host providers:
 
@@ -119,7 +119,7 @@ To get some more detailed information about how you can create and manage these 
 
 If your host provider is not on the list above, don’t worry - you can contact us at [support@privy.com](mailto:support@privy.com?subject=DNS%20Help) so we can point you in the right direction!
 
-## Verify your custom sending domain in Privy
+## Verify your custom domain in Privy
 
 If you haven't already, make sure you'd added your custom sending domain in Privy in order to improve deliverability and build trust with your customers. Your DMARC, SPF, and DKIM records are tied to your custom domain — not Privy's shared domain — so you should be sending your emails from your own domain in Privy once authenticating your domain.
 
