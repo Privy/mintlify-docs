@@ -19,8 +19,6 @@ In this article, we’ll go over what these new requirements are and how you can
   <Accordion title="Email authentication using DMARC, SPF, and DKIM records." defaultOpen={false}>
     Authentication is a way to verify that an email comes from who it claims to come from and is not a spoof. In other words, it helps prevent spam, phishing attempts, and other malicious activities that could damage your brand’s reputation or the trust your recipients have in your emails. Authentication also improves deliverability, as mailbox providers will be able to confirm the identity of the sender. The most commonly used email authentication records are **SPF**, **DKIM**, and **DMARC**. 
 
-
-
     *If you want to do a quick check to see if your domain already has DKIM and SPF records as well as a DMARC policy in place, you can do a lookup here:* [*https://dmarcian.com/domain-checker/*](https://dmarcian.com/domain-checker/)
   </Accordion>
 
@@ -47,8 +45,6 @@ Dive into what each of these DNS records stands for and its purpose below:
 
 <Card title="Domain-based Message Authentication, Reporting, and Conformance (DMARC)">
   [**DMARC**](https://dmarc.org/overview/) is a standard that builds on SPF and DKIM. It ensures emails are genuinely coming from the domain they claim to be from, by checking the alignment of the SPF and DKIM records. It detects and prevents email spoofing techniques used in phishing, business email compromise (BEC), and other email-based attacks.
-
-
 
   * DMARC provides instructions to receiving servers about how to handle incoming mail. To get delivered, messages need to pass DKIM and SPF alignment checks according to the requirements set by the DMARC policy. Messages that do not pass DMARC checks can be allowed, rejected, or placed in the spam folder.
 </Card>
@@ -165,28 +161,24 @@ If your Privy account is under the “Cannot send emails” status, you’d need
 
 ## FAQs
 
-**Who will be affected by the new requirements?** 
+<AccordionGroup>
+  <Accordion title="Who will be affected by the new requirements? " defaultOpen={false}>
+    All senders must be compliant with these new requirements, with more noticeable effects on deliverability for bulk senders. 
+  </Accordion>
 
-*All senders must be compliant with these new requirements, with more noticeable effects on deliverability for bulk senders.* 
+  <Accordion title="What happens if I don’t meet Google and Yahoo’s requirements?" defaultOpen={false}>
+    In that case, Google and Yahoo will block all emails that don’t meet their requirements, meaning that your recipients that have Gmail and Yahoo addresses will generate bounces on your newsletter campaigns and any other emails.
 
+    This can cause a lot of damage to your sending reputation and deliverability rates and can create lasting consequences to your customers’ engagement and email-generated revenue.
+  </Accordion>
 
+  <Accordion title="Will sending volume be a factor in these new requirements?" defaultOpen={false}>
+    While Google has stated that users who send to less than 5,000 contacts per day will have fewer requirements, we strongly recommend that all volume senders work on meeting all of the requirements to avoid deliverability issues.
+  </Accordion>
 
-**What happens if I don’t meet Google and Yahoo’s requirements?**
+  <Accordion title="Where can I find more information about Google and Yahoo’s requirements? " defaultOpen={false}>
+    For Google, you can access their [email sender guidelines](https://support.google.com/mail/answer/81126) to see the full list of their requirements.
 
-*In that case, Google and Yahoo will block all emails that don’t meet their requirements, meaning that your recipients that have Gmail and Yahoo addresses will generate bounces on your newsletter campaigns and any other emails.*
-
-*This can cause a lot of damage to your sending reputation and deliverability rates and can create lasting consequences to your customers’ engagement and email-generated revenue.*
-
-
-
-**Will sending volume be a factor in these new requirements?**
-
-*While Google has stated that users who send to less than 5,000 contacts per day will have fewer requirements, we strongly recommend that all volume senders work on meeting all of the requirements to avoid deliverability issues.*
-
-
-
-**Where can I find more information about Google and Yahoo’s requirements?** 
-
-*For Google, you can access their* [*email sender guidelines*](https://support.google.com/mail/answer/81126) *to see the full list of their requirements.*
-
-*And for Yahoo!, you can find this information on their* [*sender best practices*](https://senders.yahooinc.com/best-practices/)*.*
+    And for Yahoo!, you can find this information on their [sender best practices](https://senders.yahooinc.com/best-practices/).
+  </Accordion>
+</AccordionGroup>
