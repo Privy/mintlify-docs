@@ -63,7 +63,7 @@ That being said, here is a brief overview of what this process looks like:
 
 These records are TXT records on your domain that authorize specific servers to send mail using your domain name. This is how an SPF record may look:
 
-
+<img height="200" src="/images/deliverability/spf-record-example.png" />
 
 <Accordion title="Tips for setting up your SPF Record" defaultOpen={false} icon="lightbulb">
   * Publish the record and test to ensure proper configuration.
@@ -77,7 +77,7 @@ These records are TXT records on your domain that authorize specific servers to 
 
 A DKIM record is a specially formatted DNS TXT record and it stores the public key the receiving email server will use to verify a message’s signature. A DKIM includes a name, version, key type, and the public key itself, and is often made available by the provider that is sending your email. A DKIM record is a form of TXT record in the DNS zone file containing the DKIM public key. The public key is an asymmetric key that decrypts the signature signed by the private key. A simple DKIM signature is composed of several parts and may look like this:
 
-
+<img height="200" src="/images/deliverability/dkim-record-example.png" />
 
 <Accordion title="Tips for setting up your DKIM Record" defaultOpen={false} icon="lightbulb">
   * Generate the public/private key pair for encrypting and decrypting your DKIM signature.
@@ -91,7 +91,7 @@ A DKIM record is a specially formatted DNS TXT record and it stores the public k
 
 A DMARC record may look like this:
 
-
+<img height="200" src="/images/deliverability/dmarc-record-example.png" />
 
 <Accordion title="Tips for setting up your DMARC Policy" defaultOpen={false} icon="lightbulb">
   * Identify legitimate and illegitimate sources that fail authentication. This gives you insights to help you adjust other security protocols.
