@@ -71,7 +71,7 @@ These records are TXT records on your domain that authorize specific servers to 
 
 ### Set up DKIM Records
 
-A DKIM record is a specially formatted DNS TXT record and it stores the public key the receiving email server will use to verify a message’s signature. A DKIM includes a name, version, key type, and the public key itself, and is often made available by the provider that is sending your email. A DKIM record is a form of TXT record in the DNS zone file containing the DKIM public key. The public key is an asymmetric key that decrypts the signature signed by the private key. A simple DKIM signature is composed of several parts and may look like this:
+A DKIM record is a specially formatted DNS TXT record that includes a name, version, key type, and the public key itself, and is often made available by the provider that is sending your email. A simple DKIM signature is composed of several parts and may look like this:
 
 <img height="200" src="/images/deliverability/dkim-record-example.png" />
 
