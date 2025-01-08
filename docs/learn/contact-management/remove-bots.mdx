@@ -1,0 +1,100 @@
+---
+title: "Remove Bots From Your List"
+description: "Practice good list hygiene by regularly checking for and removing bot email addresses."
+---
+
+## What are bots?
+
+Bots are software programs that execute automated, repetitive, pre-defined tasks, commonly imitating human behavior. Bots impact almost every business due to their widespread use and low cost, with impacts ranging from false display submissions and list growth to inflated message engagement. Furthermore, leaving bots unchecked can compromise the health of your contacts list by reducing regular email engagement and increasing the number of negative engagements, such as bounces or spam reports. 
+
+## Prevent bots from getting on your list
+
+To reduce the impact of bots on your account, Privy uses [reCAPTCHA](https://privy.helpscoutdocs.com/article/27-manage-your-recaptcha-settings) on all forms and attempts to automatically reject bot addresses during imports. You should also proactively check that you have all available spam protection settings enabled in your online store's preferences.
+
+Regularly reviewing your email list and individual contacts as they sign up is strongly recommended. These list hygiene practices help maintain or improve your overall list health, improve your inbox placement, and reduce your costs by eliminating contacts from your Privy account that will never generate revenue. 
+
+## Check your list for bots
+
+Identifying bots and separating them from legitimate addresses is a crucial step for improving the accuracy of your display results and the health of your list. Here's how to identify them:
+
+### Email prefix
+
+An email's prefix is the information that comes before the @ symbol in an email address. Common elements of email prefixes for bot addresses include: 
+
+* A high dot count, especially ≥ 7 dots
+
+* Overly generic prefixes, such as John Smith, John Doe, or Jane Doe, especially when combined with seemingly random additional numbers or letters
+
+* Exceptionally long addresses, especially any solely alphanumeric combinations
+
+Some bot addresses previously flagged for containing these elements are shown below. 
+
+### Email domain
+
+An email domain is the part of an email address that comes after the @ symbol. Common traits of email domains for bot addresses include: 
+
+* Domains with a low-quality score when checked using tools like [IP Quality Score Tool](https://www.ipqualityscore.com/domain-reputation/)
+
+* A tweaked version of more legitimate domains, such as @Gmaul instead of @Gmail
+
+* Country-specific domains, especially those flagged for creating high volumes of spam or bot activity as outlined by outlets like [SpamHaus](https://www.spamhaus.org/reputation-statistics/countries/exploit) (e.g., Russia or China)
+
+Some bot domains previously flagged for containing these elements are shown below. 
+
+
+
+### First and last names
+
+The relevance or format of a provided first and last name is often an easy giveaway that a bot provided information instead of an actual human. Common issues to look for include:
+
+* The first name and last name are the same
+
+* The name does not match the name included in the provided email address
+
+* The name is a combination of random upper and lower case letters
+
+* The name contains special characters, such as @#$%&
+
+* The name is overly generic, such as John Doe, or that of a well-known public figure
+
+Some contacts previously flagged for having these bot traits are shown below. 
+
+
+
+## Shopify Bots
+
+There is a very common type of bot attack that can happen to Shopify stores that can be very harmful to your mailing health, causing spam complaints and bounces.
+
+This type of bot script affects the "Create an Account" section of your Shopify website, where they use that to invade your Customers list. Here’s a default example of that section:
+
+
+
+And this is what these bots look like on your Contacts tab on Privy:
+
+
+
+Because of the Shopify integration with Privy, all contacts that are added to your Customers list in Shopify will also be added to your Privy account, which can cause issues when you reach out to your Contacts from Privy.
+
+Luckily, there is a very easy fix that can prevent these bots from signing up on that page - it consists of enabling the reCAPTCHA on the  “login, create an account, and password recovery pages” & “contact and comment forms”  sections of your Shopify website. In Shopify, you can find this setting under Online Store -> Preferences -> Spam protection: 
+
+
+
+Once these features are activated, it will be more difficult for bots to sign up and abuse any of your Shopify Forms, protecting both your Shopify account as well as your Privy account.
+
+To remove the remaining bots that are still on your Privy account, you can export a  CSV file that contains only the contacts that have active accounts on your Shopify account - since most of the bots are added through the "Create an Account" section, it's easy to separate all of the bots from the real contacts on your list. 
+
+To export that list, you just need to filter your contacts on Shopify by "customer\_account\_status = 'ENABLED'" and export them to a CSV file. Like this:
+
+
+
+After you do that, you can sort through the CSV file on spreadsheet software to remove any valid entries, maintaining only the bot addresses.
+
+Once you have the CSV file with the bots, you can import them to your Privy account to unsubscribe and add tags to them, and then delete the bots in bulk.
+
+If you have any questions about this process, or if you need assistance, please feel free to send an email to [support@privy.com](mailto:support@privy.com) for extra help!
+
+
+
+## Deliverability Best Practices
+
+Removing bots from your list is only one of a variety of practices available to ensure the quality of your list remains high. To learn more about keeping your list in good shape, check out the [List Hygiene | Clean your email list](https://privy.helpscoutdocs.com/article/13-list-hygiene-clean-your-email-list) guide, and if an otherwise normal-looking address didn't receive a message from you, check out the [My contact didn't get my email](https://privy.helpscoutdocs.com/article/144-my-contact-didnt-get-my-email) guide to determine the likely reason.
