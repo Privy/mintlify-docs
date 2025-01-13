@@ -35,8 +35,6 @@ Outlook ignores set padding and margins around images. As a result, any wrapped 
 
 * Incorporate the image into your email via an HTML block and add vertical space (vspace) and horizontal space (hspace) to the image's tag. For example:
 
-<img height="200" src="/images/content/image-spacing-html.png" />
-
 ​You'll still want to set margins for the image because some email clients do not recognize "vspace" and "hspace" for styling purposes. 
 
 ### An animated gif isn't working
@@ -61,14 +59,10 @@ Outlook doesn't recognize the HTML that constrains images. If you use HTML to re
 
 This issue isn't unique to Outlook, and there isn't a quick fix to force the background image in an email template to display. Always make sure to set a background color as a backup. 
 
-<img height="200" src="/images/content/background-image-background-color.png" />
-
 ### There's extra white space
 
 White space is sometimes inserted above an image because Outlook renders HTML using Microsoft Word. This rendering technique is similar to the preview you see when printing content in that it is broken into a series of unique pages. If an image falls between what Outlook sees as two separate pages, extra space is inserted above the image to force it down to the next page.
 
 Eliminating the extra white space requires reorganizing your content. Because reorganization can require extensive layout and content changes, consider making a copy of the email first. To create a copy, navigate to the applicable email dashboard, locate the email, and select the **Duplicate** option. 
-
-<img height="200" src="/images/content/duplicate-email.png" />
 
 When reorganizing your content, you want to determine where Outlook is marking the page break. If an image is beneath the white space, try moving the image to another area in your layout and sending a test email to see if this fixes the issue. Continue reorganizing and testing your email until the unwanted white space is eliminated.
