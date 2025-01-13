@@ -138,6 +138,7 @@
         {
           "group": "Content",
           "pages": [
+            "docs/learn/content/overview",
             "docs/learn/content/coupon-codes",
             "docs/learn/content/personalization-tags",
             "docs/learn/content/adding-images-to-emails",
