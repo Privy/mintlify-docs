@@ -2,4 +2,28 @@
 title: "Personalize Your Emails and Texts"
 sidebarTitle: "Personalization Tags"
 icon: "hand-wave"
+description: "Send more personal, tailored content that connects with your audience on an individual level."
 ---
+
+Personalization allows you to connect with your audience on an individual level, which can make all the difference when someone is quickly deciding between dismissing or engaging with your content. Adding personalization to subject lines, body content, and even call-to-actions can make a huge difference in connecting with your subscribers.
+
+## How does personalization work?
+
+Information collected about an individual is stored in fields on their contact profile (e.g., First Name). This information then becomes available for exhibition in your emails via **Merge Tags**. When viewed by a contact in an email, these tags automatically reference and show the information associated with the recipients' contact profile.
+
+## Personalizing Emails
+
+### Supported Merge Tags
+
+| Merge Tag                          | Information Shown                                                                                                                                                                  |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \{\{ contact.email }}              | The contact's email address.                                                                                                                                                       |
+| \{\{ contact.first\_name }}        | The contact's first name.                                                                                                                                                          |
+| \{\{ contact.last\_name }}         | The contact's last name.                                                                                                                                                           |
+| \{\{ contact.name }}               | The contact's full name.                                                                                                                                                           |
+| \{\{coupon\_code}}                 | The coupon code associated with the contact or attached to your email.                                                                                                             |
+| \{\{ contact.custom\_fields.\* }}  | The value stored in a custom field used to collect contact information. For example, \{\{ contact.custom\_fields.favorite\_color }} would show the contact's Favorite Color value. |
+| \{\{ business.name }}              | The name of your business.                                                                                                                                                         |
+| \{\{ business.unsubscribe\_link }} | A unique link that unsubscribes your contact from all future emails.                                                                                                               |
+
+###
