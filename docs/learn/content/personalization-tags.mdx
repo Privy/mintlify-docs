@@ -26,4 +26,46 @@ Information collected about an individual is stored in fields on their contact p
 | \{\{ business.name }}              | The name of your business.                                                                                                                                                         |
 | \{\{ business.unsubscribe\_link }} | A unique link that unsubscribes your contact from all future emails.                                                                                                               |
 
-###
+### Using Merge Tags
+
+**How to personalize your Subject Lines:**
+
+A merge tag must be manually typed into a Subject Line. The easiest way to accomplish this is by copying one of the merge tags from this page and then pasting them into your subject line, as shown below.
+
+
+
+**How to personalize your body content:**
+
+To insert a merge tag into the body content of an email, click into a **Text Box**, select the **Merge Tags** dropdown menu from the editing toolbar, and select the desired field. 
+
+
+
+**How to personalize a Call-To-Action:**
+
+A merge tag must be manually typed into a button. The easiest way to accomplish this is by copying one of the merge tags from this page and then pasting them into your subject line, as shown below.
+
+
+
+### Default or Fallback Values
+
+For any merge tag, you can add a default value to provide a placeholder if there is no information available to pull in from the recipient's contact profile. If a default value isn't provided and there's no value on the contact profile, a blank space will appear instead. To include a default, manually type your merge tag into your content and use this format: 
+
+`{{ contact.first_name|default:'there' }}`
+
+| Example Merge Tag                                | Example Output                |
+| ------------------------------------------------ | ----------------------------- |
+| Hi \{\{ contact.first\_name\|default:'there' }}, | "Hi John," **OR** "Hi there," |
+
+## Personalizing SMS
+
+To add a personalization tag to a text message, click on the **Personalization** dropdown menu and select which tag you want to insert into your content:
+
+
+
+## FAQs
+
+<Icon icon="circle-question" /> **What happens if there is no value associated with the personalization merge tag you chose?**
+
+If a contact is missing the value that you chose for your personalization tag, a blank space will appear instead.
+
+For example, if you write "Hi \{\{ contact.first\_name }}" in your Subject Line and the email is sent to a contact without a first name, the Subject Line will read "Hi ".
