@@ -19,8 +19,6 @@ Don't leave money on the table — read the below step-by-step instructions to g
 
 * Select the **Abandoned Cart Email** option. This action opens Privy’s series editor.
 
-<img height="200" src="/images/automations/create-new-abandoned-cart-series.gif" />
-
 ### Name your series
 
 At the top of your series editor, you'll be able to edit and update the name of your series — this is internal only and for you to keep yourself organized.
@@ -31,8 +29,6 @@ At the top of your series editor, you'll be able to edit and update the name of 
 
 * To remove an email from your series, click on the trash icon at the bottom of the email you’d like to delete.
 
-<img height="200" src="/images/automations/abandoned-cart-add-remove.gif" />
-
 <Info>
   The minimum amount of emails needed is 1. The maximum amount of emails allowed in a series is 10.
 </Info>
@@ -42,8 +38,6 @@ At the top of your series editor, you'll be able to edit and update the name of 
 When creating your Abandoned Cart Series, you have a number of trigger settings that you can configure: your time delay, a minimum/maximum order value, specific products/collections targeting, and your coupon.
 
 To edit your settings, scroll to find your **Edit settings** button at the bottom of the left side bar.
-
-<video autoPlay muted loop playsInline className="ace-settings" src="/images/automations/abandoned-cart-settings.mp4" />
 
 ### Time Delay
 
@@ -69,13 +63,9 @@ Attach a coupon code to your series. By default, none of the emails in the defau
 
 To edit the appearance of each of your emails, click the Edit icon to access the email editor:
 
-<img height="200" src="/images/automations/edit-abandoned-cart.png" />
-
 Click **Templates** and select **Choose a Template** from the dropdown menu to start with one of Privy's templates, or choose one of your own Saved Templates. If you need help using our drag and drop email editor, check out this guide.
 
 To edit the email’s Subject Line and Preview Text, click to edit the bar at the top of the email editor. Click done to close the bar after making your changes:
-
-<video autoPlay muted loop playsInline className="edit-ace-series-subject-line" src="/images/automations/abandoned-cart-subject-line.mp4" />
 
 By default, your templates will include a **Cart Summary**, which will reveal each product in your customer's cart, as well as Call-To-Actions leading directly to your customer's cart URL.
 
@@ -88,8 +78,10 @@ Once you’ve made all your edits, click **Save**. Click **Back to series** t
 Once you’ve customized your templates and edited your settings, you’re ready to launch your Abandoned Cart Series! Click the **Activate** button in the upper right corner of your series.
 
 <Warning>
-  Once your series is activated, you will not be able to add/remove emails from your series. To accomplish this, you will need to duplicate or start a new series.
+  After your series is activated, you will not be able to add/remove emails from your series. To accomplish this, you will need to duplicate or start a new series.
 </Warning>
+
+Once your series is live, you can [review its performance](https://privy.mintlify.app/docs/learn/automations/automations-reporting) at any time.
 
 ### Disable other providers' abandoned cart emails
 
@@ -105,15 +97,11 @@ Before you activate your abandoned cart emails in Privy, make sure that you've d
 
 * Click the **Save** button to save the changes. 
 
-<img height="200" src="/images/automations/disable-shopify-ace.png" />
-
 <Icon icon="circle-question" /> **How to disable BigCommerce abandoned cart emails**
 
 * Log into your BigCommerce account and navigate to **Marketing** > **Abandoned Cart Notifications** via the sidebar menu. 
 
 * Locate the *Active?* column and click the **checkmark** next to the email(s) you need to deactivate.
-
-<img height="200" src="/images/automations/disable-bc-ace.png" />
 
 <Icon icon="circle-question" /> **How to disable Wix abandoned cart emails**
 
@@ -122,3 +110,35 @@ To disable Wix's default emails, log in to your Wix account and go to the [Auto
 <Icon icon="circle-question" /> **How to disable Weebly abandoned cart emails**
 
 To disable Weebly's default emails, log in to your Weebly account and click **Disable** from **Store** > **Orders** > **Abandoned Carts**. Going forward, Abandoned Cart emails will no longer be sent from Weebly. If there are emails queued up to be sent from Weebly, disabling the Abandoned Carts feature will cancel them.
+
+## Who gets Abandoned Cart Emails?
+
+A contact must meet the following criteria to receive your Abandoned Cart Emails:
+
+<AccordionGroup>
+  <Accordion title="They are a known and reachable contact." defaultOpen={false}>
+    The shopper must be known and eligible to receive email marketing from your business. A known contact has a profile in your Privy account, and an eligible contact has a 'mailable' status in Privy.&#x20;
+
+    Additionally, the contact must also be "cookied" by Privy so that their actions are tied to a specific email address. A tracking cookie is placed in their browser when they submit a Privy display or provide their email address and agree to receive marketing communications through the checkout flow for Shopify, Shopify Plus, and Weebly storefronts.
+  </Accordion>
+
+  <Accordion title="They have the appropriate cart value." defaultOpen={false}>
+    If you have a connected BigCommerce, Shopify, or Wix store, Privy can detect the amount of value in a shopper’s cart during their visit. If the value in their cart is greater than or equal to the minimum value and does not exceed any set maximum threshold, the shopper will remain eligible to receive the abandoned cart email. 
+  </Accordion>
+
+  <Accordion title="They have the appropriate products in their cart." defaultOpen={false}>
+    If you have a connected Shopify store, Privy can detect products in a shopper's cart via your store's product IDs. If you've set up any product/collection restrictions, the shopper's cart must contain at least one of the products identified.
+  </Accordion>
+
+  <Accordion title="Enough time has passed since their visit." defaultOpen={false}>
+    When a shopper visits your site, their activity is recorded within Privy. If their last visit occurred after the time you have set in the “last seen” setting, then they remain eligible to receive the abandoned cart email. 
+  </Accordion>
+
+  <Accordion title="They have not purchased during the series." defaultOpen={false}>
+    Once a shopper completes a purchase, they will no longer receive any additional abandoned cart emails within a series. If you had a series configured to send 2 hours, 24 hours, and 72 hours after a visit, a shopper who purchased at hour three would not receive the second and third emails. The shopper would need to return to your site and start a new qualifying cart for a series to begin again. 
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Note:** To receive an email, a shopper must meet the criteria of each email in a series at the time that each email is scheduled to be sent. Additionally, a shopper cannot qualify for the same abandoned cart series more than once within a 48-hour period. 
+</Note>
