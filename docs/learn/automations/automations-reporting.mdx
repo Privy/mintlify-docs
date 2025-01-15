@@ -1,5 +1,136 @@
 ---
-title: "Analyze Automations Performance"
+title: "Analyze your Automation Performance"
 sidebarTitle: "Reporting"
 icon: "chart-line-up"
+description: "Learn how to meaningfully interpret your analytics for your automated emails and texts."
 ---
+
+Once your Automations are live, you're going to want to check in on their performance to track their engagement metrics, revenue, and delivery. Below is a guide on how to find your Automations' reporting and how to interpret it.
+
+## Automations Table
+
+To get an overview of your Automations' performance:
+
+* Navigate to [Automations](https://dashboard.privy.com/automations).
+
+* To narrow down your view of your Automations table, you can use the Search and Filter functions at the top of the table to narrow down by status, type, and channel. *For example, if you only want to view your active Automations, filter by Status: Active.*
+
+
+
+In the top right, you'll find the total **Revenue Generated** for the Automations you're viewing in the table below. If you click the arrow next to your Revenue Generated, you'll see a dropdown with an aggregate view of the number of messages delivered, opened, and clicked since account creation.
+
+
+
+If you take a look at the table, you'll get a line-by-line view of each Automation, their Title, Subject Line, Status, and the following metrics:
+
+<AccordionGroup>
+  <Accordion title="Delivered" defaultOpen={false}>
+    The total number of contacts whose email server sent Privy a response stating that the email was delivered.
+  </Accordion>
+
+  <Accordion title="Opened" defaultOpen={false}>
+    The total number of contacts who had an email delivered and opened the email. Privy embeds an invisible image into the email message once it is sent when you send an email. When your recipient views the email and the images load, Privy knows that the email was opened.  If the recipient's email client doesn't allow the image to load, Privy will not track the email open.
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    The percentage of contacts who had an email delivered and clicked on any link in the email.
+  </Accordion>
+
+  <Accordion title="Unsubscribed" defaultOpen={false}>
+    The percentage of contacts who had an email delivered and unsubscribed from further messages.
+  </Accordion>
+
+  <Accordion title="Revenue" defaultOpen={false}>
+    The total revenue collected from all messages in this series. *Privy uses a last-touch model with a 7-day attribution window. If a customer has opened/clicked multiple emails within the seven days proceeding a purchase, the revenue will only count toward the most recent email.* 
+  </Accordion>
+</AccordionGroup>
+
+If your Automation is a series, you can view the above metrics for each individual message in the series by clicking the arrow to the left of the series on your table:
+
+
+
+## Analytics Page
+
+To drill down into an individual Automation's metrics:
+
+* Navigate to [Automations](https://dashboard.privy.com/automations).
+
+* Locate the desired Automation and click on its Title or Subject Line to view its individual analytics page:
+
+
+
+On this page, you'll find your Automation's overall Performance metrics, Delivery Report, Engagement Report, and a list of your Automation's recipients.
+
+<Note>
+  By default, you will be viewing Analytics for all messages in the series. To view the metrics for each individual message, select the specific email from the tabs beneath 'Analytics'.
+</Note>
+
+
+
+### Performance metrics
+
+At the top of your screen, you'll find an overview of the number of orders, total revenue generated, the number of emails that have been delivered, opened, and clicked since activating your series.
+
+
+
+### Delivery Report
+
+Below your overall performance metrics, your Delivery Report shows how many emails were sent, delivered, bounced, and rejected. You can hover over each bar to see the total number of messages associated with each percentage.
+
+<AccordionGroup>
+  <Accordion title="Sent" defaultOpen={false}>
+    The number of contacts sent the email minus the rejected recipients. 
+  </Accordion>
+
+  <Accordion title="Delivered" defaultOpen={false}>
+    The number of contacts which were sent the email and whose email server sent Privy a response stating that the email was delivered.
+  </Accordion>
+
+  <Accordion title="Bounced" defaultOpen={false}>
+    The number of contacts which were sent the email and had the email bounce back. [Learn more about bounces here.](https://privy.mintlify.app/docs/learn/deliverability/hard-vs-soft-bounces)
+  </Accordion>
+
+  <Accordion title="Rejected" defaultOpen={false}>
+    The number of contacts that met the email's segment criteria but were not sent the email because they had a malformed address or had previously unsubscribed, bounced, or marked an email as spam.
+  </Accordion>
+</AccordionGroup>
+
+
+
+### Engagement Report
+
+Your Engagement Report shows how recipients interacted with your email once they received it. This report has five metrics that can help you gauge the success of your email: 
+
+<AccordionGroup>
+  <Accordion title="Delivered" defaultOpen={false}>
+    The number of contacts whose email server sent Privy a response stating that the email was delivered.
+  </Accordion>
+
+  <Accordion title="Opened" defaultOpen={false}>
+    The number of contacts who had the email delivered and opened the email. Privy embeds an invisible image into the email message when you send it. When your recipient views the email and the images load, Privy knows that the email was opened.  If the recipient's email client doesn't allow the image to load, Privy will not track the email open. 
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    The number of contacts who had the email delivered and clicked on any link in the email. 
+  </Accordion>
+
+  <Accordion title="Unsubscribed" defaultOpen={false}>
+    The number of contacts who had the email delivered and clicked the unsubscribe link to be unsubscribed from all future messages.
+  </Accordion>
+
+  <Accordion title="Reported as Spam" defaultOpen={false}>
+    The number of contacts that reported this email as spam. 
+  </Accordion>
+</AccordionGroup>
+
+
+
+### Recipients
+
+Below your Delivery and Engagement Reports, you'll find a table with your Automation's recipients and what date they received the email.
+
+
+
+Abandoned Cart Text Performance
+
+To review your&#x20;
