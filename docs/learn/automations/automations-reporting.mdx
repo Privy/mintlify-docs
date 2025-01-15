@@ -15,11 +15,7 @@ To get an overview of your Automations' performance:
 
 * To narrow down your view of your Automations table, you can use the Search and Filter functions at the top of the table to narrow down by status, type, and channel. *For example, if you only want to view your active Automations, filter by Status: Active.*
 
-
-
 In the top right, you'll find the total **Revenue Generated** for the Automations you're viewing in the table below. If you click the arrow next to your Revenue Generated, you'll see a dropdown with an aggregate view of the number of messages delivered, opened, and clicked since account creation.
-
-
 
 If you take a look at the table, you'll get a line-by-line view of each Automation, their Title, Subject Line, Status, and the following metrics:
 
@@ -47,9 +43,7 @@ If you take a look at the table, you'll get a line-by-line view of each Automati
 
 If your Automation is a series, you can view the above metrics for each individual message in the series by clicking the arrow to the left of the series on your table:
 
-
-
-## Analytics Page
+## Email Analytics Page
 
 To drill down into an individual Automation's metrics:
 
@@ -57,25 +51,19 @@ To drill down into an individual Automation's metrics:
 
 * Locate the desired Automation and click on its Title or Subject Line to view its individual analytics page:
 
-
-
 On this page, you'll find your Automation's overall Performance metrics, Delivery Report, Engagement Report, and a list of your Automation's recipients.
 
 <Note>
   By default, you will be viewing Analytics for all messages in the series. To view the metrics for each individual message, select the specific email from the tabs beneath 'Analytics'.
 </Note>
 
-
-
 ### Performance metrics
 
 At the top of your screen, you'll find an overview of the number of orders, total revenue generated, the number of emails that have been delivered, opened, and clicked since activating your series.
 
-
-
 ### Delivery Report
 
-Below your overall performance metrics, your Delivery Report shows how many emails were sent, delivered, bounced, and rejected. You can hover over each bar to see the total number of messages associated with each percentage.
+Below your overall performance metrics, your Delivery Report shows how many emails were sent, delivered, bounced, and rejected. To reveal the exact number that the percentages represent, hover over the bars in the chart. 
 
 <AccordionGroup>
   <Accordion title="Sent" defaultOpen={false}>
@@ -95,11 +83,9 @@ Below your overall performance metrics, your Delivery Report shows how many emai
   </Accordion>
 </AccordionGroup>
 
-
-
 ### Engagement Report
 
-Your Engagement Report shows how recipients interacted with your email once they received it. This report has five metrics that can help you gauge the success of your email: 
+Your Engagement Report shows how recipients interacted with your email once they received it. This report has five metrics that can help you gauge the success of your email. To reveal the exact number that the percentages represent, hover over the bars in the chart. 
 
 <AccordionGroup>
   <Accordion title="Delivered" defaultOpen={false}>
@@ -123,14 +109,42 @@ Your Engagement Report shows how recipients interacted with your email once they
   </Accordion>
 </AccordionGroup>
 
-
-
 ### Recipients
 
 Below your Delivery and Engagement Reports, you'll find a table with your Automation's recipients and what date they received the email.
 
+## Abandoned Cart Text Analytics Page
+
+To drill down into your Abandoned Cart Text's performance:
+
+* Navigate to [Automations](https://dashboard.privy.com/automations).
+
+* Locate and select the desired Abandoned Cart Text to view its individual analytics page:
 
 
-Abandoned Cart Text Performance
 
-To review your&#x20;
+### Performance
+
+At the top of your screen, you'll find an overview of the number of texts sent, clicked, carts saved, and the total revenue generated since activating the automation.
+
+### Delivery Report
+
+Below your overall performance, your Delivery Report shows how many texts were sent, delivered, clicked, and unsubscribed. To reveal the exact number that the percentages represent, hover over the bars in the chart. 
+
+<AccordionGroup>
+  <Accordion title="Sent" defaultOpen={false}>
+    The number of text messages sent since the Abandoned Cart Text was activated.
+  </Accordion>
+
+  <Accordion title="Delivered" defaultOpen={false}>
+    The number of text messages that were successfully delivered via the contact's phone carrier.
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    The number of text messages in which the contact clicked on the short link within the message.
+  </Accordion>
+
+  <Accordion title="Unsubscribed" defaultOpen={false}>
+    The number of contacts which responded to your Abandoned Cart Text with the word 'STOP' to unsubscribe from all future texts.
+  </Accordion>
+</AccordionGroup>
