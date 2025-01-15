@@ -167,6 +167,7 @@
           "pages": [
             "docs/learn/deliverability/overview",
             "docs/learn/deliverability/understanding-deliverability",
+            "docs/learn/deliverability/how-to-improve-deliverability",
             "docs/learn/deliverability/understanding-email-authentication",
             "docs/learn/deliverability/use-a-custom-sending-domain",
             "docs/learn/deliverability/warming-up-sending-domain",
