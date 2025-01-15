@@ -1,7 +1,69 @@
 ---
 title: "Understanding Deliverability"
 sidebarTitle: "Understanding Deliverability"
-description: "Learn more about deliverability, its contributing factors, and best practices."
+description: "Learn about deliverability and what sorts of factors impact deliverability over time."
 ---
 
-What is Deliverability?
+In this resource, we’ll explain email deliverability, how it differs from email delivery, and what factors impact both aspects of your email campaigns.
+
+## Delivery vs. Deliverability
+
+While the terms "email deliverability" and "delivery" are often used interchangeably, they refer to different stages of the email-sending process.
+
+Delivery refers to the ability to send and successfully deliver emails to your recipients, regardless of whether the email lands in the recipient’s spam or junk folder. On the other hand, deliverability is focused on the likelihood of your email reaching the recipient’s main inbox and being seen or opened. In summary:
+
+<Card title="Delivery" icon="circle-check">
+  Delivery regards the ability to successfully send emails to your recipients' mail servers, ensuring they are accepted and not rejected due to issues like invalid email addresses or server problems.
+</Card>
+
+<Card title="Deliverability" icon="inbox">
+  Deliverability is about ensuring that emails not only reach the inbox but also appear in the main inbox and are seen by the recipient.
+</Card>
+
+When it comes to deliverability, it’s important to note that, while we cannot see the exact placement of sent emails, we can infer the effectiveness of a campaign's deliverability based on its open rate and click-through rate (CTR).
+
+**A high delivery rate does not necessarily mean high deliverability.** An email may be delivered, but if it ends up in a spam folder or is ignored, the recipient may not see it.
+
+## What factors impact Delivery & Deliverability?
+
+Several factors can impact both your delivery and deliverability. Let's dive into each one:
+
+<AccordionGroup>
+  <Accordion title="Domain Reputation" defaultOpen={false}>
+    Your sending domain’s reputation directly impacts both email deliverability and delivery. This sender score is determined by email providers such as Google, Yahoo, iCloud, and Outlook and can be monitored by using their postmaster tools.
+  </Accordion>
+
+  <Accordion title="Email Authentication" defaultOpen={false}>
+    **SPF, DKIM, DMARC**: These protocols verify the sender’s identity, preventing spoofing and phishing, which improves deliverability.
+
+    These three records are a crucial part of email security and have been required by the biggest email providers since February 2024.
+  </Accordion>
+
+  <Accordion title="Email Content" defaultOpen={false}>
+    Engaging, relevant, and well-designed emails can avoid spam filters and improve your deliverability. Aim for personalized emails with relevant content while avoiding spammy language and optimizing the HTML-text ratio.
+  </Accordion>
+
+  <Accordion title="Bounce Rates" defaultOpen={false}>
+    High bounce rates will hurt your domain’s reputation over time, hurting your deliverability. It’s important to regularly remove contacts that are bouncing from your list.
+  </Accordion>
+
+  <Accordion title="Engagement Rates" defaultOpen={false}>
+    High engagement rates signal that your content is relevant to email providers, which improves your deliverability and your domain’s sending reputation, so it’s important to maintain a clean list with engaged contacts.
+  </Accordion>
+
+  <Accordion title="Sending Frequency & Volume" defaultOpen={false}>
+    Consistent email sends, and gradual volume increases help improve your deliverability. Bombarding your recipients with too many emails can trigger spam filters and hurt your domain’s reputation.
+  </Accordion>
+
+  <Accordion title="List Hygiene" defaultOpen={false}>
+    It’s very important to regularly clean up your list to ensure your campaigns are sent to active and engaged contacts. This helps ensure your deliverability and, over time, will improve or maintain your domain’s sending reputation.
+  </Accordion>
+
+  <Accordion title="Spam Complaints" defaultOpen={false}>
+    High spam complaints damage reputation. Providing easy opt-out options and maintaining a clean and engaged list help prevent these and improve your domain’s reputation.
+  </Accordion>
+</AccordionGroup>
+
+## How can I improve my Deliverability?
+
+It's important to monitor your delivery and deliverability so that you can track any improvement and know when it's time to take some action. Follow this guide to learn how to monitor your deliverability + explore tips and best practices that will help you improve your inbox placement.
