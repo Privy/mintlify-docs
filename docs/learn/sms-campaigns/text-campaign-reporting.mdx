@@ -2,4 +2,109 @@
 title: "Review Text Performance"
 sidebarTitle: "Reporting"
 icon: "chart-line-up"
+description: "Learn how to meaningfully interpret your analytics for your text campaigns."
 ---
+
+Once you've started sending text campaigns, you'll want to check in on their performance to track their revenue, engagement, and delivery. Below is a guide on how to find your text campaigns' reporting and how to interpret it.
+
+## Campaigns Table
+
+To get an overview of your text campaigns' metrics:
+
+* Navigate to [Campaigns](https://dashboard.privy.com/message-campaigns).
+
+* To narrow down your view of your Campaigns table, you can use the Search and Filter functions at the top of the table to narrow down by status and message type. *For example, if you only want to view your Sent text campaigns, you'll want to filter by Status: Sent and Type: SMS.*
+
+In the top right, you'll find the total **Revenue Generated** for the Campaigns you're viewing in the table below. If you click the arrow next to your Revenue Generated, you'll see a dropdown including the total number of texts delivered since account creation.
+
+
+
+If you take a look at the table, you’ll get a line-by-line view of each Campaign and their title, preview, status, and send date, along with the following metrics:
+
+<AccordionGroup>
+  <Accordion title="Delivered" defaultOpen={false}>
+    The total number of text messages delivered to your recipient's phone.
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    The total number of contacts who received your text message and clicked on your short link.
+  </Accordion>
+
+  <Accordion title="Unsubscribed" defaultOpen={false}>
+    The total number of contacts who received your text message and replied 'STOP' to unsubscribe from all future messages.
+  </Accordion>
+
+  <Accordion title="Revenue" defaultOpen={false}>
+    The total revenue collected from this text message. *Privy uses a last-touch model with a 7-day attribution window. If a customer has opened/clicked multiple emails and texts within the seven days proceeding a purchase, the revenue will only count toward the message they most recently engaged with.*
+  </Accordion>
+</AccordionGroup>
+
+## Text Campaign Reporting Page
+
+To take a deeper dive into an individual text message's engagement, delivery, and revenue:
+
+* Navigate to [Campaigns](https://dashboard.privy.com/message-campaigns), locate and select the desired text campaign. This will open your text campaign's reporting page.
+
+
+
+At the top of your screen, you'll see your text campaign's title, the segment and number of contacts it was sent to, it's send day/time, and the message type. A preview of the sent text will also appear.
+
+### Revenue
+
+Below your text message's preview, you'll see a breakdown of your revenue metrics:
+
+
+
+<AccordionGroup>
+  <Accordion title="Revenue" defaultOpen={false}>
+    The total revenue collected from this text message.
+  </Accordion>
+
+  <Accordion title="Orders" defaultOpen={false}>
+    The number of individual orders attributed to this text message.
+  </Accordion>
+
+  <Accordion title="Average Order Value" defaultOpen={false}>
+    The total revenue divided by the number of orders attributed to this text message.
+  </Accordion>
+
+  <Accordion title="Order Rate" defaultOpen={false}>
+    The number of orders divided by the number of recipients for this text message.
+  </Accordion>
+
+  <Accordion title="Revenue per Recipient" defaultOpen={false}>
+    The total revenue divided by the number of recipients associated with this text message.
+  </Accordion>
+</AccordionGroup>
+
+### Delivery & Engagement
+
+Below your revenue reporting will be the following performance metrics:
+
+
+
+<AccordionGroup>
+  <Accordion title="Total Sent" defaultOpen={false}>
+    The total number of textable contacts that your message was sent to.
+  </Accordion>
+
+  <Accordion title="Delivered" defaultOpen={false}>
+    The total number of messages that successfully delivered to your recipients.
+  </Accordion>
+
+  <Accordion title="Failed" defaultOpen={false}>
+    The number of messages that were not successfully delivered to your recipients. Just like email marketing, delivery failures can happen for a number of reasons. Some of the most common reasons are: invalid numbers, roaming, carrier restrictions, or network issues.
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    The total number of contacts who received this text message and clicked on the short link.
+  </Accordion>
+
+  <Accordion title="Opted Out" defaultOpen={false}>
+    The total number of contacts that responded to this text message with the word 'STOP' in order to unsubscribe from future messages.
+  </Accordion>
+</AccordionGroup>
+
+### Recipients
+
+Finally, below your revenue, delivery, and engagement metrics, you'll find a table displaying each of your text recipients, along with the option to export to CSV.
