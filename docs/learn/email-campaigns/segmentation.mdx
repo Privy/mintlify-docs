@@ -2,4 +2,188 @@
 title: "Use Custom and Smart Segments"
 sidebarTitle: "Segments"
 icon: "people-group"
+description: "Segment your list to send targeted, engaging content tailored to their unique qualities."
 ---
+
+## What is a segment?
+
+---
+title: "Use Custom and Smart Segments"
+sidebarTitle: "Segments"
+icon: "people-group"
+description: "Segment your list to send targeted, engaging content tailored to their unique qualities."
+---
+
+A segment is a group of contacts defined by a set of conditions. Unlike a static subscriber list, segments are dynamic, meaning they grow as contacts meet the segment's conditions and shrink as contacts no longer meet them. Segmented email sends often return more revenue per recipient than unsegmented sends since they can be tailored to a particular situation, and thus are more relevant to the recipients.
+
+Privy offers two kinds of segments:
+
+1. Custom Segments
+
+2. Smart Segments
+
+Check out the following guide on how to build, manage, and use your segments in Privy.
+
+## Custom Segments
+
+Custom Segments are built from scratch by you! You can customize a group of your subscribers by combining a number of filters and criteria such as Shopping Activity, Email Engagement, Website Activity, and Customer Attributes.
+
+### Create a new segment
+
+There are a couple ways to access the Custom Segment builder:
+
+<Icon icon="circle-1" /> **From the Segments Page:** head to [Contacts > Segments](https://dashboard.privy.com/segments) and click **Create Segment.**
+
+
+
+<Icon icon="circle-2" /> **From your Campaign:** when creating a Campaign, click to edit who you're sending to. Click **+ Create Segment** under the "Send To" section.
+
+
+
+Now you're ready to build your segment:
+
+* Name your segment. This is internal only — your contacts will not see this name.
+
+* Select whether you want your contacts to **Match all** criteria or **Match any** criteria. For stricter segmentation, you'll want to select Match all.
+
+* Click the **Choose Category** menu to start selecting your conditions for your segment.&#x20;
+
+* To add more conditions, select the **+ And** or the **+ Or** buttons to start selecting the next condition.
+
+* The contact count will adjust as you add filter(s). Once you're happy with your segment, click **Create.**
+
+### Segment Conditions
+
+Privy offers a number of different conditions to segment your audience by. See below to dive into each category and their conditions.
+
+<Icon icon="bag-shopping" /> **Shopping Activity**
+
+<AccordionGroup>
+  <Accordion title="Cart value" defaultOpen={false}>
+    Include contacts based on the current value of your BigCommerce, Shopify, Squarespace, or Weebly cart.
+  </Accordion>
+
+  <Accordion title="First order" defaultOpen={false}>
+    Include contacts based on when they first ordered from your store.
+  </Accordion>
+
+  <Accordion title="Last order" defaultOpen={false}>
+    Include contacts based on when they last ordered from your store.
+  </Accordion>
+
+  <Accordion title="Lifetime spend" defaultOpen={false}>
+    Include contacts based on their total spending in your Shopify store.
+  </Accordion>
+
+  <Accordion title="Order count" defaultOpen={false}>
+    Include contacts based on the number of orders they have placed in your Shopify or Weebly store.
+  </Accordion>
+
+  <Accordion title="Purchase history" defaultOpen={false}>
+    Include contacts based on the products or [collections](https://www.privy.com/blog/introducing-shopify-collections-for-privy) they have purchased or have not purchased from your Shopify store in the past 365 days.
+  </Accordion>
+</AccordionGroup>
+
+<Icon icon="globe-pointer" /> **Website Behavior**
+
+<AccordionGroup>
+  <Accordion title="By display" defaultOpen={false}>
+    Include contacts based on which displays they have or have not signed up for.
+  </Accordion>
+
+  <Accordion title="Last seen" defaultOpen={false}>
+    Include contacts based on the last time they visited your site.
+  </Accordion>
+
+  <Accordion title="Created at" defaultOpen={false}>
+    Include contacts based on when they signed up for your email list / when their contact profile was created.
+  </Accordion>
+</AccordionGroup>
+
+<Icon icon="user-group" /> **Customer Attributes**
+
+<AccordionGroup>
+  <Accordion title="By country" defaultOpen={false}>
+    Include contacts based on the country reported by the contact's IP address.
+  </Accordion>
+
+  <Accordion title="Custom fields" defaultOpen={false}>
+    Include contacts based on their [custom field](https://privy.helpscoutdocs.com/article/168-create-and-manage-form-fields) values. These values are provided via an import or when signing up for a display.
+  </Accordion>
+
+  <Accordion title="Imported" defaultOpen={false}>
+    Include contacts based on whether or not they have been manually imported directly from another service or via CSV.
+  </Accordion>
+
+  <Accordion title="Name / Email" defaultOpen={false}>
+    Include contacts based on their exact name or email address.
+  </Accordion>
+
+  <Accordion title="Privy Tags" defaultOpen={false}>
+    Include or exclude contacts based on the [tags](https://privy.mintlify.app/docs/learn/contact-management/tag-contacts) applied to their contact profile.
+  </Accordion>
+
+  <Accordion title="Shopify Tags" defaultOpen={false}>
+    Include or exclude contacts based on the [tags](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/using-tags#tag-types) applied to their customer profile in Shopify. 
+  </Accordion>
+</AccordionGroup>
+
+<Icon icon="envelope-open" /> **Email Engagement**
+
+<AccordionGroup>
+  <Accordion title="Opened" defaultOpen={false}>
+    Include contacts that opened a specific campaign, or opened any campaign within a specific window of time.
+  </Accordion>
+
+  <Accordion title="Did not open" defaultOpen={false}>
+    Include contacts that did not open a specific campaign, or did not open on any campaign within a specific window of time.
+  </Accordion>
+
+  <Accordion title="Clicked" defaultOpen={false}>
+    Include contacts that clicked a specific campaign, or clicked on any campaign within a specific window of time.
+  </Accordion>
+
+  <Accordion title="Did not click" defaultOpen={false}>
+    Include contacts that did not click on a specific campaign, or did not click on any campaign within a specific window of time.
+  </Accordion>
+
+  <Accordion title="Sent" defaultOpen={false}>
+    Include contacts that were sent a specific campaign, or were sent any campaign within a specific window of time.
+  </Accordion>
+
+  <Accordion title="Was not sent" defaultOpen={false}>
+    Include contacts that were not a specific campaign, or were not sent any campaign within a specific window of time.
+  </Accordion>
+</AccordionGroup>
+
+### Managing Custom Segments
+
+To manage an existing Custom Segment, head to Contacts > Segments. Locate your desired segment and click on the menu beside it. Select **Rename segment** or **Delete segment**.
+
+
+
+<Warning>
+  As of now, there is no way to edit the conditions of an existing segment in Privy once it's been created.
+</Warning>
+
+## Smart Segments
+
+Smart Segments are prebuilt by Privy. They allow you to quickly target a group of your contacts without the hassle of creating a custom segment. Below are the four kinds of Smart Segments in Privy:
+
+<AccordionGroup>
+  <Accordion title="Engaged Contacts" defaultOpen={false}>
+    Mailable contacts who have opened or clicked at least one email within the last 90 days. This segment also includes new contacts who joined your list within the last 90 days.
+  </Accordion>
+
+  <Accordion title="Unengaged Contacts" defaultOpen={false}>
+    Mailable contacts who have not opened or clicked any email within the last 90 days. This segment excludes any new contacts who joined your list within the last 90 days.
+  </Accordion>
+
+  <Accordion title="Potential Customers" defaultOpen={false}>
+    Mailable contacts who have never placed an order with your store.
+  </Accordion>
+
+  <Accordion title="Current Customers" defaultOpen={false}>
+    Mailable contacts who have placed at least one order with your store.
+  </Accordion>
+</AccordionGroup>
