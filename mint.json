@@ -89,6 +89,7 @@
              "docs/learn/displays/displays-overview",
                 {
                   "group": "Display Types",
+                  "icon": "paintbrush",
                   "pages": [
                     "docs/learn/displays/classic-designer/spin-to-win",
                     "docs/learn/displays/classic-designer/landing-page",
