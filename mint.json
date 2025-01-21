@@ -256,7 +256,7 @@
                   "group": "Account Settings",
                   "pages": [
                       "docs/learn/account-settings-and-billing/account-settings/manage-your-profile",
-                    "docs/learn/account-settings-and-billing/account-settings/manage-your-profile",
+                    "docs/learn/account-settings-and-billing/account-settings/manage-your-plan",
                     "docs/learn/account-settings-and-billing/account-settings/subaccounts",
                     "docs/learn/account-settings-and-billing/account-settings/billing-payments-and-refunds"
                   ]
@@ -264,7 +264,7 @@
                 {
                   "group": "Business Settings",
                   "pages": [
-                      "docs/learn/account-settings-and-billing/business-settings/business-settings",
+                      "docs/learn/account-settings-and-billing/business-settings/brand-settings",
                     "docs/learn/account-settings-and-billing/business-settings/users",
                     "docs/learn/account-settings-and-billing/business-settings/customizations"
                   ]
@@ -276,12 +276,7 @@
                       "docs/learn/account-settings-and-billing/email-settings/sending-domains"
                   ]
                 },
-                {
-                  "group": "Support FAQs",
-                  "pages": [
-                      "docs/learn/account-settings-and-billing/support-faq/support-faq"
-                  ]
-                }
+            "docs/learn/account-settings-and-billing/support-faq/overview"    
           ]
         }
       ]
