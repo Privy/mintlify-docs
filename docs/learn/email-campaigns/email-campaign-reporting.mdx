@@ -7,7 +7,7 @@ description: "Understand how to meaningfully interpret your email campaign's res
 
 Once you start sending email campaigns in Privy, you're going to want to check in on their performance to track their engagement metrics, revenue, and delivery. Below is a guide on how to find your Campaigns' reporting, and how to interpret it.
 
-Campaigns Table
+## Campaigns Table
 
 To get an overview of your Campaigns' performance:
 
@@ -140,3 +140,23 @@ To view more detailed information on a contact's activities, you can click on a 
 <Warning>
   When exporting a CSV, the file will include all delivery and engagement activity from all recipients.&#x20;
 </Warning>
+
+## Attribution Model
+
+In marketing, attribution refers to identifying and assigning credit to the various touch points a customer interacts with before making a purchase. It can help you understand which marketing efforts are driving conversions and generating revenue.
+
+Privy attributes an order if a contact engages (opens or clicks) with a marketing message and completes the order within 7 days.&#x20;
+
+There are a few more points to keep in mind:
+
+* **Last Touch Attribution:** Orders are attributed to the last message a contact engaged with. For example, if a subscriber opens a Campaign email and later opens an Abandoned Cart Automation email before purchasing, the order is attributed to the Abandoned Cart Automation.
+
+* **Multi-Channel Attribution:** Privy evaluates each channel's attribution window separately when using multiple message channels (SMS or email). This determines if either channel should receive revenue attribution at the time of purchase.
+
+* **Conversion Window:** The conversion window for both email and SMS is 7 days, starting from the moment of engagement.
+
+* **Contact-based Attribution:** Privy uses a contact’s email address and phone number to attribute an order back to a contact.
+
+<Info>
+  For more information on how Privy's attribution model works, [check out this FAQ article](https://privy.mintlify.app/docs/learn/email-campaigns/privy-attribution-model).
+</Info>
