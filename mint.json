@@ -119,6 +119,7 @@
         {
           "group": "Email Campaigns",
           "pages": [
+            "docs/learn/email-campaigns/overview",
             "docs/learn/email-campaigns/send-an-email-campaign",
             "docs/learn/email-campaigns/segmentation",
             "docs/learn/email-campaigns/email-templates",
