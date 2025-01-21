@@ -4,3 +4,147 @@ description: "Monitor your deliverability and learn best practices to improve yo
 sidebarTitle: "How to Improve Deliverability"
 icon: "sparkles"
 ---
+
+Looking to improve your deliverability? There are a number of factors that contribute to your emails' inbox placement.&#x20;
+
+In this article, we’ll review all those factors as well as:
+
+1. <a href="#best-practices">Best Practices</a>
+
+2. <a href="#monitor-delivery-and-deliverability">How to Monitor Delivery + Deliverability in Privy</a>
+
+## Best Practices
+
+There are 6 major best practices that every business should have in place in order to improve and maintain healthy deliverability:
+
+<AccordionGroup>
+  <Accordion title="Authenticate your domain." defaultOpen={false}>
+    First, please ensure your DMARC/DKIM/SPF records are all in place. This requirement **cannot** be overlooked. This process is done directly with your domain service provider and can vary from provider to provider. [Learn how to authenticate your domain.](https://privy.mintlify.app/docs/learn/deliverability/understanding-email-authentication)
+  </Accordion>
+
+  <Accordion title="Meet email provider requirements." defaultOpen={false}>
+    Alongside the requirements for authentication records, each email provider has its own other requirements that all bulk senders should follow. These requirements range from email content to domain settings and can be found in full on the following links:
+
+    * [Google Sender Guidelines](https://support.google.com/a/answer/81126?hl=en)
+
+    * [Yahoo Sender Best Practices](https://senders.yahooinc.com/best-practices/)
+
+    * [Outlook Policies, Practices, and Guidelines](https://sendersupport.olc.protection.outlook.com/pm/policies.aspx)
+  </Accordion>
+
+  <Accordion title="Warm up your domain." defaultOpen={false}>
+    For new domains, or domains that have recently added authentication records (DMARC/DKIM/SPF), it’s important to [warm up your domain](https://privy.mintlify.app/docs/learn/deliverability/warming-up-sending-domain) so that major inbox providers such as Google and Yahoo can detect the progression of your domain’s reputation.
+
+    This is an essential step to ensure a good sending reputation, but please bear in mind that this can be a lengthy process, taking weeks or months to warm up a domain properly.
+  </Accordion>
+
+  <Accordion title="Practice list hygiene." defaultOpen={false}>
+    Maintaining a clean and updated list is essential for good delivery and deliverability rates. Periodically removing bots, invalid, and bounced addresses can make a huge difference in your delivery and help maintain a good sending reputation. [Learn how to practice list hygiene in Privy.](https://privy.mintlify.app/docs/learn/contact-management/list-hygiene)
+  </Accordion>
+
+  <Accordion title="Be mindful of your email content." defaultOpen={false}>
+    When it comes to email content, there are some things that you need to avoid and other things that you must have. Here are some of them:
+
+    * Keep your subject line concise and avoid all caps. Shoot for between 28 to 50 characters.
+
+    * Keep your preheader concise. Shoot for between 40 to 100 characters.
+
+    * Keep your email concise. Shoot for between 50 and 125 words.
+
+    * Personalize your emails with [merge tags](https://privy.mintlify.app/docs/learn/content/personalization-tags). For example, include the contact's first name.
+
+    * Avoid using spammy keywords like guarantee, opportunity, click, and winner.
+
+    * Avoid using special characters like %, $, &, !, ?, @, and # excessively.
+
+    * Avoid excessive use of images. Emails that use too many images or are all one image can trigger a spam filter. Using several lines of text to separate images helps avoid this.
+
+    * Avoid using too many links or calls to action.
+  </Accordion>
+
+  <Accordion title="Use postmaster tools." defaultOpen={false}>
+    Major email providers also have postmaster tools that allow you to investigate how your domain performs on their platform. These are great if you want more insight into your domain’s sending reputation and SPAM rates. You can find these postmaster tools for the biggest email providers here:
+
+    * [Gmail Postmaster Tools](https://gmail.com/postmaster/)
+
+    * [Outlook Postmaster Tools](https://sendersupport.olc.protection.outlook.com/pm/)
+
+    * [Yahoo Postmaster Tools](https://senders.yahooinc.com/)
+
+    Take advantage of these tools to monitor your domain’s health!
+  </Accordion>
+</AccordionGroup>
+
+## Monitor Delivery and Deliverability
+
+Now that we've covered best practices, let's go over how you can keep track of your campaigns and automations performance, and how those metrics translate into your delivery and deliverability health.
+
+### Which metrics are most important?
+
+To measure your **delivery**, you'll want to focus on how many emails successfully made it to your subscribers:
+
+<AccordionGroup>
+  <Accordion title="Total Sent" defaultOpen={false}>
+    The total number of emails sent during the reporting period.
+  </Accordion>
+
+  <Accordion title="Delivered" defaultOpen={false}>
+    The percentage of successfully delivered emails compared to the total number sent.&#x20;
+  </Accordion>
+
+  <Accordion title="Bounced" defaultOpen={false}>
+    The percentage of emails that resulted in a soft or hard bounce compared to the total number of emails sent. [Learn more about Hard vs. Soft Bounces. ](https://privy.mintlify.app/docs/learn/deliverability/hard-vs-soft-bounces)
+  </Accordion>
+</AccordionGroup>
+
+To get a pulse on your **deliverability**, you'll want to focus on your emails' engagement metrics:
+
+<AccordionGroup>
+  <Accordion title="Open Rate" defaultOpen={false}>
+    The total number of unique opens divided by the total number of delivered emails.&#x20;
+  </Accordion>
+
+  <Accordion title="Click Rate" defaultOpen={false}>
+    The total number of unique clicks divided by the total number of emails delivered.
+  </Accordion>
+
+  <Accordion title="Order Rate" defaultOpen={false}>
+    The total number of unique orders divided by the total number of delivered emails.&#x20;
+  </Accordion>
+
+  <Accordion title="Unsubscribed" defaultOpen={false}>
+    The percentage of contacts who unsubscribed from the contact list after receiving an email.&#x20;
+  </Accordion>
+
+  <Accordion title="Spam Rate" defaultOpen={false}>
+    The percentage of contacts who marked your email as being spam. *This is one of the most important statistics and it’s essential to keep this at a minimum to avoid domain reputation issues.*
+  </Accordion>
+</AccordionGroup>
+
+### Where can I find these in Privy?
+
+On the home page of your dashboard, you’ll see records for all emails sent in the selected timeframe. This the last card on the page. It will give you insights into your deliverability over multiple campaigns + automations:
+
+To see specific details about individual Campaigns or Automations, you can access them by going to your Campaigns or Automations pages and clicking on a specific email.
+
+<Tip>
+  For more detailed information on how to find individual email reporting, check out these guides:
+
+  * [Campaign Reporting](https://privy.mintlify.app/docs/learn/email-campaigns/email-campaign-reporting#delivery-report)
+
+  * [Automation Reporting](https://privy.mintlify.app/docs/learn/automations/automations-reporting#delivery-report)
+</Tip>
+
+### Benchmarks
+
+Now that you know where to look for your deliverability numbers, let’s go over the ranges that are considered ideal for each relevant metric:
+
+* **Open rate:** a good open rate stands at between 17% and 28%, though this depends on your store’s industry.
+
+* **Click-through rate (CTR):** A good CTR is between 2% and 5%, but it also depends on your store’s industry.
+
+* **Spam complaints:** 0.1% and below is the ideal number for spam complaints. This would mean that only 1 contact marks your email as spam per 1000 delivered emails.
+
+* **Bounces:** The ideal bounce rate is 2% or lower. Anything between 2% and 5% is worth investigating, and anything over 5% is considered critical and requires immediate action to improve.
+
+* **Unsubscribes/opt-outs:** The ideal number of unsubscribes in a single email should be around 0.5% and below, meaning 5 customers unsubscribe per 1000 delivered emails.
