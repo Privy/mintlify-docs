@@ -103,16 +103,6 @@
             "docs/learn/displays/settings-overview",
             "docs/learn/displays/reporting-overview",
             "docs/learn/displays/ab-test-displays",
-                {
-                  "group": "Display Types",
-                  "pages": [
-                    "docs/learn/displays/classic-designer/spin-to-win",
-                    "docs/learn/displays/classic-designer/landing-page",
-                    "docs/learn/displays/classic-designer/embedded-form",
-                    "docs/learn/displays/classic-designer/banner-display",
-                    "docs/learn/displays/classic-designer/bar-display"
-                  ]
-                }
           ]
         },
         {
@@ -253,7 +243,8 @@
           "group": "Account Settings + Billing",
           "pages": [
                 {
-                  "group": "Account Settings",
+                  "group": "Plan + Billing",
+                  "icon": "file-invoice-dollar",
                   "pages": [
                       "docs/learn/account-settings-and-billing/account-settings/manage-your-profile",
                     "docs/learn/account-settings-and-billing/account-settings/manage-your-plan",
@@ -263,6 +254,7 @@
                 },
                 {
                   "group": "Business Settings",
+                  "icon": "store",
                   "pages": [
                       "docs/learn/account-settings-and-billing/business-settings/brand-settings",
                     "docs/learn/account-settings-and-billing/business-settings/users",
@@ -271,6 +263,7 @@
                 },
                 {
                   "group": "Email Settings",
+                  "icon": "envelope",
                   "pages": [
                       "docs/learn/account-settings-and-billing/email-settings/sender-options",
                       "docs/learn/account-settings-and-billing/email-settings/sending-domains"
