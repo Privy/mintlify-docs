@@ -1,0 +1,64 @@
+---
+title: "Understanding Privy's Attribution Model"
+description: "Learn how Privy tracks orders and revenue associated with your emails, displays, and texts."
+---
+
+## What is Attribution?
+
+In marketing, attribution refers to identifying and assigning credit to the various touchpoints a customer interacts with before making a purchase. It can help you understand which marketing efforts are driving conversions and generating revenue.
+
+## How does Attribution work with Email + Text?
+
+Privy attributes an order if a contact engages (opens or clicks) with a marketing message and completes the order within 7 days. There are a few more points to keep in mind:
+
+* **Last Touch Attribution:** Orders are attributed to the last message a contact engaged with. For example, if a subscriber opens a Campaign email and later opens an Abandoned Cart Automation email before purchasing, the order is attributed to the Abandoned Cart Automation.
+
+* **Multi-Channel Attribution:** Privy evaluates each channel's attribution window separately when using multiple message channels (SMS or email). This determines if either channel should receive revenue attribution at the time of purchase.
+
+* **Conversion Window:** The conversion window for both email and SMS is 7 days, starting from the moment of engagement.
+
+* **Contact-based Attribution:** Privy uses a contact’s email address and phone number to attribute an order back to a contact. 
+
+## How does Attribution work for Displays?
+
+An order is counted when someone signs up for your Privy display and then completes a purchase through your store using the same email address or phone number at any point in the future. Privy counts an order regardless of whether or not the customer used a discount code. This attribution model helps merchants understand which displays ultimately lead to orders. 
+
+## FAQs
+
+Here are some answers to common questions we hear when it comes to attribution:
+
+<AccordionGroup>
+  <Accordion title="How does attribution work for Automation series that have multiple emails?" defaultOpen={false} icon="circle-question">
+    Similar to Campaigns, our Automations use a last-touch interaction model, so the order will only be attributed to the email that the customer *most recently* engaged with prior to placing the order. Learn how to view the revenue reporting for each individual email in an Automation series [here](https://privy.mintlify.app/docs/learn/automations/automations-reporting#:~:text=If%20your%20Automation%20is%20a%20series%2C%20you%20can%20view%20the%20above%20metrics%20for%20each%20individual%20message%20in%20the%20series%20by%20clicking%20the%20arrow%20to%20the%20left%20of%20the%20series%20on%20your%20table%3A).
+  </Accordion>
+
+  <Accordion title="Does Attribution Work Differently Between Emails and SMS?" defaultOpen={false} icon="circle-question">
+    Yes, attribution works differently between emails and SMS due to the nature of these channels:
+
+    * **Emails:** Attribution in emails is based on opens and/or clicks. This tracking is accomplished through hidden, embedded tracking links and pixels automatically included in each email.
+
+    * **SMS:** SMS attribution uses link tracking, as SMS messages do not support tracking pixels. When a recipient clicks on a link in an SMS, their activity is tracked and attributed accordingly.
+  </Accordion>
+
+  <Accordion title="Can I customize the attribution model?" defaultOpen={false} icon="circle-question">
+    It is not possible to change the attribution model. Privy adheres to industry-standard attribution windows and methodologies. 
+  </Accordion>
+</AccordionGroup>
+
+## Matching Privy Attribution to other platforms
+
+Attributed revenue and orders in Privy might not match other reports due to differences in attribution models. For example:
+
+* **Different Attribution Windows:** Other platforms may use different time frames for attribution.
+
+* **Touch-based vs. Click-based Attribution:** Some tools or e-commerce platforms may use narrower attribution models, such as only providing attribution credit to the last click. 
+
+* **Multi-Touch vs. Last-Touch Attribution:** Some systems credit the last touchpoint, while others may distribute credit across multiple touchpoints.
+
+* **Data Processing Delays:** Timing differences in data updates and synchronization can cause discrepancies.
+
+Attributed revenue in Privy should be considered a proxy or indicator of the effectiveness of your email and SMS marketing efforts. While our attribution model aims to provide a clear picture of which marketing activities are driving conversions, it is not the complete source of truth. For a comprehensive understanding of your marketing performance, it's important to consider attributed revenue alongside other metrics and data sources.
+
+## Additional Support
+
+If you have further questions about Privy's attribution model, or the attribution you see in your account, please contact our [Support Team](mailto:support@privy.com) for assistance.
