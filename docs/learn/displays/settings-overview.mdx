@@ -5,7 +5,11 @@ description: "Customize how your displays appear to your preferred audience."
 icon: "bullseye-arrow"
 ---
 
-Privy Convert has a wide range of settings so that you can customize when + how your displays trigger, to whom, and how your information is collected.
+Privy Convert has a wide range of settings so that you can customize when + how your displays trigger, to whom, and how your information is collected. In this article, we'll review where to find your settings, and break down what each condition means.
+
+## Where can I find my displays' settings?
+
+Head to [Convert > All Displays](https://dashboard.privy.com/displays). Select an existing display or create a new one. Head to the **Settings** step at the top of the editor.
 
 <img height="200" src="/images/displays/display-settings.png" />
 
@@ -17,7 +21,7 @@ Determine how and when your display appears to your audience.
 
 <img height="200" src="/images/displays/triggers-and-visibility.png" />
 
-You have the option to choose one or more of the following trigger settings:
+You have the option to choose one or more of the following **trigger** settings:
 
 * Time on Page
 
@@ -33,7 +37,7 @@ You have the option to choose one or more of the following trigger settings:
   If you have no trigger settings selected, your display will not appear automatically for your audience. In this case, we recommend using a tab so visitors can manually trigger your display.
 </Warning>
 
-You have the option to choose one or more of the following visibility settings:
+You have the option to choose one or more of the following **visibility** settings:
 
 * Limit display appearance
 
@@ -44,7 +48,7 @@ You have the option to choose one or more of the following visibility settings:
 </Info>
 
 <Warning>
-  Unchecking "Limit display appearance" means there will be no limit to how often a display will trigger in a session for your audience.
+  Unchecking "Limit display appearance" means there will be **no limit** to how often a display will trigger in a session for your audience.
 </Warning>
 
 ### Audience Targeting
@@ -150,3 +154,77 @@ Select whether or not you'd like your Coupon to automatically apply to cart afte
 <Note>
   Your Coupon must be created in Privy in order to be attached to your display. [Learn more about creating and managing Coupons in Privy.](https://privy.mintlify.app/docs/learn/content/coupon-codes)
 </Note>
+
+## Advanced Settings
+
+To expand and edit your display's advanced settings, click **Show Advanced Settings** at the bottom left of your screen.
+
+### Sign Up Rules
+
+
+
+You can select up to two options for restricting who may sign up for your display:
+
+* **Limit 1 sign up per contact:** This prevents the same email address from signing up more than once on the same exact display. *This is recommended and enabled on every Privy template by default.*
+
+* **New contacts only:** This prevents email addresses that are already on your list from being able to submit a new sign up.
+
+<Note>
+  If a contact is restricted from signing up due to the conditions above, they will see an error message letting them know that they have already signed up.
+</Note>
+
+### Opt-In
+
+
+
+Choose between **Single Opt-In** and **Double Opt-In** for your display. *Single Opt-In is the default setting for each Privy template.* Choosing Double Opt-In is encouraged for building a high quality, engaged list; it requires new sign ups to confirm their subscription in their inbox. [Learn more.](https://privy.mintlify.app/docs/learn/contact-management/double-opt-in)
+
+### Sync Integrations
+
+
+
+If you are using an external email service provider and/or need to sync your sign ups to one of your Linked Accounts, make sure you add all necessary sync rules to your display(s) here. [Learn more about our supported Integrations.](https://privy.mintlify.app/docs/learn/integrations/overview-integrations)
+
+### Profile Attributes
+
+Profile Attributes are datapoints that are automatically detected by Privy upon sign up. This data may include the page they were on when they signed up for a display, browser information, visit history, and approximate location.
+
+The following Profile Attributes are available in Privy today:
+
+<AccordionGroup>
+  <Accordion title="Coupon" defaultOpen={false}>
+    The coupon code the visitor received upon signing up. 
+  </Accordion>
+
+  <Accordion title="Sessions Count" defaultOpen={false}>
+    The number of browser sessions this user has had on your site. *A session ends after 30 minutes of inactivity.*
+  </Accordion>
+
+  <Accordion title="Pageviews (all time)" defaultOpen={false}>
+    The number of pages this user has viewed across all known sessions on your site.
+  </Accordion>
+
+  <Accordion title="Pageviews (this session)" defaultOpen={false}>
+    The number of pages on your site this user has viewed this session.
+  </Accordion>
+
+  <Accordion title="Current URL" defaultOpen={false}>
+    The most recent URL the user was seen on while interacting with a display.
+  </Accordion>
+
+  <Accordion title="Signup date" defaultOpen={false}>
+    The timestamp of when that contact registered. 
+  </Accordion>
+
+  <Accordion title="UTM Medium" defaultOpen={false}>
+    The UTM parameters (if present) of the URL where the contact signed up on a Privy form. 
+  </Accordion>
+
+  <Accordion title="Custom" defaultOpen={false}>
+    Use this option to set a custom field which can be used for filtering or segmentation in the future, or mapped to the Linked Account(s) that you're syncing sign ups to.
+  </Accordion>
+</AccordionGroup>
+
+<Icon icon="circle-question" /> **Where can I find Profile Attributes after I've collected them?**
+
+Detected attributes appear on [individual contact records](https://privy.mintlify.app/docs/learn/contact-management/view-and-filter-contacts#viewing-individual-contacts), in [contact exports to CSV](https://privy.mintlify.app/docs/learn/contact-management/export-contacts#export-contacts-to-csv), and in your Linked Account's data (if you are syncing sign ups to a third party).
