@@ -36,6 +36,9 @@
   "theme": "quill",
   "layout": "solidSidenav",
   "rounded": "default",
+  "search": {
+    "location": "top"
+  },
 
   "topbar": {
     "style": "default"
