@@ -6,8 +6,6 @@ description: "Gamify your sign up experience with this display — everyone wins
 
 A Spin To Win display encourages site visitors to sign up for a chance to win from several potential prizes via an interactive wheel. Visitors love it because it's a fun, engaging way to get a discount, and you'll love it because it's fully customizable and converts at a high rate.
 
-
-
 Looking for some inspiration? [Check out these examples!](https://www.privy.com/spin-to-win-examples)
 
 ## Create a new Spin To Win
@@ -54,11 +52,9 @@ To edit existing elements, click directly on them in your display. You can edit 
 
 Under your *Elements* on the left, you can drag your elements to reorder them and edit your display's background, wheel, and desktop and mobile tabs.
 
-
-
 ## Edit your wheel
 
-In the display editor, select **Wheel** under your *Elements***** to customize your wheel's colors, text, and coupon settings.
+In the display editor, select **Wheel** under your *Elements*\*\*\*\* to customize your wheel's colors, text, and coupon settings.
 
 Select **Configure slices** to edit each slice of your Spin To Win's wheel:
 
@@ -88,6 +84,73 @@ To attach a Saved coupon:
 
 * Repeat for each of your slices. Make sure your Label and Win Text match the coupon you've chosen.
 
-* Scroll and click **OK** to save your changes.
+* Scroll and click **OK** to save your wheel.
 
 <video autoPlay muted loop playsInline className="attach-saved-coupon" src="/images/displays/add-saved-coupon.mp4" />
+
+Once you're happy with your Spin To Win's appearance and your wheel's configuration, click **Save & Close** in the upper right corner of the editor.
+
+## Customize your Thank You Page
+
+After saving your changes, you'll be brought back to the *Create* step of your display builder. You'll want to customize your display's Thank You Page to deliver the Win Text and Coupon to your new signup.
+
+* Scroll down and click to edit your **Thank You Page Design**.
+
+* Copy the below merge tags to automatically display your sign up's prize and coupon code:
+
+| Content     | Merge Tag                   |
+| ----------- | --------------------------- |
+| Coupon Code | \{\{ signup.coupon\_code }} |
+| Win Text    | \{\{ signup.win\_text }}    |
+
+* Once you've made your changes, click **Save & Close** in the upper right corner.
+
+## Edit your settings
+
+To customize your Spin To Win's settings and audience targeting, navigate to the *Targeting* step of the builder:
+
+
+
+1. **When To Show It:** determine when and how your display triggers.
+
+2. **Who To Show It To:** determine who is eligible to view your display.
+
+3. **How Long To Show It:** specify whether this display should be Ongoing, or set to run on a fixed schedule.
+
+[Learn more about Privy's audience targeting.](https://privy.mintlify.app/docs/learn/displays/settings-overview#basic-settings)
+
+## Edit your Follow-Up actions
+
+Once you've finalized your settings and audience targeting, you'll want to make sure that you're properly following up with your new sign up. Head to the **Follow-Up** step of your builder.
+
+
+
+<AccordionGroup>
+  <Accordion title="After Signup Email" defaultOpen={false}>
+    Click on your After Signup Email to view and edit your template, subject line, and sender info. [Learn more about our drag-and-drop email editor.](https://privy.mintlify.app/docs/learn/email-campaigns/email-templates) Make sure that you **Publish** your email so that it sends to new sign ups.
+  </Accordion>
+
+  <Accordion title="Create a series" defaultOpen={false}>
+    If you want to create a series of more than one After Signup Email for this specific display, select this option.
+  </Accordion>
+
+  <Accordion title="Sync signups" defaultOpen={false}>
+    If you're syncing new sign ups to a [Linked Account](https://privy.mintlify.app/docs/learn/integrations/overview-integrations), be sure to add a sync rule here.
+  </Accordion>
+
+  <Accordion title="Send Text Message" defaultOpen={false}>
+    If you're on the Growth Plan and you're collecting SMS contacts with this display, you can create an After Signup Text to deliver to new contacts after they complete their Double Opt-In.
+  </Accordion>
+
+  <Accordion title="Notifications" defaultOpen={false}>
+    Enable or disable real-time notifications for your users. These notifications will alert the user of new display signups immediately. **Save**. 
+  </Accordion>
+</AccordionGroup>
+
+## Launch your Spin To Win
+
+Once you've finalized your design, targeting, and follow-up actions, select the **Publish** button at the upper right of the *Follow-Up* step and confirm your decision in the prompt. 
+
+
+
+Your Spin To Win is now live! [You can review its reporting at any time.](https://privy.mintlify.app/docs/learn/displays/reporting-overview)
