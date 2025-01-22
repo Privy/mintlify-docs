@@ -10,13 +10,13 @@
     "headings": {
       "family": "Matter",
       "weight": 650,
-      "url": "https://efedorenko-shared.s3.amazonaws.com/MatterStandard-VF.woff2",
+      "url": "https://public-assets.privy.com/fonts/MatterStandard-VF.woff2",
       "format": "woff2"
     },
     "body": {
       "family": "Matter",
       "weight": 400,
-      "url": "https://efedorenko-shared.s3.amazonaws.com/MatterStandard-VF.woff2",
+      "url": "https://public-assets.privy.com/fonts/MatterStandard-VF.woff2",
       "format": "woff2"
     }
   },
