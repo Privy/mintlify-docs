@@ -7,11 +7,65 @@ description: "Explore all the different components that you can add to customize
 
 When customizing your displays, you have the ability to add new elements (i.e., images or countdown timers) and new form fields (i.e., Name or Phone Number) to capture important information at sign up. This article will walk you through each element and form field supported by Privy, how to add them to your display, and your options for customizing them.
 
-# Form Fields
+## Form Fields
 
 Form fields collect information from your contacts as they sign up so that you can engage with your audience via the correct channels and personalize your content whenever possible! Learn more about Privy's supported form fields below.
 
-## Adding and managing form fields
+<AccordionGroup>
+  <Accordion title="Email" defaultOpen={false}>
+    Collect your contact's primary email address. This is one of Privy's default form fields.
+
+
+
+    <Icon icon="triangle-exclamation" /> **Note**: Either an email OR a phone number field is required when collecting sign ups so that a new contact profile can be created, or an existing contact profile can be updated with the new sign up activity.
+  </Accordion>
+
+  <Accordion title="Phone" defaultOpen={false}>
+    Collect your contact's primary phone number. This is one of Privy's default form fields.
+
+
+
+    <Icon icon="circle-info" /> **Note:** By default, an SMS Opt-In field is added when you add a new Phone field. If you are not collecting contacts for SMS Marketing, you can delete the SMS Opt-In language.
+  </Accordion>
+
+  <Accordion title="SMS Opt-In" defaultOpen={false}>
+    The SMS Opt-In field is a legal disclaimer required when collecting SMS contacts.
+
+
+
+    <Icon icon="triangle-exclamation" /> **Note:** Any phone numbers collected without access to Privy Text, a verified toll-free number, or the SMS Opt-In form field will not be considered textable in Privy. [Learn more about SMS Consent here.](https://privy.mintlify.app/docs/learn/compliance/understand-sms-consent)
+  </Accordion>
+
+  <Accordion title="Name" defaultOpen={false}>
+    Collect your contact's full name, or first or last name only. This field is perfect if you're looking to [personalize your email content](https://privy.mintlify.app/docs/learn/content/personalization-tags)!
+  </Accordion>
+
+  <Accordion title="Checkbox" defaultOpen={false}>
+    A checkbox enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation.&#x20;
+
+
+
+    <Icon icon="lightbulb-on" /> Checkboxes are perfect for when a contact might need to choose multiple options (select all that apply).
+  </Accordion>
+
+  <Accordion title="Radio Button" defaultOpen={false}>
+    A radio button enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation.&#x20;
+
+
+
+    <Icon icon="lightbulb-on" /> Radio buttons are ideal for when you need a contact to select only one option.
+  </Accordion>
+
+  <Accordion title="Mini Quiz" defaultOpen={false}>
+    A mini quiz enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation.
+
+
+
+    <Icon icon="lightbulb-on" /> Mini quizzes are a fun way to make your displays interactive! They work similarly to radio buttons (best for single-select), but with a modern twist. They are most effective when used as the first step in a Multi-step display, because they can seamlessly transition to the next step on-click.
+  </Accordion>
+</AccordionGroup>
+
+### Adding and managing form fields
 
 To add a new form field on your display:
 
@@ -25,15 +79,13 @@ To add a new form field on your display:
   Once you've added a new form field, you can head to the **Style** settings on the right and select **Match Styles** to quickly copy the same appearance as your existing form fields!
 </Tip>
 
-
-
 To move your form field, simply drag and drop it around your display. To delete a form field, click directly on the desired field(s) and click the delete icon.
 
-## Customizing form fields
+### Customizing form fields
 
 To customize a form field's settings and appearance, click directly on the form field you want to edit. Its settings will open up on the right:
 
-* **Form field:** this will appear as the name of the form field you selected (i.e., Email or Mini Quiz). Choose whether or not this field is required and how it maps to your contact's profile.
+* **Form field settings:** this will appear as the name of the form field you selected (i.e., Email or Mini Quiz). Choose whether or not this field is required and how it maps to your contact's profile.
 
 * **Style:** customize your field's border, fill color, sizing, and spacing.
 
@@ -41,80 +93,78 @@ To customize a form field's settings and appearance, click directly on the form 
 
 * **Block:** customize the padding/spacing between your form field and other elements.
 
-### Email
-
-Email is one of Privy's default form fields. It collects the contact's primary email address.
-
-<Warning>
-  Either an email OR a phone number field is required when collecting sign ups so that a new contact profile can be created, or an existing contact profile can be updated with the new sign up activity.
-</Warning>
-
-### Phone
-
-Phone is one of Privy's default form fields. It collects the contact's primary phone number.
-
-<Note>
-  By default, an SMS Opt-In field is added when you add a new Phone field. If you are not collecting contacts for SMS Marketing, you can delete the SMS Opt-In language.
-</Note>
-
-### SMS Opt-In
-
-The SMS Opt-In field is a legal disclaimer required when collecting SMS contacts.
-
-<Warning>
-  Any phone numbers collected without access to Privy Text, a verified toll-free number, or the SMS Opt-In form field will not be considered textable in Privy. [Learn more about SMS Consent here.](https://privy.mintlify.app/docs/learn/compliance/understand-sms-consent)
-</Warning>
-
-### Name
-
-Collect your contact's full name, or first or last name only. This field is perfect if you're looking to [personalize your email content](https://privy.mintlify.app/docs/learn/content/personalization-tags)!
-
-### Checkbox
-
-A checkbox enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation. Checkboxes are perfect for when a contact might need to select multiple options (select all that apply).
-
-### Radio Button
-
-A radio button enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation. Radio buttons are ideal for when you need a contact to select only one option.
-
-### Mini Quiz
-
-A mini quiz enables you to collect custom fields at sign up — custom fields are stored in your contact's profile and can be used in segmentation.
-
-
-
-
-
-# Elements
+## Elements
 
 Elements allow you to customize your display's appearance to communicate clearly with your visitors and encourage them to take action. They can greatly influence how your traffic responds when they see your display. Below are the elements supported by Privy today. *Click on an element to jump ahead to its section in the article.*
 
-1. Text
+<AccordionGroup>
+  <Accordion title="Text" defaultOpen={false}>
+    Add a text box to your display to add an eye-catching header, communicate an incentive, and set expectations for what people are signing up for.
+  </Accordion>
 
-2. Image
+  <Accordion title="Image" defaultOpen={false}>
+    Add an image to the body of your display. Rather than a background image or layout image, this picture would appear in-line with other text and form fields.
 
-3. Button
 
-4. Product
 
-5. Countdown
+    <Icon icon="lightbulb-on" /> This is a great way to showcase your business' logo!
+  </Accordion>
 
-6. Line
+  <Accordion title="Button" defaultOpen={false}>
+    Add a call-to-action to your display. By default, our templates will include a button under your form field(s).&#x20;
 
-7. Spacer
 
-Adding and managing elements
 
-Text
+    <Icon icon="lightbulb-on" /> You might find it useful to add a "Keep Shopping" button on your display's Thank You Page to close the display after someone signs up.
+  </Accordion>
 
-Image
+  <Accordion title="Product" defaultOpen={false}>
+    Shopify and Shopify Plus accounts can add a Product block to their display. [Learn more about Product blocks here.](https://privy.mintlify.app/docs/learn/content/product-blocks#product-blocks-in-displays)
 
-Button
 
-Product
 
-Countdown
+    <Icon icon="lightbulb-on" /> These are effective to use on cross sell displays, or on your Thank You Page if you'd like to direct shoppers to add a specific item to cart.
+  </Accordion>
 
-Line
+  <Accordion title="Countdown" defaultOpen={false}>
+    Drive urgency by adding a countdown timer to your display. [Learn more about customizing countdown timers here.](https://privy.mintlify.app/docs/learn/content/countdown-timers#add-a-countdown-timer-to-a-display)
 
-Spacer
+
+
+    <Icon icon="lightbulb-on" /> Countdowns are great to use leading up to big sales, product launches, or special announcements.
+  </Accordion>
+
+  <Accordion title="Line" defaultOpen={false}>
+    Add a line to your display to break up your content. Customize the color, line thickness, and make it solid, dashed, or dotted!
+  </Accordion>
+
+  <Accordion title="Spacer" defaultOpen={false}>
+    Use a spacer in your display to quickly and easily add a little breathing room between your elements.
+  </Accordion>
+</AccordionGroup>
+
+### Adding and managing elements
+
+To add a new element on your display:
+
+* Head to [Convert > All Displays](https://dashboard.privy.com/displays). Select an existing display or [create a new one](https://privy.mintlify.app/docs/learn/displays/create-a-display).
+
+* In the editor, hover over the elements on your display and click the blue 'plus' icon to add a new element.
+
+* Select your desired option from the menu.&#x20;
+
+
+
+To move your element, simply drag and drop it around your display. To delete an element, click directly on it and click the delete icon.
+
+### Customizing elements
+
+To customize an element, click directly on the element you want to edit. Its settings will open up on the right:
+
+* **Element settings:** this will appear as the name of the element you selected (i.e., Button or Text). Customize any actions or settings shown here.
+
+* **Style:** customize your element's border, fill color, sizing, and spacing if applicable.
+
+* **Text:** customize your element's text, font, size, color, and alignment.
+
+* **Block:** customize the padding/spacing surrounding your element.
