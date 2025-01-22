@@ -1,0 +1,20 @@
+Docs: https://mintlify.com/docs/settings/global
+
+"colors": {
+  // The primary color.
+  // Used most often for highlighted content, section headers, accents, in light mode
+  "primary": "#254E5A", // primary-light -> blue spruce/900
+
+  // The primary color for dark mode.
+  // Used most often for highlighted content, section headers, accents, in dark mode
+  "light": "#E3E32B",   // primary-dark -> lemon/300
+
+  // The primary color for important buttons
+  "dark": "#254E5A",    // primary-light -> blue spruce/900
+
+  // The color of the background in both light and dark mode
+  "background": {
+    "dark": "#0D1D23",  // page-background-dark -> blue spruce/1000
+    "light": "#FFF"     // background-light -> white
+  }
+},

@@ -6,13 +6,18 @@
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
-  "backgroundImage": "/images/background.png",
   "font": {
     "headings": {
-      "family": "Figtree"
+      "family": "Matter",
+      "weight": 650,
+      "url": "https://efedorenko-shared.s3.amazonaws.com/MatterStandard-VF.woff2",
+      "format": "woff2"
     },
     "body": {
-      "family": "Figtree"
+      "family": "Matter",
+      "weight": 400,
+      "url": "https://efedorenko-shared.s3.amazonaws.com/MatterStandard-VF.woff2",
+      "format": "woff2"
     }
   },
   "seo": {
@@ -20,22 +25,18 @@
   },
  
   "colors": {
-    "primary": "#583eea",
-    "light": "#a194f7",
-    "dark": "#583eea",
-    "anchors": {
-      "from": "#583eea",
-      "to": "#583eea"
-    },
+    "primary": "#254E5A",
+    "light": "#E3E32B",
+    "dark": "#254E5A",
     "background": {
-      "dark": "#0b0a0f",
-      "light": "#f8f7f9"
+      "dark": "#0D1D23",
+      "light": "#FFF"
     }
   },
-  
- "theme": "venus",
-"layout": "sidenav",
-  
+  "theme": "quill",
+  "layout": "solidSidenav",
+  "rounded": "default",
+
   "topbar": {
     "style": "default"
   },
@@ -65,9 +66,7 @@
     "name": "Learn",
     "icon": "house",
     "iconType": "duotone"
-    
   },
-  
   "navigation": [
     
     {
