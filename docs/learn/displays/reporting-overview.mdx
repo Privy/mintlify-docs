@@ -5,21 +5,33 @@ description: "Review your displays' performance in your dashboard."
 icon: "chart-line-up"
 ---
 
-Once you've published displays in Privy, you can review a snapshot of your ongoing performance on your Privy Homepage, as well as the Reporting tab in your individual display(s).
+Once you've published displays in Privy, you can review a snapshot of your ongoing performance in your Privy dashboard, your Convert dashboard, and the Reporting tab in your individual display(s).
 
 ## Reviewing Overall Performance
 
-To start, head to **Convert > All Displays** to review your displays' performance in aggregate. The following information is available in this view:
+To start, head to [Convert > All Displays](https://dashboard.privy.com/displays) to review your displays' performance in aggregate.
 
 <img height="200" src="/images/displays/convert-overall-performance.png" />
 
-1. **Display Views:** The total number of display views since account creation. A view is registered when the display loads on a visitor's screen.&#x20;
+The following information is available in this view:
 
-2. **Total Signups:** The total number of display signups since account creation. A sign-up is registered when a visitor submits their information via a display. 
+<AccordionGroup>
+  <Accordion title="Views" defaultOpen={false}>
+    The total number of display views since account creation. A view is registered when the display loads on a visitor's screen.&#x20;
+  </Accordion>
 
-3. **Total Orders:** The total number of orders since account creation. An order is registered when someone signs up for your Privy display and then completes a purchase through your store using the same email address. Privy counts an order regardless of whether or not the customer used a coupon code during checkout.&#x20;
+  <Accordion title="Signups" defaultOpen={false}>
+    The total number of display signups since account creation. A sign-up is registered when a visitor submits their information via a display. 
+  </Accordion>
 
-4. **Display Revenue:** The total revenue collected from all contacts who signed up via a Privy display and subsequently made a purchase. This revenue attribution is only available to Privy accounts integrated with a Shopify or BigCommerce storefront.&#x20;
+  <Accordion title="Orders" defaultOpen={false}>
+    The total number of orders since account creation. An order is registered when someone signs up for your Privy display and then completes a purchase through your store using the same email address. Privy counts an order regardless of whether or not the customer used a coupon code during checkout.&#x20;
+  </Accordion>
+
+  <Accordion title="Revenue" defaultOpen={false}>
+    The total revenue collected from all contacts who signed up via a Privy display and subsequently made a purchase. This revenue attribution is only available to Privy accounts integrated with a Shopify or BigCommerce storefront.&#x20;
+  </Accordion>
+</AccordionGroup>
 
 ## Reviewing display-specific data
 
@@ -33,11 +45,19 @@ Each display's performance is previewed via its display card on the Convert dash
 
 The metrics that may be displayed in this card preview are: 
 
-1. **Views:** the total number of views this display has received. A view is registered when the display loads on a visitor's screen. 
+<AccordionGroup>
+  <Accordion title="Views" defaultOpen={false}>
+    The total number of views this display has received. *A view is registered when the display loads on a visitor's screen.* 
+  </Accordion>
 
-2. **Signups:** the total number of visitors that signed up by submitting a signup form.
+  <Accordion title="Signups" defaultOpen={false}>
+    The total number of visitors that signed up by submitting a signup form.
+  </Accordion>
 
-3. **Orders:** the total number of orders placed by visitors who completed a signup.
+  <Accordion title="Orders" defaultOpen={false}>
+    The total number of orders placed by visitors who completed a signup.
+  </Accordion>
+</AccordionGroup>
 
 ### View data on Display Reports
 
@@ -47,14 +67,30 @@ After clicking on a specific display card, additional reporting data will appear
 
 **Reporting Period:** Select a custom timeframe by clicking on the dates and compare to the previous period or the same period in the prior year. You can also turn off the comparison period by clicking "Show Previous Period" below the chart.
 
-Each metric card (Views, Signups and Orders) is clickable. When clicked, the chart updates to show historical information for that metric. You can also toggle between the total number and the rate, when looking at Signups and Orders.
+<Tip>
+  Each metric card (Views, Signups and Orders) is clickable. When clicked, the chart updates to show historical information for that metric. You can also toggle between the total number and the rate, when looking at Signups and Orders.
+</Tip>
 
-1. **Views**: the number of times your display was shown to visitors on your site.
+The metrics that may be displayed on this Reporting page are: 
 
-2. **Signups**: the number of visitors that signed up by submitting a signup form.
+<AccordionGroup>
+  <Accordion title="Views" defaultOpen={false}>
+    The number of times your display was shown to visitors on your site.
+  </Accordion>
 
-3. **Signup Rate**: the percentage of views that resulted in a signup event.
+  <Accordion title="Signups" defaultOpen={false}>
+    The number of visitors that signed up by submitting a signup form.
+  </Accordion>
 
-4. **Orders**: the number of orders placed by visitors who completed a signup.
+  <Accordion title="Signup Rate" defaultOpen={false}>
+    The percentage of views that resulted in a signup event.
+  </Accordion>
 
-5. **Order Rate**: the percentage of orders placed by visitors who completed a signup.
+  <Accordion title="Orders" defaultOpen={false}>
+    The number of orders placed by visitors who completed a signup.
+  </Accordion>
+
+  <Accordion title="Order Rate" defaultOpen={false}>
+    The percentage of orders placed by visitors who completed a signup.
+  </Accordion>
+</AccordionGroup>
