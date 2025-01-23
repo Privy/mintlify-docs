@@ -96,7 +96,9 @@
                     "docs/learn/displays/classic-designer/landing-page",
                     "docs/learn/displays/classic-designer/embedded-form",
                     "docs/learn/displays/classic-designer/banner-display",
-                    "docs/learn/displays/classic-designer/bar-display"
+                    "docs/learn/displays/classic-designer/bar-display",
+                    "docs/learn/displays/free-shipping-bar",
+                    "docs/learn/displays/cross-sell"
                   ]
                 },
             "docs/learn/displays/create-a-display", 
