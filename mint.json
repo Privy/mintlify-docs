@@ -311,7 +311,7 @@
         {
           "group": "Segmentation",
           "pages": [
-            "docs/guides/segmentation/overview"
+            "docs/guides/segmentation/overview",
             "docs/guides/segmentation/what-segments-are-right-for-me"
           ]
         },
