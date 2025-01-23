@@ -225,7 +225,7 @@
                 },
                 {
                   "group": "SMS",
-                  "icon": "mobile"
+                  "icon": "mobile",
                   "pages": [
                       "docs/learn/integrations/attentive",
                       "docs/learn/integrations/postscript"
