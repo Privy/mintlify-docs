@@ -1,0 +1,107 @@
+---
+sidebarTitle: "Cross Sell"
+title: "Use a Cross Sell Display"
+description: "Increase order value and enhance your on-site experience by suggesting products based on your shoppers' behavior."
+---
+
+A Cross Sell encourages or incentivizes customers to add additional items or upgrades to their cart before they finalize their purchase. When a Cross Sell keeps the customer's experience and goals in mind, it has the potential to benefit both you and the customer tremendously. You can increase your average order value and revenue, while the customer receives an add-on that complements their current need.
+
+<Warning>
+  **Note:** This feature is only available to Privy accounts integrated with BigCommerce and Shopify storefronts.
+</Warning>
+
+## Create a new Cross Sell display
+
+To create a Cross Sell display:
+
+* Navigate to [**Convert** > **All Displays**](https://dashboard.privy.com/displays) and click the **Create** **New Display** button. 
+
+* Select the **Increase Order Value** filter on the left side menu of the *Templates* dashboard.
+
+* Select one of Privy's “Cross Sell” templates and click **Get started**.
+
+
+
+## Customize your Cross Sell
+
+Now that you’ve selected your template, it’s time to select which product you want to promote, and customize the display's appearance.
+
+* Edit your display's background color, sizing, and display type on the right side of the editor.
+
+* To add new elements, hover over your display's content and click the blue 'plus' sign, then select the desired element from the menu and customize.
+
+<Tip>
+  Need help customizing your display? [Check out this resource.](https://privy.mintlify.app/docs/learn/displays/create-a-display#customize-your-displays-appearance)
+</Tip>
+
+### Choose your product
+
+By default, your template will have a [Product block](https://privy.mintlify.app/docs/learn/content/product-blocks#product-blocks-in-displays) included. To select your product, hover over the elements and click. On the right side, you'll be able to search and select which Shopify product you want to promote.
+
+
+
+Once you select your product, Privy will automatically pull in its title, description, and price information. It will also auto-fill the button's URL to add this product to cart on-click. You can customize how much of this information you want visible by checking and unchecking the boxes on the right.
+
+To edit a specific component of your product block (i.e., the text or the image), click directly on the element you want to change and customize its settings on the right.
+
+<Tip>
+  Need help customizing your product block? [Check out this resource.](https://privy.mintlify.app/docs/learn/content/product-blocks#product-blocks-in-displays)
+</Tip>
+
+Don't forget to **Save** your changes!
+
+## Edit your settings
+
+When you’re happy with your display’s design, you’ll want to head over to **Settings** to set up your targeting so that your Cross Sell shows at the right time to the right audience.
+
+### Triggers and visibility
+
+For a Cross Sell, we want to set the "Time on page" trigger setting to **Immediately.** All other settings can remain the same!
+
+
+
+### Audience Targeting
+
+There's a few different approaches you can take to Audience Targeting for your Cross Sell. Select which goal you have in mind for this display to reveal which targeting you should set up:
+
+<AccordionGroup>
+  <Accordion title="I want to suggest a product that pairs nicely with what the customer added to cart." defaultOpen={false}>
+    Add a new targeting condition for **`Cart Product IDs`** + **`contains any of`** and then select which product(s) you want to include.
+  </Accordion>
+
+  <Accordion title="My shopper is close to free shipping, so I want to get them over that threshold." defaultOpen={false}>
+    Add a new targeting condition for **`Cart Value`** + **`is greater than or equal to`** and then enter a value.
+
+
+
+    Add a second targeting condition for **`Cart Value`** + **`is less than`** and then enter your free shipping threshold.
+
+
+
+    <Icon icon="lightbulb-on" /> By setting up these two conditions together, you are setting up a Cart Value "range" that you want to trigger this display. This will prevent carts that already qualify for free shipping from seeing it.
+  </Accordion>
+
+  <Accordion title="I want to promote a bundle that contains an item that my shopper added to cart." defaultOpen={false}>
+    Add a new targeting condition for **`Cart Product IDs`** + **`contains any of`** and then select which product(s) you want to include.
+  </Accordion>
+</AccordionGroup>
+
+Feel free to add any other audience targeting if you'd like to restrict this display from appearing on certain pages or to certain audiences. [Learn more about our targeting conditions here.](https://privy.mintlify.app/docs/learn/displays/settings-overview)
+
+<Tip>
+  To avoid promoting a product(s) to a person who might already have it in their carts, just add the targeting condition **`Cart Product IDs`** + **`does not contain any of`** and select the product(s) you are showing on your display.
+</Tip>
+
+Don't forget to **Save** your changes.
+
+## Launch your Cross Sell
+
+Once you’ve customized your Cross Sell’s appearance and finalized your targeting, you’re ready to launch your display. Click **Activate** in the upper right corner.
+
+## Review your performance
+
+Now that your Cross Sell is live, [you can review its performance](https://privy.mintlify.app/docs/learn/displays/reporting-overview) at any time from your Convert dashboard, or the display's Reporting page.
+
+<Warning>
+  Since your Cross Sell does not collect sign ups, only display Views will be available in reporting.
+</Warning>
