@@ -20,7 +20,7 @@ To create a Cross Sell display:
 
 * Select one of Privy's “Cross Sell” templates and click **Get started**.
 
-
+<video autoPlay muted loop playsInline className="create-new-cross-sell" src="/images/displays/cross-sell-create.mp4" />
 
 ## Customize your Cross Sell
 
@@ -38,7 +38,7 @@ Now that you’ve selected your template, it’s time to select which product yo
 
 By default, your template will have a [Product block](https://privy.mintlify.app/docs/learn/content/product-blocks#product-blocks-in-displays) included. To select your product, hover over the elements and click. On the right side, you'll be able to search and select which Shopify product you want to promote.
 
-
+<video autoPlay muted loop playsInline className="cross-sell-product" src="/images/displays/cross-sell-choose-product.mp4" />
 
 Once you select your product, Privy will automatically pull in its title, description, and price information. It will also auto-fill the button's URL to add this product to cart on-click. You can customize how much of this information you want visible by checking and unchecking the boxes on the right.
 
@@ -58,7 +58,7 @@ When you’re happy with your display’s design, you’ll want to head over to�
 
 For a Cross Sell, we want to set the "Time on page" trigger setting to **Immediately.** All other settings can remain the same!
 
-
+<video autoPlay muted loop playsInline className="cross-sell-trigger" src="/images/displays/cross-sell-trigger.mp4" />
 
 ### Audience Targeting
 
@@ -67,22 +67,21 @@ There's a few different approaches you can take to Audience Targeting for your C
 <AccordionGroup>
   <Accordion title="I want to suggest a product that pairs nicely with what the customer added to cart." defaultOpen={false}>
     Add a new targeting condition for **`Cart Product IDs`** + **`contains any of`** and then select which product(s) you want to include.
+    img="/images/displays/cross-sell-cartproduct.png"
   </Accordion>
 
   <Accordion title="My shopper is close to free shipping, so I want to get them over that threshold." defaultOpen={false}>
     Add a new targeting condition for **`Cart Value`** + **`is greater than or equal to`** and then enter a value.
-
-
-
     Add a second targeting condition for **`Cart Value`** + **`is less than`** and then enter your free shipping threshold.
 
-
+    img="/images/displays/cross-sell-cartvalue.png"
 
     <Icon icon="lightbulb-on" /> By setting up these two conditions together, you are setting up a Cart Value "range" that you want to trigger this display. This will prevent carts that already qualify for free shipping from seeing it.
   </Accordion>
 
   <Accordion title="I want to promote a bundle that contains an item that my shopper added to cart." defaultOpen={false}>
     Add a new targeting condition for **`Cart Product IDs`** + **`contains any of`** and then select which product(s) you want to include.
+    img="/images/displays/cross-sell-cartproduct.png"
   </Accordion>
 </AccordionGroup>
 
@@ -97,6 +96,8 @@ Don't forget to **Save** your changes.
 ## Launch your Cross Sell
 
 Once you’ve customized your Cross Sell’s appearance and finalized your targeting, you’re ready to launch your display. Click **Activate** in the upper right corner.
+
+<video autoPlay muted loop playsInline className="launch-cross-sell" src="/images/displays/cross-sell-publish.mp4" />
 
 ## Review your performance
 
