@@ -273,7 +273,7 @@
                   "group": "Email Settings",
                   "icon": "envelope",
                   "pages": [
-                      "docs/learn/account-settings-and-billing/email-settings/sender-options"
+                      "docs/learn/account-settings-and-billing/email-settings/sender-options",
                       {
                         "group": "Sending Domains",
                         "pages": [
