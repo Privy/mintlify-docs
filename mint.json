@@ -250,6 +250,7 @@
         {
           "group": "Account + Billing",
           "pages": [
+            "docs/learn/account-settings-and-billing/overview",
                 {
                   "group": "Plan + Billing",
                   "icon": "file-invoice-dollar",
@@ -286,7 +287,7 @@
                       }
                   ]
                 },
-            "docs/learn/account-settings-and-billing/support-faq/overview"    
+            "docs/learn/account-settings-and-billing/support-faq"    
           ]
         }
       ]
