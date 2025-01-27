@@ -273,8 +273,17 @@
                   "group": "Email Settings",
                   "icon": "envelope",
                   "pages": [
-                      "docs/learn/account-settings-and-billing/email-settings/sender-options",
-                      "docs/learn/account-settings-and-billing/email-settings/sending-domains"
+                      "docs/learn/account-settings-and-billing/email-settings/sender-options"
+                      {
+                        "group": "Sending Domains",
+                        "pages": [
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/shopify-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/godaddy-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/namecheap-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/domain-com-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/wix-sending-domain"
+                        ]
+                      }
                   ]
                 },
             "docs/learn/account-settings-and-billing/support-faq/overview"    
