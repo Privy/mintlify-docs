@@ -1,4 +1,129 @@
 ---
 title: "Create a Bar Display"
 sidebarTitle: "Bars"
+description: "Collect emails or make an announcement with a bar at the top or bottom of your website."
 ---
+
+A Bar display snaps to the top or bottom of your web page and can remain visible as your visitors navigate around. It’s a great way to get your visitors' attention without interrupting their experience, and it takes up less real estate than a Banner display would. This display is perfect for collecting a single field of information, such as an email address, or just displaying a promotional message like an ongoing sale. 
+
+  <img height="200" src="/images/displays/bar-example.png" />
+
+<Info>
+  Looking to use our Free Shipping Bar? Check out this guide instead.
+</Info>
+
+## Create a new Bar display
+
+To create a new Bar:
+
+* Navigate to [Convert > All Displays](https://dashboard.privy.com/displays).
+
+* Click **Create new display**. This will open our Templates page.
+
+* Our Embedded Forms need to be built using our Classic display builder, so navigate to this builder by selecting the **Get started** option in the lower left corner of your screen.
+
+* Name your display in the following prompt, specify whether you want to collect email, phone, or both, and select **Create display**.
+
+<video autoPlay muted loop playsInline className="create-bar" src="/images/displays/bar-create.mp4" />
+
+<Tip>
+  Not planning on collecting email or phone number? We'll show you how to remove these form fields below.
+</Tip>
+
+In the *Create* step of the Classic display builder, you can click to edit:
+
+* **Form Fields:** what information you want to collect at sign up. *If you do not plan on collecting any information, uncheck the "Enable Form?" checkbox as shown below.*
+
+* **Compliance:** whether you want new sign ups to go through a Single Opt-In or Double Opt-In process.
+
+* **Validations:** set any rules to restrict who may sign up for your display.
+
+<video autoPlay muted loop playsInline className="disable-form-fields" src="/images/displays/disable-form-fields.mp4" />
+
+* Click to **Add a display**.
+
+* On the following screen, select **Bar** from the left side. Browse the templates and choose which one you’d like to start with. Press **Choose selected** in the upper right corner to open the designer.
+
+<video autoPlay muted loop playsInline className="choose-bar-template" src="/images/displays/bar-choose-template.mp4" />
+
+## Customize your Bar display
+
+Now that you’ve selected a template to start from, it’s time to customize your display’s appearance.
+
+<video autoPlay muted loop playsInline className="edit-bar-design" src="/images/displays/bar-customize.mp4" />
+
+### Add new elements
+
+To add a text box, click **+ Add new element** on the left.
+
+### Edit existing elements
+
+To edit existing elements, click directly on them in your display, or select them from the menu on the left. You can edit their settings, duplicate, or delete the element on the left.
+
+Under your *Elements* on the left, you can also edit your bar's background and specify whether you want the bar to be positioned at the top or bottom of your page.
+
+Once you’re happy with your design, press **Save & Close** in the upper right corner.
+
+## Customize your Thank You Page
+
+After saving your changes, you’ll be brought back to the *Create* step of your display builder. If you're collecting sign ups with your bar, you’ll want to customize its Thank You Page to confirm your contact’s sign up.
+
+* Scroll down and click to edit your **Thank You Page Design**.
+
+* If you’re offering a coupon code in exchange for a sign up, be sure to include the `{{ signup.coupon_code }}` merge tag on your Thank You Page.
+
+## Edit your settings
+
+### Attach a coupon
+
+If you are offering a coupon code in exchange for a sign up, be sure to attach your coupon to your display:
+
+* In your display’s *Create* step, scroll to edit the **Coupon** section and select the desired Coupon from the dropdown menu. **Save.**
+
+### Targeting
+
+To customize your Bar’s settings and audience targeting, navigate to the *Target* step of the builder:
+
+  <img height="200" src="/images/displays/bar-target.png" />
+
+1. **When To Show It:** determine when and how your display triggers.
+
+2. **Who To Show It To:** determine who is eligible to view your display.
+
+3. **How Long To Show It:** specify whether this display should be Ongoing, or set to run on a fixed schedule.
+
+## Edit your Follow-Up Actions
+
+Once you’ve finalized your settings and audience targeting, you’ll want to make sure that you’re properly following up with your new sign up. Head to the *Follow-Up* step of your builder.
+
+<img height="200" src="/images/displays/bar-follow-up.png" />
+
+<AccordionGroup>
+  <Accordion title="After Signup Email" defaultOpen={false}>
+    Click on your After Signup Email to view and edit your template, subject line, and sender info. [Learn more about our drag-and-drop email editor.](https://privy.mintlify.app/docs/learn/email-campaigns/email-templates) Make sure that you **Publish** your email so that it sends to new sign ups.
+  </Accordion>
+
+  <Accordion title="Create a series" defaultOpen={false}>
+    If you want to create a series of more than one After Signup Email for this specific display, select this option.
+  </Accordion>
+
+  <Accordion title="Sync signups" defaultOpen={false}>
+    If you're syncing new sign ups to a [Linked Account](https://privy.mintlify.app/docs/learn/integrations/overview-integrations), be sure to add a sync rule here.
+  </Accordion>
+
+  <Accordion title="Send Text Message" defaultOpen={false}>
+    If you're on the Growth Plan and you're collecting SMS contacts with this display, you can create an After Signup Text to deliver to new contacts after they complete their Double Opt-In.
+  </Accordion>
+
+  <Accordion title="Notifications" defaultOpen={false}>
+    Enable or disable real-time notifications for your users. These notifications will alert the user of new display signups immediately. **Save**. 
+  </Accordion>
+</AccordionGroup>
+
+## Launch your Bar display
+
+Once you’ve finalized your design, targeting, and follow-up actions, select the **Publish** button at the upper right of the *Follow-Up* step and confirm your decision in the prompt. 
+
+  <img height="200" src="/images/displays/bar-launch.png" />
+
+Your Bar is now live on your site! [You can review its reporting at any time.](https://privy.mintlify.app/docs/learn/displays/reporting-overview)

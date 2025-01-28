@@ -96,7 +96,9 @@
                     "docs/learn/displays/classic-designer/landing-page",
                     "docs/learn/displays/classic-designer/embedded-form",
                     "docs/learn/displays/classic-designer/banner-display",
-                    "docs/learn/displays/classic-designer/bar-display"
+                    "docs/learn/displays/classic-designer/bar-display",
+                    "docs/learn/displays/free-shipping-bar",
+                    "docs/learn/displays/cross-sell"
                   ]
                 },
             "docs/learn/displays/create-a-display", 
@@ -202,6 +204,7 @@
             "docs/learn/integrations/integrations-faq",
                 {
                   "group": "Ecommerce",
+                  "icon": "globe",
                   "pages": [
                       "docs/learn/integrations/shopify",
                       "docs/learn/integrations/bigcommerce",
@@ -214,6 +217,7 @@
                 },
                 {
                   "group": "Email Service Providers",
+                  "icon": "envelope",
                   "pages": [
                       "docs/learn/integrations/klaviyo",
                       "docs/learn/integrations/mailchimp"
@@ -221,6 +225,7 @@
                 },
                 {
                   "group": "SMS",
+                  "icon": "mobile",
                   "pages": [
                       "docs/learn/integrations/attentive",
                       "docs/learn/integrations/postscript"
@@ -228,12 +233,14 @@
                 },
                 {
                   "group": "Rewards & Loyalty",
+                  "icon": "gift",
                   "pages": [
                       "docs/learn/integrations/smile"
                   ]
                 },
                 {
                   "group": "Ads & Analytics",
+                  "icon": "rectangle-ad",
                   "pages": [
                       "docs/learn/integrations/enable-google-analytics"
                   ]
@@ -243,6 +250,7 @@
         {
           "group": "Account + Billing",
           "pages": [
+            "docs/learn/account-settings-and-billing/overview",
                 {
                   "group": "Plan + Billing",
                   "icon": "file-invoice-dollar",
@@ -267,10 +275,19 @@
                   "icon": "envelope",
                   "pages": [
                       "docs/learn/account-settings-and-billing/email-settings/sender-options",
-                      "docs/learn/account-settings-and-billing/email-settings/sending-domains"
+                      {
+                        "group": "Sending Domains",
+                        "pages": [
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/shopify-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/godaddy-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/namecheap-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/domain-com-sending-domain",
+                          "docs/learn/account-settings-and-billing/email-settings/sending-domains/wix-sending-domain"
+                        ]
+                      }
                   ]
                 },
-            "docs/learn/account-settings-and-billing/support-faq/overview"    
+            "docs/learn/account-settings-and-billing/support-faq"    
           ]
         }
       ]
@@ -283,31 +300,36 @@
         {
           "group": "List Growth",
           "pages": [
-             "docs/guides/list-growth/discount-free-strategy"
+            "docs/guides/list-growth/overview", 
+            "docs/guides/list-growth/cart-saver-strategy",
+            "docs/guides/list-growth/mini-quiz-strategy"
           ]
         },
         {
           "group": "Automations",
           "pages": [
-            "docs/guides/automations/intro-automations"
+            "docs/guides/automations/overview",
+            "docs/guides/automations/advanced-automations"
           ]
         },
         {
           "group": "Campaigns",
           "pages": [
-            "docs/guides/campaigns/campaign_strategies"
+            "docs/guides/campaigns/overview"
           ]
         },
         {
           "group": "Segmentation",
           "pages": [
-            "docs/guides/segmentation/segments-101"
+            "docs/guides/segmentation/overview",
+            "docs/guides/segmentation/what-segments-are-right-for-me"
           ]
         },
         {
           "group": "Deliverability",
           "pages": [
-            "docs/guides/deliverability/deliverability-101"
+            "docs/guides/deliverability/overview",
+            "docs/guides/deliverability/re-engagement-emails"
           ]
         }
       ]
