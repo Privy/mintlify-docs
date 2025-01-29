@@ -338,5 +338,603 @@
   "footerSocials": {
     "x": "https://x.com/privy",
     "linkedin": "https://www.linkedin.com/company/privy"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/article/488-create-a-welcome-discount-display",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/372-change-a-displays-type",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/529-change-a-displays-background",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/535-manage-display-tabs",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/545-set-up-an-after-signup-email",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/513-set-up-an-after-signup-text",
+      "destination": "/docs/learn/displays/create-a-display"
+    },
+    {
+      "source": "/article/302-add-images-to-displays-and-emails",
+      "destination": "/docs/learn/displays/form-fields-and-elements"
+    },
+    {
+      "source": "/article/464-create-a-countdown-timer-with-signup",
+      "destination": "/docs/learn/displays/form-fields-and-elements"
+    },
+    {
+      "source": "/article/175-run-an-a-b-test-on-a-display",
+      "destination": "/docs/learn/displays/ab-test-displays"
+    },
+    {
+      "source": "/article/508-create-a-cross-sell-display",
+      "destination": "/docs/learn/displays/cross-sell"
+    },
+    {
+      "source": "/article/365-create-a-free-shipping-bar",
+      "destination": "/docs/learn/displays/free-shipping-bar"
+    },
+    {
+      "source": "/article/489-create-a-cart-saver-display",
+      "destination": "/docs/guides/list-growth/cart-saver-strategy"
+    },
+     {
+      "source": "/article/465-create-an-exit-intent-display",
+      "destination": "/docs/guides/list-growth/cart-saver-strategy"
+    },
+    {
+      "source": "/article/499-create-an-embedded-form",
+      "destination": "/docs/learn/displays/classic-designer/embedded-form"
+    },
+     {
+      "source": "/article/511-add-a-form-to-your-shopify-footer",
+      "destination": "/docs/learn/displays/classic-designer/embedded-form"
+    },
+    {
+      "source": "/article/527-add-a-form-to-your-shopify-page",
+      "destination": "/docs/learn/displays/classic-designer/embedded-form"
+    },
+    {
+      "source": "/article/514-create-a-landing-page",
+      "destination": "/docs/learn/displays/classic-designer/landing-page"
+    },
+    {
+      "source": "/article/481-create-a-banner-display/",
+      "destination": "/docs/learn/displays/classic-designer/banner-display"
+    },
+     {
+      "source": "/article/474-create-a-bar-display/",
+      "destination": "/docs/learn/displays/classic-designer/banner-display"
+    },
+     {
+      "source": "/article/518-create-a-spin-to-win-display/",
+      "destination": "/docs/learn/displays/classic-designer/spin-to-win"
+    },
+     {
+      "source": "/article/500-add-coupons-to-a-spin-to-win/",
+      "destination": "/docs/learn/displays/classic-designer/spin-to-win"
+    },
+    {
+      "source": "/article/504-use-audience-targeting-conditions",
+       "destination": "/docs/learn/displays/settings-overview"
+    },
+    {
+      "source": "/article/446-use-display-triggers",
+      "destination": "/docs/learn/displays/settings-overview"
+    },
+     {
+      "source": "/article/537-automatically-apply-coupon-codes",
+      "destination": "/docs/learn/displays/settings-overview"
+    },
+    {
+      "source": "/article/183-schedule-a-display",
+      "destination": "/docs/learn/displays/settings-overview"
+    },
+    {
+       "source": "/article/127-why-can-t-i-see-my-display",
+      "destination": "/docs/learn/displays/settings-overview"
+     },
+    {
+      "source": "/article/40-my-after-signup-email-isnt-sending",
+       "destination": "/docs/learn/displays/settings-overview"
+    },
+    {
+       "source": "/article/362-use-form-validations-in-displays",
+      "destination": "/docs/learn/displays/settings-overview"
+     },
+    {
+       "source": "/article/333-sync-coupons-to-your-esp",
+      "destination": "/docs/learn/displays/settings-overview"
+    },
+    {
+       "source": "/article/118-overview-of-form-fields",
+      "destination":"/docs/learn/displays/settings-overview"
+    },
+     {
+      "source":"/article/63-use-hidden-form-fields",
+      "destination":"/docs/learn/displays/settings-overview"
+    },
+    {
+      "source": "/article/209-https-to-http-referrer-loss",
+      "destination": "/docs/learn/displays/https-to-http-refferer-loss"
+    },
+    {
+      "source": "/article/142-use-liquid-in-conversion-javascript",
+      "destination":"/docs/learn/displays/use-liquid-in-conversion-javascript"
+    },
+    {
+      "source":"/article/448-cookies-set-in-a-visitors-browser",
+      "destination":"/docs/learn/displays/cookies-set-in-a-visitors-browser#cookies-set-in-a-visitors-browser"
+    },
+    {
+       "source":"/article/25-overview-of-privy-reports",
+       "destination":"/docs/learn/displays/reporting-overview"
+    },
+    {
+       "source":"/article/543-analyze-display-clicks",
+       "destination":"/docs/learn/displays/reporting-overview"
+    },
+     {
+       "source":"/article/349-analyze-display-performance",
+       "destination":"/docs/learn/displays/reporting-overview"
+    },
+     {
+       "source":"/article/184-what-does-privy-consider-an-order",
+      "destination":"/docs/learn/displays/reporting-overview"
+     },
+    {
+       "source":"/article/455-send-a-broadcast-text",
+        "destination":"/docs/learn/sms-campaigns/send-a-text-campaign"
+    },
+     {
+      "source":"/article/462-send-newsletter-emails",
+      "destination":"/docs/learn/email-campaigns/send-an-email-campaign"
+    },
+     {
+      "source":"/article/450-use-the-drag-and-drop-email-editor",
+      "destination":"/docs/learn/email-campaigns/email-templates"
+    },
+     {
+      "source":"/article/470-create-and-manage-email-templates",
+      "destination":"/docs/learn/email-campaigns/email-templates"
+    },
+     {
+      "source":"/article/484-use-custom-and-smart-segments-in-email",
+      "destination":"/docs/learn/email-campaigns/segmentation"
+    },
+    {
+      "source":"/article/449-analyze-email-performance",
+       "destination":"/docs/learn/email-campaigns/email-campaign-reporting"
+    },
+    {
+      "source":"/article/552-understanding-privys-attribution-model",
+      "destination":"/docs/learn/email-campaigns/email-campaign-reporting"
+    },
+    {
+      "source":"/article/68-send-abandoned-cart-texts",
+      "destination":"/docs/learn/automations/abandoned-cart-text"
+    },
+     {
+       "source":"/article/350-who-gets-abandoned-cart-texts",
+       "destination":"/docs/learn/automations/abandoned-cart-text"
+    },
+    {
+        "source":"/article/515-send-abandoned-cart-emails",
+      "destination":"/docs/learn/automations/abandoned-cart-email"
+    },
+     {
+        "source":"/article/191-who-gets-abandoned-cart-emails",
+        "destination":"/docs/learn/automations/abandoned-cart-email"
+     },
+    {
+      "source":"/article/490-send-purchase-follow-up-emails",
+       "destination":"/docs/learn/automations/purchase-follow-up"
+    },
+    {
+       "source":"/article/492-send-a-welcome-series",
+      "destination":"/docs/learn/automations/welcome-email"
+    },
+     {
+       "source":"/article/363-send-a-customer-winback-email",
+      "destination":"/docs/learn/automations/customer-winback"
+    },
+    {
+        "source":"/article/72-create-and-manage-coupon-codes",
+      "destination":"/docs/learn/content/coupon-codes"
+    },
+     {
+       "source":"/article/28-insert-a-coupon-into-your-content",
+      "destination":"/docs/learn/content/coupon-codes"
+    },
+    {
+       "source":"/article/156-master-coupon-vs-unique-coupon",
+       "destination":"/docs/learn/content/coupon-codes"
+    },
+    {
+        "source":"/article/554-insert-a-coupon-into-your-email",
+      "destination":"/docs/learn/content/coupon-codes"
+    },
+     {
+      "source":"/article/301-add-images-to-displays-and-emails",
+       "destination":"/docs/learn/content/adding-images-to-emails"
+    },
+    {
+       "source":"/article/52-edit-an-email-image",
+       "destination":"/docs/learn/content/adding-images-to-emails"
+    },
+    {
+      "source":"/article/86-web-safe-fonts-faq",
+        "destination":"/docs/learn/content/web-safe-fonts"
+    },
+     {
+      "source":"/article/497-use-custom-fonts",
+       "destination":"/docs/learn/content/use-custom-fonts"
+    },
+    {
+       "source":"/article/78-use-product-blocks-in-newsletters",
+      "destination":"/docs/learn/content/product-blocks"
+    },
+    {
+        "source":"/article/347-add-an-order-summary-to-emails",
+       "destination":"/docs/learn/content/order-summaries-in-email"
+    },
+    {
+      "source":"/article/538-personalize-your-emails",
+      "destination":"/docs/learn/content/personalization-tags"
+    },
+     {
+      "source":"/article/160-how-to-style-the-unsubscribe-link",
+      "destination":"/docs/learn/content/how-to-style-unsubscribe-link"
+    },
+     {
+       "source":"/article/74-my-emails-look-different-in-outlook",
+       "destination":"/docs/learn/content/my-emails-look-different-in-outlook"
+    },
+    {
+       "source":"/article/172-use-an-html-email-template",
+        "destination":"/docs/learn/content/use-html-email-template"
+    },
+    {
+       "source":"/article/342-view-and-filter-contact-profiles",
+       "destination":"/docs/learn/contact-management/view-and-filter-contacts"
+    },
+    {
+       "source":"/article/306-import-and-manage-contacts",
+      "destination":"/docs/learn/contact-management/import-and-manage-contacts"
+    },
+    {
+       "source":"/article/159-how-to-export-your-contacts",
+       "destination":"/docs/learn/contact-management/export-contacts"
+    },
+     {
+       "source":"/article/534-list-hygiene-upload-to-unsubscribe",
+       "destination":"/docs/learn/contact-management/unsubscribe-contacts"
+    },
+    {
+       "source":"/article/307-unsubscribe-contacts",
+       "destination":"/docs/learn/contact-management/unsubscribe-contacts"
+    },
+    {
+       "source":"/article/475-add-privy-tags-to-your-contacts",
+      "destination":"/docs/learn/contact-management/tag-contacts"
+    },
+     {
+       "source":"/article/485-understand-double-opt-in-doi",
+      "destination":"/docs/learn/contact-management/double-opt-in"
+    },
+    {
+       "source":"/article/478-list-hygiene-clean-your-email-list",
+       "destination":"/docs/learn/contact-management/list-hygiene"
+    },
+    {
+      "source":"/article/84-list-hygiene-remove-bots",
+       "destination":"/docs/learn/contact-management/remove-bots"
+    },
+    {
+        "source":"/article/177-overview-privy-integrations",
+      "destination":"/docs/learn/integrations/overview-integrations"
+    },
+    {
+       "source":"/article/193-does-privy-work-with-spas",
+        "destination":"/docs/learn/integrations/does-privy-work-with-spa"
+    },
+    {
+        "source":"/article/358-sync-contacts-to-postscript",
+        "destination":"/docs/learn/integrations/postscript"
+    },
+     {
+       "source":"/article/437-sync-contacts-to-shopify",
+      "destination":"/docs/learn/integrations/sync-contacts-to-shopify"
+    },
+    {
+       "source":"/article/507-install-privy-on-shopify",
+       "destination":"/docs/learn/integrations/shopify"
+    },
+    {
+        "source":"/article/71-sync-contacts-to-klaviyo",
+        "destination":"/docs/learn/integrations/klaviyo"
+    },
+    {
+       "source":"/article/517-sync-contacts-to-mailchimp",
+       "destination":"/docs/learn/integrations/mailchimp"
+    },
+    {
+       "source":"/article/293-sync-contacts-to-sendgrid",
+        "destination":"/docs/learn/integrations/sync-to-sendgrid"
+    },
+     {
+      "source":"/article/294-sync-contacts-to-adroll",
+      "destination":"/docs/learn/integrations/sync-to-adroll"
+    },
+     {
+       "source":"/article/286-install-privy-on-hubspot",
+      "destination":"/docs/learn/integrations/hubspot"
+    },
+    {
+       "source":"/article/320-review-your-results-in-hubspot",
+       "destination":"/docs/learn/integrations/review-results-in-hubspot"
+    },
+    {
+        "source":"/article/288-install-privy-on-wordpress-org",
+        "destination":"/docs/learn/integrations/wordpress"
+    },
+    {
+       "source":"/article/285-install-privy-on-weebly",
+       "destination":"/docs/learn/integrations/weebly"
+    },
+     {
+       "source":"/article/361-install-privy-on-bigcommerce",
+       "destination":"/docs/learn/integrations/bigcommerce"
+    },
+    {
+      "source":"/article/367-install-privy-on-squarespace",
+      "destination":"/docs/learn/integrations/squarespace"
+    },
+     {
+       "source":"/article/343-install-privy-on-wix",
+       "destination":"/docs/learn/integrations/wix"
+    },
+    {
+      "source":"/article/461-add-a-form-to-your-wix-page",
+       "destination":"/docs/learn/integrations/add-a-form-to-your-wix-page"
+    },
+    {
+        "source":"/article/459-integrate-privy-with-smile-io",
+        "destination":"/docs/learn/integrations/smile"
+    },
+     {
+       "source":"/article/360-integrate-privy-with-attentive",
+      "destination":"/docs/learn/integrations/attentive"
+    },
+    {
+        "source":"/article/290-install-privy-on-shift4shop-formerly-3dcart",
+       "destination":"/docs/learn/integrations/shift4shop"
+    },
+    {
+      "source":"/article/289-install-privy-with-tag-manager",
+       "destination":"/docs/learn/integrations/tagmanager"
+    },
+     {
+        "source":"/article/295-send-privy-sign-ups-to-sailthru",
+        "destination":"/docs/learn/integrations/sailthru"
+    },
+    {
+        "source":"/article/291-connect-privy-and-slack",
+      "destination":"/docs/learn/integrations/slack"
+    },
+     {
+       "source":"/article/316-add-recart-messenger-to-your-privy-account",
+       "destination":"/docs/learn/integrations/recartmessenger"
+    },
+    {
+       "source":"/article/333-sync-coupons-to-your-esp",
+       "destination":"/docs/learn/integrations/sync-coupons-to-esp"
+    },
+    {
+        "source":"/article/331-resolve-an-unauthorized-error",
+      "destination":"/docs/learn/integrations/resolve-an-unauthorized-error"
+    },
+    {
+       "source":"/article/404-manage-your-profile-preferences",
+        "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-profile"
+    },
+    {
+      "source":"/article/200-enable-daily-and-weekly-updates",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-profile"
+    },
+     {
+      "source":"/article/203-troubleshoot-common-login-issues",
+      "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-profile"
+    },
+     {
+      "source":"/article/510-billing-payments-refunds-faq",
+      "destination":"/docs/learn/account-settings-and-billing/account-settings/billing-payments-and-refunds"
+    },
+     {
+      "source":"/article/313-shopify-billing",
+      "destination":"/docs/learn/account-settings-and-billing/account-settings/shopify-billing"
+    },
+    {
+      "source":"/article/284-cancel-a-privy-plan",
+        "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-plan"
+    },
+     {
+       "source":"/article/548-basic-convert-plan-overview",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/basic-convert-plan"
+    },
+     {
+       "source":"/article/509-account-management-faq",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-plan"
+    },
+    {
+      "source":"/article/235-remove-the-privy-branding-privy-logo",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/manage-your-plan"
+    },
+     {
+      "source":"/article/453-use-a-privy-subaccount",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/subaccounts"
+    },
+    {
+       "source":"/article/323-manage-multiple-businesses",
+       "destination":"/docs/learn/account-settings-and-billing/account-settings/subaccounts"
+    },
+    {
+       "source":"/article/523-change-your-accounts-timezone",
+        "destination":"/docs/learn/account-settings-and-billing/business-settings/brand-settings"
+    },
+     {
+      "source":"/article/458-manage-your-company-branding",
+      "destination":"/docs/learn/account-settings-and-billing/business-settings/brand-settings"
+    },
+     {
+      "source":"/article/493-add-or-remove-users",
+       "destination":"/docs/learn/account-settings-and-billing/business-settings/users"
+    },
+    {
+        "source":"/article/163-use-custom-webhooks",
+        "destination":"/docs/learn/account-settings-and-billing/business-settings/customizations"
+    },
+    {
+      "source":"/article/479-install-a-facebook-event-code",
+       "destination":"/docs/learn/account-settings-and-billing/business-settings/customizations"
+    },
+    {
+      "source":"/article/433-install-tracking-codes-pixels",
+       "destination":"/docs/learn/account-settings-and-billing/business-settings/customizations"
+    },
+    {
+       "source":"/article/346-how-to-enable-google-analytics",
+       "destination":"/docs/learn/account-settings-and-billing/business-settings/customizations"
+    },
+     {
+       "source":"/article/522-manage-your-recaptcha-settings",
+       "destination":"/docs/learn/account-settings-and-billing/business-settings/customizations"
+    },
+    {
+        "source":"/article/480-update-your-email-footer-address",
+      "destination":"/docs/learn/account-settings-and-billing/email-settings/sender-options"
+    },
+     {
+      "source":"/article/447-use-a-shopify-sending-domain",
+      "destination":"/docs/learn/account-settings-and-billing/email-settings/sending-domains/shopify-sending-domain"
+    },
+     {
+      "source":"/article/366-use-a-namecheap-sending-domain",
+       "destination":"/docs/learn/account-settings-and-billing/email-settings/sending-domains/namecheap-sending-domain"
+    },
+    {
+       "source":"/article/472-use-a-godaddy-sending-domain",
+        "destination":"/docs/learn/account-settings-and-billing/email-settings/sending-domains/godaddy-sending-domain"
+    },
+    {
+       "source":"/article/445-use-a-domain-com-sending-domain",
+       "destination":"/docs/learn/account-settings-and-billing/email-settings/sending-domains/domain-com-sending-domain"
+    },
+     {
+      "source":"/article/352-use-a-wix-sending-domain",
+      "destination":"/docs/learn/account-settings-and-billing/email-settings/sending-domains/wix-sending-domain"
+    },
+     {
+      "source":"/article/145-support-faq",
+       "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+     {
+      "source":"/article/332-submit-feedback-about-privy",
+       "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+    {
+      "source":"/article/300-ada-compliance-with-privy",
+        "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+    {
+       "source":"/article/202-privy-security-practices-and-policies",
+      "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+    {
+        "source":"/article/173-browsers-supported-by-privy",
+       "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+    {
+       "source":"/article/195-will-privy-slow-down-my-site",
+       "destination":"/docs/learn/account-settings-and-billing/support-faq"
+    },
+    {
+        "source":"/article/149-privy-sms-compliance",
+        "destination":"/docs/learn/compliance/privy-text-compliance"
+    },
+    {
+       "source":"/article/498-toll-free-message-verification-for-privy-text",
+       "destination":"/docs/learn/compliance/toll-free-verification"
+    },
+    {
+      "source":"/article/551-sms-consent-collection",
+       "destination":"/docs/learn/compliance/understand-sms-consent"
+    },
+     {
+       "source":"/article/473-privy-email-compliance",
+       "destination":"/docs/learn/compliance/privy-email-compliance"
+    },
+     {
+       "source":"/article/364-general-data-protection-regulation-gdpr",
+        "destination":"/docs/learn/compliance/gdpr"
+    },
+    {
+        "source":"/article/451-understand-marketing-consent",
+       "destination":"/docs/learn/compliance/understand-marketing-consent"
+    },
+    {
+       "source":"/article/297-how-does-privy-process-gdpr-and-ccpa-requests",
+      "destination":"/docs/learn/compliance/gdpr-ccpa-requests"
+    },
+    {
+      "source":"/article/311-understand-contact-auto-rejection",
+       "destination":"/docs/learn/compliance/contact-auto-rejection"
+    },
+    {
+      "source":"/article/298-california-consumer-privacy-act",
+       "destination":"/docs/learn/compliance/ccpa"
+    },
+     {
+       "source":"/article/10-dmarc-dkim-spf-record-authentication",
+       "destination":"/docs/learn/deliverability/understanding-email-authentication"
+    },
+     {
+      "source":"/article/33-use-a-custom-sending-domain",
+       "destination":"/docs/learn/deliverability/use-a-custom-sending-domain"
+    },
+    {
+      "source":"/article/556-how-to-warm-up-a-sending-domain",
+       "destination":"/docs/learn/deliverability/warming-up-sending-domain"
+    },
+    {
+       "source":"/article/550-hard-vs-soft-bounces",
+        "destination":"/docs/learn/deliverability/hard-vs-soft-bounces"
+    },
+     {
+       "source":"/article/482-understand-deliverability",
+       "destination":"/docs/learn/deliverability/understanding-deliverability"
+    },
+    {
+        "source":"/article/477-my-contact-didnt-get-my-email",
+       "destination":"/docs/learn/deliverability/why-didnt-my-contact-get-my-email"
+    },
+    {
+       "source":"/article/547-understanding-non-human-interactions-in-email-marketing",
+        "destination":"/docs/learn/deliverability/understanding-non-human-interactions"
+    },
+    {
+       "source":"/article/42-privys-get-started-checklist",
+        "destination":"/docs/learn/quickstart"
+    }
+  ]
 }
