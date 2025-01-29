@@ -931,6 +931,10 @@
     {
        "source":"/article/42-privys-get-started-checklist",
         "destination":"/docs/learn/quickstart"
+    },
+    {
+      "source": "/article/:slug*",
+      "destination": "/docs/home/learn"
     }
   ]
 }
