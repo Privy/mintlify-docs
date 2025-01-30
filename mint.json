@@ -309,7 +309,8 @@
           "group": "Automations",
           "pages": [
             "docs/guides/automations/overview",
-            "docs/guides/automations/advanced-automations"
+            "docs/guides/automations/advanced-automations",
+            "docs/guides/automations/advanced-101"
           ]
         },
         {
