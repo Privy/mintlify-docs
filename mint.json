@@ -301,8 +301,7 @@
           "group": "List Growth",
           "pages": [
             "docs/guides/list-growth/overview", 
-            "docs/guides/list-growth/cart-saver-strategy",
-            "docs/guides/list-growth/mini-quiz-strategy"
+            "docs/guides/list-growth/cart-saver-strategy"
           ]
         },
         {
@@ -324,7 +323,7 @@
           "group": "Segmentation",
           "pages": [
             "docs/guides/segmentation/overview",
-            "docs/guides/segmentation/what-segments-are-right-for-me"
+            "docs/guides/segmentation/segments-101"
           ]
         },
         {
