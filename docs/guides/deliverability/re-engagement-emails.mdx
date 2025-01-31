@@ -2,3 +2,93 @@
 title: "Re-Engagement Emails"
 description: "Confirm your subscribers' interest and practice list hygiene to improve your deliverability."
 ---
+
+## What is a Re-Engagement Email?
+
+A Re-Engagement Email is a campaign that you send to your colder, unengaged contacts to confirm their interest in hearing from you.&#x20;
+
+### Why should I send this type of email?
+
+It's natural that, over time, contacts may lose interest in your brand — it's not something that brands should take personally, nor is it something that should be ignored. If you notice your Unengaged Contacts segment growing, it might be time to take action. You want to ensure that you're looking after a healthy, engaged list to maintain high deliverability, and to ensure that you're not paying for uninterested or invalid emails.
+
+## Best Practices
+
+Think carefully about who your audience is, why they might be unengaged, and how you should approach them! Below are some considerations for your subject line, email content, and recipients.
+
+Privy has a **Contact Re-Engagement** template that you can use. When you create a new email and [select a template](https://privy.mintlify.app/docs/learn/email-campaigns/email-templates#choose-a-template), you can find it in the *Privy Templates* folde&#x72;*.*
+
+### Subject Line
+
+This email should stand out as much as possible, because the people you're sending to have not opened an email from you in months. This doesn't mean sending in ALL CAPS or using threatening language. Instead, be friendly, understanding, witty, and pique their interest.
+
+**Here's some of our favorite Re-Engagement Email subject lines:**
+
+* Testing, testing...is this thing on? 🎤
+
+* Was it something we said? 😟
+
+* A message from our founder ❤️
+
+* 50% OFF?!
+
+* Are you there, \{\{ contact.first\_name }}?&#x20;
+
+* We need to get something off our chest 😨
+
+### Content
+
+Once your contact opens the email, you want to get to the point! Make sure your message aligns with your brand's tone and includes the following:
+
+* Tell them you miss them!
+
+* Let them know you want to make sure you only send them content that's relevant and interesting to them.
+
+* Include an unsubscribe link. Let them know they have this option, and they can sign up again in the future if they'd like to.
+
+* Include a "What's New?" button that leads them to their site if they want to see what they've been missing.
+
+### Coupon
+
+A coupon is completely optional, but keep in mind that you'll be sending to a targeted, specific group of people that have lost interest. The expectation is that they might not engage with this email, either. Don't be afraid to swing big and offer a major discount or gift with an expiration date.
+
+### Segment
+
+The easiest segment to send a Re-Engagement Email to is your [Unengaged Contacts](https://privy.mintlify.app/docs/learn/email-campaigns/segmentation#unengaged-contacts) Smart Segment. These are mailable contacts that have been on your list for over 90 days, but have not opened a single email in 3+ months.
+
+However, you can also [create a Custom Segment](https://privy.mintlify.app/docs/learn/email-campaigns/segmentation#custom-segments) to send to if you'd like more control over the criteria.
+
+If you create a Custom Segment, the 2 essential criteria you'll want to add are:
+
+1. Email Engagement: **Did not open** + **in the last** + **`[value]` days**
+
+2. Created at: **is before** + **`[date]`**
+
+
+
+These two segments will set the parameters for how long these contacts have been on your list, and how long they have been unengaged.
+
+<Warning>
+  **Note:** You can segment by email engagement data up to 270 days back.
+</Warning>
+
+Some other criteria you might be interested in adding:
+
+1. Order count: if you want to focus on contacts that have never ordered with you before, you can add **Order count** + **is** + **0**.
+
+2. Last order: if you want to exclude contacts who may have ordered after a certain date, you can add **Last order** + **is after** + **`[date]`**.
+
+3. Privy or Shopify Tags: include or exclude any contacts that contain specific tag(s), such as "wholesale".
+
+## Review your performance
+
+After you've sent your Re-Engagement email, it's good to wait at least 48 hours to take any action. If you delivered a coupon with an expiration date, wait until the coupon expires.
+
+While you hope to capture as many opens and orders as possible, you should expect that this email's open, click, and order rate will be at a much lower rate than your usual campaigns perform.
+
+Head to your [Campaigns](https://dashboard.privy.com/message-campaigns) page and click into your Re-Engagement email to get an in-depth view of [your campaign's performance](https://privy.mintlify.app/docs/learn/email-campaigns/email-campaign-reporting#individual-campaign-reporting), including its delivery, engagement, and activity.
+
+### Removing non-openers
+
+To remove any contacts who still failed to engage with this email, scroll down to your campaign's [*Activity* table](https://privy.mintlify.app/docs/learn/email-campaigns/email-campaign-reporting#activity) and **Export** a CSV of your recipients. You will receive an email with a link to download your file.
+
+Make sure your filter and remove any contacts who opened your email, then [import the rest as unsubscribed](https://privy.mintlify.app/docs/learn/contact-management/unsubscribe-contacts#bulk-unsubscribe).
