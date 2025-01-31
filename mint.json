@@ -309,14 +309,15 @@
           "group": "Automations",
           "pages": [
             "docs/guides/automations/overview",
-            "docs/guides/automations/advanced-automations",
-            "docs/guides/automations/automations-101"
+            "docs/guides/automations/automations-101",
+            "docs/guides/automations/advanced-automations"
           ]
         },
         {
           "group": "Campaigns",
           "pages": [
-            "docs/guides/campaigns/overview"
+            "docs/guides/campaigns/overview",
+            "docs/guides/campaigns/campaigns-101"
           ]
         },
         {
