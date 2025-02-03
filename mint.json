@@ -138,12 +138,6 @@
           ]
         },
         {
-          "group": "Review Performance",
-          "pages": [
-            "docs/get-started/getting-started/review-your-performance"
-          ]
-        },
-        {
           "group": "Content",
           "pages": [
             "docs/learn/content/overview",
@@ -288,49 +282,6 @@
                   ]
                 },
             "docs/learn/account-settings-and-billing/support-faq"    
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Strategy Guides",
-     
-      "pages": [
-       
-        {
-          "group": "List Growth",
-          "pages": [
-            "docs/guides/list-growth/overview", 
-            "docs/guides/list-growth/cart-saver-strategy"
-          ]
-        },
-        {
-          "group": "Automations",
-          "pages": [
-            "docs/guides/automations/overview",
-            "docs/guides/automations/automations-101",
-            "docs/guides/automations/advanced-automations"
-          ]
-        },
-        {
-          "group": "Campaigns",
-          "pages": [
-            "docs/guides/campaigns/overview",
-            "docs/guides/campaigns/campaigns-101"
-          ]
-        },
-        {
-          "group": "Segmentation",
-          "pages": [
-            "docs/guides/segmentation/overview",
-            "docs/guides/segmentation/segments-101"
-          ]
-        },
-        {
-          "group": "Deliverability",
-          "pages": [
-            "docs/guides/deliverability/overview",
-            "docs/guides/deliverability/re-engagement-emails"
           ]
         }
       ]
