@@ -10,12 +10,12 @@
     "headings": {
       "family": "Matter",
       "weight": 650,
-      "url": "https://public-assets.privy.com/MatterStandard-VF.woff2",
+      "url": "https://public-assets.privy.com/fonts/MatterStandard-VF.woff2",
       "format": "woff2"
     },
     "body": {
       "family": "Matter",
-      "url": "https://public-assets.privy.com/MatterStandard-VF.woff2",
+      "url": "https://public-assets.privy.com/fonts/MatterStandard-VF.woff2",
       "format": "woff2"
     }
   },
