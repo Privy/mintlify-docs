@@ -1,0 +1,76 @@
+---
+title: "Boost Engagement with Segments + Personalization"
+description: "Sending tailored messaging to custom segments can do wonders for your engagement and improve inbox placement over time."
+---
+
+When segmentation and personalization join forces, it can make a huge difference in your engagement metrics. This is an often overlooked deliverability strategy, but establishing a strong track record of engagement and interest from your contacts is one of the best ways you can improve your inbox placement. 
+
+There’s many different approaches to this strategy, so in this article we’ll walk you through a few ideas and how you can execute them.
+
+## How to personalize emails
+
+Your emails can be personalized by using Merge Tags in either your content or Subject Line. The most common personalization businesses use is a contact’s first name. You can reference all supported Merge Tags and how to insert them into your content [in this guide](https://help.privy.com/docs/learn/content/personalization-tags).
+
+## How to build Custom Segments
+
+You can build a Custom Segment by heading to [**Contacts > Segments**](https://dashboard.privy.com/segments)**** in your dashboard. You can segment your audience by Shopping Activity, Website Activity, Attributes, Email Engagement…or a combination of these! [Here’s a full guide](https://help.privy.com/docs/learn/email-campaigns/segmentation#custom-segments) walking through all the conditions you can use in segmentation, and how to build one.
+
+## Use Cases and Examples
+
+If you’re looking for some inspiration, the following use cases would be a great place to start with leveraging segments and personalization:
+
+### VIPs and Repeat Customers
+
+By default, your VIP and Repeat Customers are going to be the most likely to engage with your content, so we highly recommend leveraging this segment often! You want to connect with these contacts so that they feel like more than an order number.
+
+A VIP customer can look different to every business, but here’s a great place to start:
+
+If your VIP segment includes **Order Count** as shown above, you can rest assured that you’ve got these contacts’ names since they’ve had to provide billing and shipping information. You can copy and paste **`{{ contact.first_name }}`** into your Subject Line to include their first name and really stand out in their inbox, like these examples:
+
+### By Purchase History
+
+One of the easiest ways to tailor your messaging to feel more personalized is by using Purchase History segmentation. You can target customers based on whether or not their order history includes certain Products or Collections.
+
+Defining a segment's common purchasing activity allows you to better understand who you’re speaking to and what type of language to use with them. Here's some great use cases along with examples to follow:
+
+<AccordionGroup>
+  <Accordion title="Looking to motivate someone's first order of a product?" defaultOpen={false}>
+    In this case, you would want to create a segment of anyone whose Purchase History **does not include** this specific product.&#x20;
+
+
+
+    Check out this example from Truly Lifestyle Brand:
+  </Accordion>
+
+  <Accordion title="Releasing a new variant, formula, or version of a best seller?" defaultOpen={false}>
+    In this case, you might want to target anyone whose Purchase History **includes** this product or collection. They've shown interest in this item before, and they might be the most inclined to buy again.
+
+
+
+    Use language such as "your *next* order", like SHYNE's example of reintroducing Curl Creme to past purchasers:
+  </Accordion>
+
+  <Accordion title="Want to cross sell something that would go well with a popular product?" defaultOpen={false}>
+    In this case, you'll want to create a segment of anyone whose Purchase History **includes** the product or collection which pairs nicely with the product you're promoting.
+
+
+
+    For example, check out this email from Thuma which highlights upgrades that are designed specifically to work with a recently purchased bed frame:
+  </Accordion>
+</AccordionGroup>
+
+### By Order Date
+
+### Re-Engagement Emails
+
+Re-engaging cold contacts can be a challenge, but a great way to combat this is by personalizing their subject line.
+
+You can use your **Unengaged Smart Segment** to easily target contacts who haven’t opened an email in over 3 months:
+
+With an unengaged audience, there’s more of a chance that you might not have their first name. To account for this, copy and paste **`{{ contact.first_name|default:'there' }}`** in your subject line and email body to [ensure you have a fallback](https://help.privy.com/docs/learn/content/personalization-tags#default-or-fallback-values)!
+
+Check out this example of a re-engagement offer from Bag-all:
+
+<Tip>
+  Want some more guidance of how and why you should send Re-Engagement emails? [Check out this guide for a deeper dive into this strategy.](https://help.privy.com/docs/guides/deliverability/re-engagement-emails)
+</Tip>
