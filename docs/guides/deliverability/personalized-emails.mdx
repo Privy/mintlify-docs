@@ -21,11 +21,14 @@ If you’re looking for some inspiration, the following use cases would be a gre
 
 ### VIPs and Repeat Customers
 
-By default, your VIP and Repeat Customers are going to be the most likely to engage with your content, so we highly recommend leveraging this segment often! You want to connect with these contacts so that they feel like more than an order number.
+By default, your VIP and Repeat Customers are going to be the most likely to engage with your content, so we highly recommend leveraging this segment often! You want to connect with these contacts so that they feel like more than an order number. Make your emails feel like an exclusive invitation, like the example below.
 
-A VIP customer can look different to every business, but here’s a great place to start:
+A VIP customer can look different to every business, but the example is a great place to start — it targets contacts who have placed at least 1 order with you + have recently shown interest in your content!
+
+<img height="200" src="/images/strategy-guides/personalized-vip.png" />
 
 If your VIP segment includes **Order Count** as shown above, you can rest assured that you’ve got these contacts’ names since they’ve had to provide billing and shipping information. You can copy and paste **`{{ contact.first_name }}`** into your Subject Line to include their first name and really stand out in their inbox, like these examples:
+<img height="200" src="/images/strategy-guides/personalized-subject-lines.png" />
 
 ### By Purchase History
 
@@ -38,18 +41,21 @@ Defining a segment's common purchasing activity allows you to better understand 
     In this case, you would want to create a segment of anyone whose Purchase History **does not include** this specific product.&#x20;
 
     Check out this example from Truly Lifestyle Brand:
+    ![](/images/strategy-guides/personalized-purchase-truly.png)
   </Accordion>
 
   <Accordion title="Releasing a new variant, formula, or version of a best seller?" defaultOpen={false}>
     In this case, you might want to target anyone whose Purchase History **includes** this product or collection. They've shown interest in this item before, and they might be the most inclined to buy again.
 
     Use language such as "your *next* order", like SHYNE's example of reintroducing Curl Creme to past purchasers:
+    ![](/images/strategy-guides/personalized-purchase-shyne.png)
   </Accordion>
 
   <Accordion title="Want to cross sell something that would go well with a popular product?" defaultOpen={false}>
     In this case, you'll want to create a segment of anyone whose Purchase History **includes** the product or collection which pairs nicely with the product you're promoting.
 
     For example, check out this email from Thuma which highlights upgrades that are designed specifically to work with a recently purchased bed frame:
+    ![](/images/strategy-guides/personalization-cross-sell.png)
   </Accordion>
 </AccordionGroup>
 
@@ -63,23 +69,18 @@ There are a few different scenarios where it might be useful to segment by Last 
 
 
 
-    To prevent this, segment by **Last Order** is **before** + choose the start date of your sale.
+    To prevent this, segment by **Last Order** is **before** + choose the start date of your sale:
+    ![](/images/strategy-guides/personalize-last-order.png)
 
 
   </Accordion>
 
-  <Accordion title="Send a &#x22;Thank You&#x22; note to customers who shopped with you this year." defaultOpen={false}>
-    After Black Friday, the holiday season, and approaching a new year, it might be a good idea to send a personal thank you to those who supported your business.
+  <Accordion title="Send a &#x22;Thank You&#x22; note to customers who shopped with you during a big sale." defaultOpen={false}>
+    After Black Friday, the holidays, or one of your major sales, you might want to send a personalized Thank You note to anyone who supported your small business.
 
+    To achieve this, use a combination of both **Last Order is before** + **Last Order is after** to set a date range of when customers last ordered:
+    ![](/images/strategy-guides/personalized-order-range.png)
 
-
-    To achieve this, segment by **Last Order** is **after** + choose Jan 1st of the year.
-
-
-
-    <Tip>
-      Aside from the end of the year, can also use this idea around bigger sales and/or initiatives that your business saw success with!
-    </Tip>
   </Accordion>
 </AccordionGroup>
 
@@ -92,6 +93,7 @@ You can use your **Unengaged Smart Segment** to easily target contacts who haven
 With an unengaged audience, there’s more of a chance that you might not have their first name. To account for this, copy and paste **`{{ contact.first_name|default:'there' }}`** in your subject line and email body to [ensure you have a fallback](https://help.privy.com/docs/learn/content/personalization-tags#default-or-fallback-values)!
 
 Check out this example of a re-engagement offer from Bag-all:
+<img height="200" src="/images/strategy-guides/personalized-unengaged.png" />
 
 <Tip>
   Want some more guidance of how and why you should send Re-Engagement emails? [Check out this guide for a deeper dive into this strategy.](https://help.privy.com/docs/guides/deliverability/re-engagement-emails)
