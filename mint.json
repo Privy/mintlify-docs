@@ -285,6 +285,58 @@
           ]
         }
       ]
+    },
+    {
+      "group": "Strategy Guides",
+     
+      "pages": [
+       
+        {
+          "group": "List Growth",
+          "pages": [
+            "docs/guides/list-growth/overview", 
+            "docs/guides/list-growth/cart-saver-strategy",
+            "docs/guides/list-growth/multi-step-strategy",
+            "docs/guides/list-growth/mini-quiz-strategy"
+          ]
+        },
+        {
+          "group": "Automations",
+          "pages": [
+            "docs/guides/automations/overview",
+            "docs/guides/automations/automations-101",
+            "docs/guides/automations/advanced-automations",
+            "docs/guides/automations/post-purchase-experience"
+          ]
+        },
+        {
+          "group": "Campaigns",
+          "pages": [
+            "docs/guides/campaigns/overview",
+            "docs/guides/campaigns/campaigns-101",
+            "docs/guides/campaigns/sms-campaigns-101",
+            "docs/guides/campaigns/key-dates-to-send"
+          ]
+        },
+        {
+          "group": "Segmentation",
+          "pages": [
+            "docs/guides/segmentation/overview",
+            "docs/guides/segmentation/segments-101",
+            "docs/guides/segmentation/advanced-segments",
+            "docs/guides/segmentation/resend-an-unopened-campaign"
+          ]
+        },
+        {
+          "group": "Deliverability",
+          "pages": [
+            "docs/guides/deliverability/overview",
+            "docs/guides/deliverability/get-a-pulse-on-your-list",
+            "docs/guides/deliverability/re-engagement-emails",
+            "docs/guides/deliverability/personalized-emails"
+          ]
+        }
+      ]
     }
   ],
   "footerSocials": {
