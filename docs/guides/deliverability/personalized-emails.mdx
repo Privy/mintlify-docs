@@ -1,6 +1,7 @@
 ---
 title: "Boost Engagement with Segments + Personalization"
 description: "Sending tailored messaging to custom segments can do wonders for your engagement and improve inbox placement over time."
+sidebarTitle: "Segments + Personalization"
 ---
 
 When segmentation and personalization join forces, it can make a huge difference in your engagement metrics. This is an often overlooked deliverability strategy, but establishing a strong track record of engagement and interest from your contacts is one of the best ways you can improve your inbox placement. 
@@ -28,6 +29,7 @@ A VIP customer can look different to every business, but the example is a great 
 <img height="200" src="/images/strategy-guides/personalized-vip.png" />
 
 If your VIP segment includes **Order Count** as shown above, you can rest assured that you’ve got these contacts’ names since they’ve had to provide billing and shipping information. You can copy and paste **`{{ contact.first_name }}`** into your Subject Line to include their first name and really stand out in their inbox, like these examples:
+
 <img height="200" src="/images/strategy-guides/personalized-subject-lines.png" />
 
 ### By Purchase History
@@ -67,12 +69,8 @@ There are a few different scenarios where it might be useful to segment by Last 
   <Accordion title="Follow up with customers who haven't shopped during your sale yet." defaultOpen={false}>
     During big sales, you're going to want to send nudges and reminders before it ends. It might feel awkward to send these nudges to people who already bought with you during this promo.
 
-
-
     To prevent this, segment by **Last Order** is **before** + choose the start date of your sale:
     ![](/images/strategy-guides/personalize-last-order.png)
-
-
   </Accordion>
 
   <Accordion title="Send a &#x22;Thank You&#x22; note to customers who shopped with you during a big sale." defaultOpen={false}>
@@ -80,7 +78,6 @@ There are a few different scenarios where it might be useful to segment by Last 
 
     To achieve this, use a combination of both **Last Order is before** + **Last Order is after** to set a date range of when customers last ordered:
     ![](/images/strategy-guides/personalized-order-range.png)
-
   </Accordion>
 </AccordionGroup>
 
@@ -93,6 +90,7 @@ You can use your **Unengaged Smart Segment** to easily target contacts who haven
 With an unengaged audience, there’s more of a chance that you might not have their first name. To account for this, copy and paste **`{{ contact.first_name|default:'there' }}`** in your subject line and email body to [ensure you have a fallback](https://help.privy.com/docs/learn/content/personalization-tags#default-or-fallback-values)!
 
 Check out this example of a re-engagement offer from Bag-all:
+
 <img height="200" src="/images/strategy-guides/personalized-unengaged.png" />
 
 <Tip>

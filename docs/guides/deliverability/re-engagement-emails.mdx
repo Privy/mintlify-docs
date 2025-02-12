@@ -1,6 +1,7 @@
 ---
 title: "Re-Engagement Emails"
 description: "Confirm your subscribers' interest and practice list hygiene to improve your deliverability."
+sidebarTitle: "Re-Engagement Emails"
 ---
 
 ## What is a Re-Engagement Email?
@@ -33,7 +34,7 @@ This email should stand out as much as possible, because the people you're sendi
 
 * 50% OFF?!
 
-* Are you there, \{\{ contact.first\_name }}?&#x20;
+* Are you there, {{ contact.first_name }}? 
 
 * We need to get something off our chest 😨
 
@@ -61,9 +62,25 @@ However, you can also [create a Custom Segment](https://help.privy.com/docs/lear
 
 If you create a Custom Segment, the 2 essential criteria you'll want to add are:
 
-1. Email Engagement: **Did not open** + **in the last** + **`[value]` days**
+1. Email Engagement: 
 
-2. Created at: **is before** + **`[date]`**
+   **Did not open**
+
+    \+ 
+
+   **in the last**
+
+    \+ 
+
+   **`[value]` days**
+
+2. Created at: 
+
+   **is before**
+
+    \+ 
+
+   **`[date]`**
 
 <img height="200" src="/images/strategy-guides/re-engagement-segment.png" />
 
@@ -75,9 +92,33 @@ These two segments will set the parameters for how long these contacts have been
 
 Some other criteria you might be interested in adding:
 
-1. Order count: if you want to focus on contacts that have never ordered with you before, you can add **Order count** + **is** + **0**.
+1. Order count: if you want to focus on contacts that have never ordered with you before, you can add 
 
-2. Last order: if you want to exclude contacts who may have ordered after a certain date, you can add **Last order** + **is after** + **`[date]`**.
+   **Order count**
+
+    \+ 
+
+   **is**
+
+    \+ 
+
+   **0**
+
+   .
+
+2. Last order: if you want to exclude contacts who may have ordered after a certain date, you can add 
+
+   **Last order**
+
+    \+ 
+
+   **is after**
+
+    \+ 
+
+   **`[date]`**
+
+   .
 
 3. Privy or Shopify Tags: include or exclude any contacts that contain specific tag(s), such as "wholesale".
 
