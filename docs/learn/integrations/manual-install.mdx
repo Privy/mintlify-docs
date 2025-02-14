@@ -1,0 +1,72 @@
+---
+title: "Manually install Privy on your site"
+description: "Manually install Privy's code into your website."
+---
+
+If your website platform integrates with Privy, the installation of the Privy app is recommended for most users. Please confirm that standard installation does not fit your situation before proceeding with a manual install.
+
+Privy supports the following integrations — if you see your provider below, please follow their dedicated instructions:
+
+<CardGroup cols={4}>
+  <Card title="Shopify" horizontal={true} href="/docs/learn/integrations/shopify" />
+
+  <Card title="BigCommerce" horizontal={true} href="/docs/learn/integrations/bigcommerce" />
+
+  <Card title="Wix" horizontal={true} href="/docs/learn/integrations/wix" />
+
+  <Card title="Weebly" horizontal={true} href="/docs/learn/integrations/weebly" />
+</CardGroup>
+
+If you don't see an integration for your platform, proceed with following these instructions:
+
+## Copy the code
+
+To install your code, you first need to copy it from your Privy account’s settings:
+
+* Select the **Account** option from the navigation bar. Your business name appears here. 
+
+* Select the **Business Information** option from the dropdown menu. 
+
+* In the sidebar, select **Privy Code** under the *Business Settings* section. 
+
+* Locate and select the **Default** or **Asynchronous** tab to reveal its details. The default code is the preferred method to install Privy and will allow it to load in line with everything else on your site. Meanwhile, the asynchronous code will load Privy last.
+
+* Copy the selected code.
+
+## Install the code
+
+Paste the code to your site theme header or footer before the \</head> closing tag.
+
+## Verify the installation
+
+The Privy code allows you to display your displays and monitor your website’s events (e.g., display views). If your displays aren’t displaying properly or event information is missing, verify that the code has been installed and that it’s firing correctly:
+
+* Select the **Account** option from the navigation bar in Privy. Your business name appears here. 
+
+* Select the **Business Information** option from the dropdown menu. 
+
+* In the sidebar, select **Privy Code** under the *Business Settings* section. 
+
+* In the *Installation Guides* section, locate and copy your account identifier.
+
+* Open a page on your website and right-click anywhere on the page.
+
+* In the dropdown menu, select **View page source** or **View source**.
+
+* Use **CTRL-F** or **CMD-F** to search for the identifier that you copied.
+
+* If the code appears, verify that it has been copied and pasted correctly from your settings.
+
+If the Privy code does not appear or is incorrect, follow the installation steps again. If your code appears and has been copied and pasted correctly, verify that it’s firing: 
+
+* Open a page on your website and right-click anywhere on the page.
+
+* In the dropdown menu, select **Inspect Element** or **Inspect**. A toolbar will appear at the bottom or side of your screen.
+
+* Click the **Network** tab, then refresh your page. 
+
+* Click the **Name** column to sort the elements alphabetically, then look for widge&#x74;*.js*. 
+
+* Next to *widget.js,* you should see *304 Not Modified* or *200 OK* in the *Status* column.
+
+If you see any other status or the .js code is not found, your tracking code may not be firing correctly. [Contact Support](mailto:support@privy.com) for further troubleshooting steps and assistance.
