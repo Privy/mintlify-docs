@@ -1,0 +1,111 @@
+---
+title: "Use URL Targeting in Your Displays"
+sidebarTitle: "URL Targeting"
+icon: "bullseye-arrow"
+description: "Become a master at URL targeting so that your displays trigger for the right people in the right places."
+---
+
+One of Privy’s most powerful capabilities is our URL Audience Targeting for displays. There’s a whole world of possibilities when it comes to targeting by URL, so in this article we will break down the basics of each condition, and walk through 4 common scenarios in which it’s used:
+
+1. <a href="#target-specific-product-or-collection-pages"> Target a display to appear on certain product or collection pages.</a>
+2. <a href="#restrict-a-display-from-appearing-on-certain-pages"> Restrict a display from appearing on certain pages.</a>
+3. <a href="#target-traffic-from-social-media"> Target visitors coming from social media, such as Instagram.</a>
+4. <a href="#target-traffic-from-ads-or-influencer-links"> Target visitors coming from ads or influencer links.</a>
+
+## What kinds of URL Targeting are available at Privy?
+
+**Current URL:** This targeting is based on the URL that the visitor is currently on.
+
+**Initial URL:** This targeting is based on the URL of the page that your visitor first landed on when visiting your website. This can be based on the current session, or all time.
+
+**Referring URL:** This targeting is based on the URL of the page that your visitor was on immediately before viewing the current page. This URL can be from your site or an external page.
+
+Each of these URL targeting properties have a few different options of the “operator” you’d like to use:
+
+<AccordionGroup>
+  <Accordion title="Contains / Does not contain">
+    The visitor's URL contains or does not contain the specified part of a URL.
+
+    _For example, the following targeting condition will show the display to any URL containing _\*\*\_ in the URL, including \_`https://example-store.com/shirts/plain-white-tee`
+  </Accordion>
+  <Accordion title="Equals / Does not equal">
+    The visitor's URL matches or does not match the exact URL specified.
+
+    For example, the following targeting will only show the display to visitors on `https://example-store.com/cart`
+  </Accordion>
+  <Accordion title="Is homepage / Is not homepage">
+    The visitor's URL does or does not match your site's home page.
+  </Accordion>
+  <Accordion title="Matches / Does not match regex">
+    This is an advanced function that should only be implemented by users who are familiar with regular expressions. RegEx is a helpful website for learning, building, and testing regular expressions.
+  </Accordion>
+</AccordionGroup>
+
+### How do I add URL Targeting to a display?
+
+To add URL targeting to a display:
+
+- Head to **Convert > All Displays**.
+- Select an existing display, or create a new one.
+- In the editor, head to the **Settings** step.
+- Click on the **Audience Targeting** card and select the desired property from the dropdown menu. Customize the operator and value, then click **Save.**
+
+## Common Scenarios
+
+### Target specific product or collection pages
+
+Let’s say you want to promote a deal or bundle for specific products, or you want to guide customers browsing a certain collection to your best sellers.
+
+You'll want to add a **Current URL** targeting property and use **Contains** as the operator.
+
+In the Value field, paste the part of the URL(s) you’d like to target.
+
+This might look a little different for targeting specific product pages vs targeting any pages that are part of a certain collection, so here’s a little guidance:
+
+<AccordionGroup>
+  <Accordion title="Collections">
+    When targeting collections, you’ll just want to paste the name of the collection found just before your product’s name in the URL. It should look like this:
+
+    This will allow the display to appear on any pages containing the collection name in the URL. This includes browsing the collection pages _and_ any specific products which are part of that collection.
+  </Accordion>
+  <Accordion title="Products">
+    When targeting a specific product page, you’ll want to paste the name of the product found at the end of your product page’s URL. It should look like this:
+
+    This will restrict the display to _only_ appear on that specific product’s page.
+  </Accordion>
+</AccordionGroup>
+
+### Restrict a display from appearing on certain pages
+
+There may be displays that you want to prevent from showing on certain pages, such as your Cart page, home page, or your About Us page.
+
+You will want to add a **Current URL** property and use the **Does not contain** operator.
+
+In the Value field, paste the part of the URL(s) that you do not want your display appearing on.
+
+For example, this is what it will look like if you want to restrict your display from appearing on your Cart Page and About Us page:
+
+\
+If you want your display restricted from appearing on your Homepage, simply use the **Current URL** property and choose **is not homepage**:
+
+### Target traffic from social media
+
+If you’d like to show a special display or offer a specific promotion to visitors coming from social media, you can use URL Targeting to achieve this.
+
+You will want to use the **Initial URL (this session)** property and select **Contains** as your operator.
+
+In the Value field, paste the name of the social media as it appears in your UTM. Your targeting should look something like this:
+
+If you’re unsure of how your social media appears in your Initial URL, click through to your site from the desired social media and immediately check the URL to find it:
+
+### Target traffic from ads or influencer links
+
+If your traffic clicked on an ad, or came to your site using an influencer link, you can target them based on their Initial URL. Targeting by this traffic’s unique source can help you more accurately measure your conversion rate for this audience, and it can even allow you to present them with a display with specific copy, images, and incentives that might make them more likely to convert.
+
+You will want to use the **Initial URL (this session)** property and select **Contains** as your operator.
+
+In the Value field, paste either the unique identifier from your ad UTM, or paste your influencer’s unique URL. Here’s an example of what each might look like:
+
+**Google Ad UTM:**
+
+**Influencer Link:**
