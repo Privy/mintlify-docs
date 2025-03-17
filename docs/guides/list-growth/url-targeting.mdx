@@ -26,12 +26,16 @@ Each of these URL targeting properties have a few different options of the “op
   <Accordion title="Contains / Does not contain">
     The visitor's URL contains or does not contain the specified part of a URL.
 
-    _For example, the following targeting condition will show the display to any URL containing _\*\*\_ in the URL, including \_`https://example-store.com/shirts/plain-white-tee`
+    For example, the following targeting condition will show the display to any URL containing "/shirts" in the URL, including `https://example-store.com/shirts/plain-white-tee`
+
+    ![](/images/strategy-guides/current-url-contains.png)
   </Accordion>
   <Accordion title="Equals / Does not equal">
     The visitor's URL matches or does not match the exact URL specified.
 
     For example, the following targeting will only show the display to visitors on `https://example-store.com/cart`
+
+    ![](/images/strategy-guides/current-url-equal-to.png)
   </Accordion>
   <Accordion title="Is homepage / Is not homepage">
     The visitor's URL does or does not match your site's home page.
@@ -66,10 +70,14 @@ This might look a little different for targeting specific product pages vs targe
   <Accordion title="Collections">
     When targeting collections, you’ll just want to paste the name of the collection found just before your product’s name in the URL. It should look like this:
 
-    This will allow the display to appear on any pages containing the collection name in the URL. This includes browsing the collection pages _and_ any specific products which are part of that collection.
+    ![](/images/strategy-guides/collection-url-targeting.png)
+
+    This will allow the display to appear on any pages containing the collection name in the URL.
   </Accordion>
   <Accordion title="Products">
     When targeting a specific product page, you’ll want to paste the name of the product found at the end of your product page’s URL. It should look like this:
+
+    ![](/images/strategy-guides/product-url-targeting.png)
 
     This will restrict the display to _only_ appear on that specific product’s page.
   </Accordion>
@@ -85,8 +93,11 @@ In the Value field, paste the part of the URL(s) that you do not want your displ
 
 For example, this is what it will look like if you want to restrict your display from appearing on your Cart Page and About Us page:
 
-\
+<img height="200" src="/images/strategy-guides/url-does-not-contain.png" />
+
 If you want your display restricted from appearing on your Homepage, simply use the **Current URL** property and choose **is not homepage**:
+
+<img height="200" src="/images/strategy-guides/url-is-not-homepage.png" />
 
 ### Target traffic from social media
 
@@ -96,7 +107,11 @@ You will want to use the **Initial URL (this session)** property and select **Co
 
 In the Value field, paste the name of the social media as it appears in your UTM. Your targeting should look something like this:
 
+<img height="200" src="/images/strategy-guides/initial-url-social-media.png" />
+
 If you’re unsure of how your social media appears in your Initial URL, click through to your site from the desired social media and immediately check the URL to find it:
+
+<img height="200" src="/images/strategy-guides/utm-social-media.png" />
 
 ### Target traffic from ads or influencer links
 
@@ -108,4 +123,8 @@ In the Value field, paste either the unique identifier from your ad UTM, or past
 
 **Google Ad UTM:**
 
+<img height="200" src="/images/strategy-guides/utm-google-ad.png" />
+
 **Influencer Link:**
+
+<img height="200" src="/images/strategy-guides/utm-influencer.png" />
