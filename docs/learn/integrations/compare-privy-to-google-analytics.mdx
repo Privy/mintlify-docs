@@ -1,0 +1,37 @@
+---
+title: "Compare Privy to Google Analytics"
+description: "Learn to compare metrics between Privy and Google Analytics."
+---
+
+Users often compare the view metrics tracked by Privy with information tracked from other third-party analytics tools. Due to slight variances in how each platform captures and processes data, there are often differences, which make perfectly matching _X metric_ from Privy to _X metric_ in another third party app difficult. Instead, it's typically more important to focus on matching the trends between the two platforms. That said, to make the comparison between Privy and one of the most popular analytics tools (Google Analytics), you can follow the steps outlined below.
+
+<Warning>
+  **Note: **Installing your Privy code on multiple websites, selecting the wrong view within Google Analytics, or choosing a date range in Google Analytics different from the date range within Privy will return incorrect results. Please be sure to compare the same site within the same date range.
+</Warning>
+
+## Locate Pageviews in Google Analytics
+
+To review the pageviews metric in Google Analytics:
+
+- Log into your [Google Analytics](https://analytics.google.com/) account. 
+- Select **Audience** > **Overview** from the sidebar. 
+- Adjust the date to the appropriate range in the upper right. 
+- Pageviews appear below the graph.
+
+## Common reasons for differences
+
+Google Analytics and other reporting systems may differ from reports in Privy. Here are a few common examples of why you might see a discrepancy:
+
+- Bot and spider traffic might trigger Privy displays, but this traffic is often automatically filtered from your Google Analytics reports. 
+- Timezone differences may push reporting into different days than expected.
+- Some Google Analytics reports aren't real-time, while Privy's reports are real-time.
+- Some visitors use Adblock or other privacy plugins that block Google Analytics, while others suppress applications like Privy.
+- Google Analytics and Privy don't always agree on the definition of a unique user since the two can differ in how they treat cross-device traffic, first-party cookies, and session expiration.
+- If you install Privy and Google Analytics at different times, the two systems will never agree on new and returning visitors. 
+- Incomplete installation of Privy or Google Analytics code can mean the two systems track different pages or visitors.
+
+## Blocked resources in Google Analytics
+
+One of the many powerful features of the Privy platform is its ability to help you target the right audience with the right display at the right time. These targeting and frequency rules depend on the placement of cookies in a visitor's browser. 
+
+In some cases, your Google Analytics will report a blocked resource coming from [widget.privy.com](http://widget.privy.com), which is the intended behavior. This warning is not an error, and there's no need for concern. None of your actual web pages are blocked. These URLs are used internally by the Privy code to set the browser cookies that power the targeting and frequency settings, and they automatically ask Google not to show them in search results. That's all that Google means by "blocked" resources.
