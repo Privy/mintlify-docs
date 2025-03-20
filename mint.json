@@ -325,7 +325,8 @@
             "docs/guides/segmentation/overview",
             "docs/guides/segmentation/segments-101",
             "docs/guides/segmentation/advanced-segments",
-            "docs/guides/segmentation/resend-an-unopened-campaign"
+            "docs/guides/segmentation/resend-an-unopened-campaign",
+            "docs/guides/segmentation/segment-by-signup-activity"
           ]
         },
         {
