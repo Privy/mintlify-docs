@@ -9,13 +9,12 @@ A contact refers to an individual whose engagement with your business has led to
 
 Besides signing up via a Privy display, there are a few different ways that Contacts can be created in Privy:
 
-1. <a href="#import-via-spreadsheet" >During an import via Spreadsheet</a>
+1. During an import via Spreadsheet
+2. During an import via Linked Account
+3. Manually adding a contact via the Contacts dashboard
+4. During the checkout process
 
-2. <a href="#import-via-linked-account" >During an import via Linked Account</a>
-
-3. <a href="#create-contacts-manually" >Manually adding a contact via the Contacts dashboard</a>
-
-4. <a href="#create-contacts-during-checkout" >During the checkout process</a> *(Shopify + Weebly stores)*
+    _(Shopify \+ Weebly stores)_
 
 ## Import via Spreadsheet
 
@@ -23,60 +22,54 @@ Besides signing up via a Privy display, there are a few different ways that Cont
 
 Before you upload a contacts file, you must have your data structured appropriately. An example file is available for download [here](https://s3.amazonaws.com/privy.com/support/example_privy_import.csv). Please ensure your import meets the following criteria:
 
-* The file must use the CSV format. 
-
-* The file must include an email address or phone number column, depending on the type of import.
-
-* The first row of the file must contain column headers. These headers are not case-sensitive and match the imported values with customer attributes (fields) in Privy. 
-
-* If you are importing some mailable and some non-mailable (unsubscribed) contacts, you should separate your contacts into two files—one for subscribed and one for unsubscribed contacts. 
+- The file must use the CSV format. 
+- The file must include an email address or phone number column, depending on the type of import.
+- The first row of the file must contain column headers. These headers are not case-sensitive and match the imported values with customer attributes (fields) in Privy. 
+- If you are importing some mailable and some non-mailable (unsubscribed) contacts, you should separate your contacts into two files—one for subscribed and one for unsubscribed contacts. 
 
 Here's an example of how the format should appear in your file:
 
-<img height="200" src="/images/contact-management/import-table-example.png" />
+<img
+  height="200"
+  src="/images/contact-management/import-table-example.png"
+/>
 
 **Once your file is ready, please also note that:** 
 
-* Contacts are only considered mailable or textable if they are identified as such during the import process and are also subsequently approved by the Privy Compliance team.
-
-* If you upload a file that includes existing email addresses, the associated contact profile will update to include the most recent value(s) and any additional fields.
+- Contacts are only considered mailable or textable if they are identified as such during the import process and are also subsequently approved by the Privy Compliance team.
+- If you upload a file that includes existing email addresses, the associated contact profile will update to include the most recent value(s) and any additional fields.
 
 ### Upload and Match Your Data
 
 To upload your properly formatted contacts file: 
 
-* In your Privy account, select **Contacts > All Contacts** from the main navigation. 
-
-* On the *Contacts* dashboard, click on the **Add Contacts** option and select the **CSV Upload** option from the dropdown menu.
-
-* Select whether you are importing **Emails** or **SMS Numbers.**
+- In your Privy account, select **Contacts \> All Contacts** from the main navigation. 
+- On the _Contacts_ dashboard, click on the **Add Contacts** option and select the **CSV Upload** option from the dropdown menu.
+- Select whether you are importing **Emails** or **SMS Numbers.**
 
 <Tip>
   If you are importing **both** **Emails and SMS Numbers**, start by importing email contacts subscribed to your marketing list first, followed by a second import of SMS numbers consented to SMS marketing. You should still include the 'email' field in your SMS Import to map both marketing channels to a single contact.
 </Tip>
 
-* Click **Choose File** to locate the CSV file on your computer. Once you have selected the file, click **Next** in the lower right corner. 
-
-* On the *Match your Columns* page, you will match the file's column headers with customer attributes (fields) in Privy. Use the dropdown menus to select an existing attribute or click **Create New Field** to create a new custom field to store the information. After matching all of the fields and identifying one of them as the required email field, click **Next**.  
+- Click **Choose File** to locate the CSV file on your computer. Once you have selected the file, click **Next** in the lower right corner. 
+- On the _Match your Columns_ page, you will match the file's column headers with customer attributes (fields) in Privy. Use the dropdown menus to select an existing attribute or click **Create New Field** to create a new custom field to store the information. After matching all of the fields and identifying one of them as the required email field, click **Next**.  
 
 <video autoPlay muted loop playsInline className="start-contact-import" src="/images/contact-management/start-import.mp4" />
 
-* On the *Choose Status* page, select whether the file is a list of 'Subscribed' or 'Unsubscribed' contacts. Confirm your selection by typing out the status and then click **Next**.
-
-* On the *Tag* page, you can apply a Privy Tag to every contact in the file to make filtering or segmenting for these specific contacts easier in the future. *Tags are optional.* 
-
-* Lastly, review and confirm your file upload by clicking **Submit**.
+- On the _Choose Status_ page, select whether the file is a list of 'Subscribed' or 'Unsubscribed' contacts. Confirm your selection by typing out the status and then click **Next**.
+- On the _Tag_ page, you can apply a Privy Tag to every contact in the file to make filtering or segmenting for these specific contacts easier in the future. _Tags are optional._ 
+- Lastly, review and confirm your file upload by clicking **Submit**.
 
 <video autoPlay muted loop playsInline className="submit-contact-import" src="/images/contact-management/complete-import.mp4" />
 
 ### Compliance Review
 
-After you've submitted the import, your contacts will initially appear in your account with an "**unset: non mailable**" status. These contacts will transition to a "**mailable**" or "**textable**" status following a review by the Privy Compliance Team. *The review process is carried out during our business hours, which are from 9 AM to 5 PM EST, Monday through Friday. For imports initiated outside of these hours, approval will typically occur on the following business day.*
+After you've submitted the import, your contacts will initially appear in your account with an "**unset: non mailable**" status. These contacts will transition to a "**mailable**" or "**textable**" status following a review by the Privy Compliance Team. _The review process is carried out during our business hours, which are from 9 AM to 5 PM EST, Monday through Friday. For imports initiated outside of these hours, approval will typically occur on the following business day._
 
 Once the import undergoes review, and if it gets approved, you will receive a confirmation email, and your contacts will become mailable or textable. In case our compliance team requires additional information before approving the import, they will reach out to you with further questions. Please keep in mind that the duration of this process may vary depending on the size of the import file. You can check the review status of the import in the Import section of your account's [Business Settings](https://dashboard.privy.com/settings/imports).
 
 <Warning>
-  **Note:** Privy will not approve purchased lists or mailing lists that contain non-permission-based contacts. If an import is rejected, you will receive an email from the Compliance Team, and the import will have a *Rejected* status in the *Import* section of your account's [Business Settings](https://dashboard.privy.com/settings/imports).
+  **Note:** Privy will not approve purchased lists or mailing lists that contain non-permission-based contacts. If an import is rejected, you will receive an email from the Compliance Team, and the import will have a _Rejected_ status in the _Import_ section of your account's [Business Settings](https://dashboard.privy.com/settings/imports).
 </Warning>
 
 ## Import via Linked Account
@@ -85,33 +78,34 @@ Some integrations, such as Shopify, allow you to import contacts directly into P
 
 To check if one of [your linked accounts](https://dashboard.privy.com/settings/accounts) supports this functionality: 
 
-* Click on your business name in the upper right corner of your dashboard and select **Business Settings.**
-
-* Head to the [Import Contacts](https://dashboard.privy.com/settings/import-contacts) page on the left navigation.
-
-* Select a supported Linked Account from the dropdown menu and choose which list you'd like the import.
-
-* Click **Import Contacts**.
+- Click on your business name in the upper right corner of your dashboard and select **Business Settings.**
+- Head to the [Import Contacts](https://dashboard.privy.com/settings/import-contacts) page on the left navigation.
+- Select a supported Linked Account from the dropdown menu and choose which list you'd like the import.
+- Click **Import Contacts**.
 
 You can check the status of your imports at any time via your [Email Imports](https://dashboard.privy.com/settings/email-imports) page.
 
-<img height="200" src="/images/contact-management/import-linked-account.gif" />
+<img
+  height="200"
+  src="/images/contact-management/import-linked-account.gif"
+/>
 
 ## Create contacts manually
 
-* In your Privy account, select **Contacts** from the main navigation. 
+- In your Privy account, select **Contacts** from the main navigation. 
+- On the _Contacts_ dashboard, click on the **Add Contacts** option and select the **Add Contacts Manually** option from the dropdown menu.
+- You will be prompted for the contact's email address, first name, and last name. Only the email address is required. After providing the desired information, click **Save**. 
 
-* On the *Contacts* dashboard, click on the **Add Contacts** option and select the **Add Contacts Manually** option from the dropdown menu.
-
-* You will be prompted for the contact's email address, first name, and last name. Only the email address is required. After providing the desired information, click **Save**. 
-
-The contact's profile is created immediately and should be available after a page refresh. Select the profile to input additional information or unsubscribe the contact from future communications.&#x20;
+The contact's profile is created immediately and should be available after a page refresh. Select the profile to input additional information or unsubscribe the contact from future communications. 
 
 <Tip>
   For importing extensive lists, we strongly recommend using our CSV import option. This is the ideal choice when bringing in numerous contacts, as it allows our Compliance team to review larger imports and helps in preserving the health of your contact list. 
 </Tip>
 
-<img height="200" src="/images/contact-management/create-contact-manually.gif" />
+<img
+  height="200"
+  src="/images/contact-management/create-contact-manually.gif"
+/>
 
 <Warning>
   **A previously unsubscribed contact cannot be resubscribed via these steps.** While mailable is the default state of new contacts, an error message will appear when attempting to apply the subscribed status to an unsubscribed contact. Instead, the contact will remain unsubscribed until they opt back in via your checkout process or an onsite display with the same email address.
@@ -121,17 +115,19 @@ The contact's profile is created immediately and should be available after a pag
 
 The Shopify, Shopify Plus, and Weebly integrations automatically create or update contacts in Privy when a customer's email address is collected during your store's checkout process. The email address used during checkout is captured in Privy as an 'order' and is used to generate or update a contact's profile. An address is captured when the customer has either:
 
-* Completed a purchase.
+- Completed a purchase.
+- Reached the payment step of the checkout process. 
 
-* Reached the payment step of the checkout process. 
-
-<img height="200" src="/images/contact-management/checkout-optin.png" />
+<img
+  height="200"
+  src="/images/contact-management/checkout-optin.png"
+/>
 
 <Icon icon="circle-question" /> **What if an existing contact opts in during the checkout process?**
 
 **Deduplication:** Privy will not create any duplicate contacts — the existing contact profile will be updated, and new order activity will be added to the existing profile.
 
-**Email permission status:** If a contact checks the subscribe box as part of the order process, they will be marked as [mailable](https://privy.helpscoutdocs.com/article/139-understand-deliverability) unless they previously became ineligible due to hard bounces or by marking your emails as spam. If a contact does not check the box, their eligibility within Privy will remain unchanged. If the provided address is associated with a previously deleted profile, a new profile will be created using the contact's last known eligibility state.&#x20;
+**Email permission status:** If a contact checks the subscribe box as part of the order process, they will be marked as [mailable](https://privy.helpscoutdocs.com/article/139-understand-deliverability) unless they previously became ineligible due to hard bounces or by marking your emails as spam. If a contact does not check the box, their eligibility within Privy will remain unchanged. If the provided address is associated with a previously deleted profile, a new profile will be created using the contact's last known eligibility state. 
 
 <Icon icon="circle-question" /> **What if a new contact places an order without accepting email marketing?**
 
@@ -143,15 +139,15 @@ In Privy, we encourage the practice of maintaining list hygiene to ensure that y
 
 Before removing contacts, consider referencing the following guides to better understand healthy list cleaning practices:
 
-<Card title="Cleaning Your Email List" icon="soap">
+<Card title="Cleaning Your Email List" icon="soap" href="https://help.privy.com/docs/learn/contact-management/list-hygiene">
   Follow this guide on safely removing cold or uninterested contacts from your list.
 </Card>
 
-<Card title="Removing Bots From Your List" icon="robot">
+<Card title="Removing Bots From Your List" icon="robot" href="https://help.privy.com/docs/learn/contact-management/remove-bots">
   Got bots? It happens. Follow this guide to learn how to identify bot email addresses and the most effective ways to remove them from your list.
 </Card>
 
-<Card title="Upload to Unsubscribe Contacts" icon="arrow-left-from-bracket">
+<Card title="Upload to Unsubscribe Contacts" icon="arrow-left-from-bracket" href="https://help.privy.com/docs/learn/contact-management/unsubscribe-contacts#bulk-unsubscribe">
   If you've identified a large number of contacts that you'd like to unsubscribe from Privy, follow this guide on how to import the CSV as unsubscribed.
 </Card>
 
@@ -159,22 +155,25 @@ Before removing contacts, consider referencing the following guides to better un
 
 To delete a large amount of Contacts and all their data within Privy:
 
-* Head the [Contacts](https://dashboard.privy.com/contacts) tab on your Privy Dashboard.
-
-* When removing a specific set of contacts, utilize the filtering options located on the left side of your Contacts table. Select and apply all preferred filters.
+- Head the [Contacts](https://dashboard.privy.com/contacts) tab on your Privy Dashboard.
+- When removing a specific set of contacts, utilize the filtering options located on the left side of your Contacts table. Select and apply all preferred filters.
 
 Next, expand the **"with # contacts"** menu on the upper right side of your Contacts table and select the **Delete** option on the dropdown.
 
-<img height="200" src="/images/contact-management/delete-contacts-bulk.png" />
+<img
+  height="200"
+  src="/images/contact-management/delete-contacts-bulk.png"
+/>
 
 ### Delete contacts manually
 
 To delete individual contacts in Privy:
 
-* Head the [Contacts](https://dashboard.privy.com/contacts) tab on your Privy Dashboard.
+- Head the [Contacts](https://dashboard.privy.com/contacts) tab on your Privy Dashboard.
+- Use the search option to search for the specific contact email. Click on the contact once it's found.
+- In the contact's profile, click on the Delete contact option in the upper right corner.
 
-* Use the search option to search for the specific contact email. Click on the contact once it's found.
-
-* In the contact's profile, click on the Delete contact option in the upper right corner.
-
-<img height="200" src="/images/contact-management/delete-contact.gif" />
+<img
+  height="200"
+  src="/images/contact-management/delete-contact.gif"
+/>
