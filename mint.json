@@ -222,7 +222,8 @@
                   "icon": "mobile",
                   "pages": [
                       "docs/learn/integrations/attentive",
-                      "docs/learn/integrations/postscript"
+                      "docs/learn/integrations/postscript",
+                      "docs/learn/integrations/emotive"
                   ]
                 },
                 {
