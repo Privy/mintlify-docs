@@ -221,9 +221,9 @@
                   "group": "SMS",
                   "icon": "mobile",
                   "pages": [
+                      "docs/learn/integrations/emotive",
                       "docs/learn/integrations/attentive",
-                      "docs/learn/integrations/postscript",
-                      "docs/learn/integrations/emotive"
+                      "docs/learn/integrations/postscript"
                   ]
                 },
                 {
