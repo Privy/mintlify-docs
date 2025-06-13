@@ -6,6 +6,14 @@ sidebarTitle: "Emotive"
 
 To sync the contacts captured by your Privy displays into your Emotive account, you will first need to integrate the two accounts, then set up sync rules on each of your displays.
 
+## Features of the integration
+
+The Privy \<\> Emotive integration allows you to sync SMS contacts collected via Privy Display, and:
+
+- Choose which Welcome Flow they should enter after signup
+- Sync the master or unique coupon code generated at signup
+- Sync custom properties collected at time of signup (via [Mini Quiz, Radio Button, or Checkboxes](https://help.privy.com/docs/learn/displays/form-fields-and-elements#form-fields))
+
 ## Setting up the integration
 
 To link your Privy account with your Emotive account:
@@ -23,7 +31,7 @@ All set\! Emotive should now appear as a linked account in the _Authorized Acco
 
   If you have an existing API Key, you can locate it on this page, then copy & paste it into the Personal Access Token field in Privy.
 
-![](/images/integrations/emotive-locate-api-key.png)
+  ![](/images/integrations/emotive-locate-api-key.png)
 
   If you need to create a new API Key, you can do so by following these instructions:
 
@@ -33,7 +41,6 @@ All set\! Emotive should now appear as a linked account in the _Authorized Acco
   - Click **Next** once you're ready, and copy your new API Key.
 
   <video autoPlay muted loop playsInline className="create-api-key-in-emotive" src="/images/integrations/emotive-create-api-key.mp4" />
-
 </Accordion>
 
 ## Add a sync rule to your displays
@@ -52,6 +59,23 @@ This display’s signups will now sync to Emotive\!
 <Warning>
   **Note:** Sync rules must be set up for each individual display.
 </Warning>
+
+### Sync Coupon Codes to Emotive
+
+To sync master or unique coupon codes from Privy to Emotive, you must:
+
+1. Have a coupon code attached to your Privy display
+2. Collect the _Coupon_ Profile Attribute in your display's settings
+
+To attach your coupon code to your display and collect the _Coupon_ Profile Attribute:
+
+- Head to your display's **Settings**.
+- Select the **Coupon** card and choose the desired coupon code from the dropdown menu.
+- Next, select _Show Advanced Settings_ in the lower left.
+- Select the **Profile Attributes** card, click **Collect New Attribute**, and choose "Coupon" as the _Attribute to be collected_.
+- **Save** your changes.
+
+All set\! The coupon code associated with each signup will now sync over to Emotive.
 
 ## Removing the integration
 
