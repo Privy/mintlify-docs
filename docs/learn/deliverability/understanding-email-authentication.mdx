@@ -5,28 +5,25 @@ icon: "badge-check"
 description: "Make sure you have your DMARC / SPF / DKIM records in place to meet sender requirements."
 ---
 
-Starting in February 2024, Google and Yahoo! have stated that there will be new requirements for sending emails to their users. Two of the mentioned requirements are that all senders must have an authenticated domain (SPF/DKIM) and a DMARC policy. 
+Starting in February 2024, Google and Yahoo\! have stated that there will be new requirements for sending emails to their users. Two of the mentioned requirements are that all senders must have an authenticated domain (SPF/DKIM) and a DMARC policy. 
 
 In this article, we’ll go over what these new requirements are and how you can make sure that you are up to speed with all of them so you won’t run into any issues with these email service providers while sending your emails securely through Privy.
 
 ## What are Google and Yahoo's requirements?
 
 <AccordionGroup>
-  <Accordion title="Send emails from your custom domain." defaultOpen={false}>
+  <Accordion title="Send emails from your custom domain." defaultOpen="false">
     Using free email domains like @gmail.com or @aol.com in your ‘From’ address has never been a good practice — not only does it negatively affect your recipients’ experience with your brand, but it can now cause your emails to get rejected or land in the spam folder. Transitioning to a domain you own is strongly advised for seamlessly setting up authentication and complying with evolving standards. For customers without a custom domain, acquiring one promptly is recommended.
   </Accordion>
-
-  <Accordion title="Email authentication using DMARC, SPF, and DKIM records." defaultOpen={false}>
+  <Accordion title="Email authentication using DMARC, SPF, and DKIM records." defaultOpen="false">
     Authentication is a way to verify that an email comes from who it claims to come from and is not a spoof. In other words, it helps prevent spam, phishing attempts, and other malicious activities that could damage your brand’s reputation or the trust your recipients have in your emails. Authentication also improves deliverability, as mailbox providers will be able to confirm the identity of the sender. The most commonly used email authentication records are **SPF**, **DKIM**, and **DMARC**. 
 
-    *If you want to do a quick check to see if your domain already has DKIM and SPF records as well as a DMARC policy in place, you can do a lookup here:* [*https://dmarcian.com/domain-checker/*](https://dmarcian.com/domain-checker/)
+    _If you want to do a quick check to see if your domain already has DKIM and SPF records as well as a DMARC policy in place, you can do a lookup here:_ [_https://dmarcian.com/domain-checker/_](https://dmarcian.com/domain-checker/)
   </Accordion>
-
-  <Accordion title="Maintain a spam rate below 0.3%." defaultOpen={false}>
-    This will also be enforced by Google to prevent recipients from being spammed with unwanted content. We have systems in place that can be useful for tracking your spam complaints with Privy, but ultimately businesses should want to use [Google Postmaster Tools](https://gmail.com/postmaster/) to track those as well. [Segmentation](https://help.privy.com/docs/learn/email-campaigns/segmentation) is a great way to make sure that your messages are more tailored + reaching the intended audience. 
+  <Accordion title="Maintain a spam rate below 0.3%." defaultOpen="false">
+    This will also be enforced by Google to prevent recipients from being spammed with unwanted content. We have systems in place that can be useful for tracking your spam complaints with Privy, but ultimately businesses should want to use [Google Postmaster Tools](https://gmail.com/postmaster/) to track those as well. [Segmentation](https://help.privy.com/docs/learn/email-campaigns/segmentation) is a great way to make sure that your messages are more tailored \+ reaching the intended audience. 
   </Accordion>
-
-  <Accordion title="All emails must contain a one-click unsubscribe rate." defaultOpen={false}>
+  <Accordion title="All emails must contain a one-click unsubscribe rate." defaultOpen="false">
     All emails sent to both providers will require that an unsubscribe link/button is visible in the email body. Luckily, emails created with Privy have and always will include this option by default.
   </Accordion>
 </AccordionGroup>
@@ -46,7 +43,7 @@ Dive into what each of these DNS records stands for and its purpose below:
 <Card title="Domain-based Message Authentication, Reporting, and Conformance (DMARC)">
   [**DMARC**](https://dmarc.org/overview/) is a standard that builds on SPF and DKIM. It ensures emails are genuinely coming from the domain they claim to be from, by checking the alignment of the SPF and DKIM records. It detects and prevents email spoofing techniques used in phishing, business email compromise (BEC), and other email-based attacks.
 
-  * DMARC provides instructions to receiving servers about how to handle incoming mail. To get delivered, messages need to pass DKIM and SPF alignment checks according to the requirements set by the DMARC policy. Messages that do not pass DMARC checks can be allowed, rejected, or placed in the spam folder.
+  - DMARC provides instructions to receiving servers about how to handle incoming mail. To get delivered, messages need to pass DKIM and SPF alignment checks according to the requirements set by the DMARC policy. Messages that do not pass DMARC checks can be allowed, rejected, or placed in the spam folder.
 </Card>
 
 ## How to set up these records
@@ -59,65 +56,67 @@ That being said, here is a brief overview of what this process looks like:
 
 These records are TXT records on your domain that authorize specific servers to send mail using your domain name. This is how an SPF record may look:
 
-<img height="200" src="/images/deliverability/spf-record-example.png" />
+```
+v=spf1 include:_spf.google.com~all
+```
 
-<Accordion title="Tips for setting up your SPF Record" defaultOpen={false} icon="lightbulb">
-  * Publish the record and test to ensure proper configuration.
+<Tip>
+  Replace "google.com" with whichever email server your domain uses.
+</Tip>
 
-  * Create your SPF TXT record specifying the authorized addresses. You can do this in your DNS settings depending on your domain host provider.
-
-  * Get a list of the IP addresses, email servers, or domains authorized to send emails on your behalf.
+<Accordion title="Tips for setting up your SPF Record" defaultOpen="false" icon="lightbulb">
+  - Publish the record and test to ensure proper configuration.
+  - Create your SPF TXT record specifying the authorized addresses. You can do this in your DNS settings depending on your domain host provider.
+  - Get a list of the IP addresses, email servers, or domains authorized to send emails on your behalf.
 </Accordion>
 
 ### Set up DKIM Records
 
 A DKIM record is a specially formatted DNS TXT record that includes a name, version, key type, and the public key itself, and is often made available by the provider that is sending your email. A simple DKIM signature is composed of several parts and may look like this:
 
-<img height="200" src="/images/deliverability/dkim-record-example.png" />
+```
+v=DKIM1;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDXtO3Mn1iOnq8XjWzud7GUrrgJFJhIj+1Zf7O527Tu3I5K1NXOk6HWVI10GP3YzIzIzrMMdBuEvGfZF30BRV8qX3EG1ETiyP664BDpIQUvtnkCLzjezl8qvD1LU9sSygCtIcHTHhu2eyh7gG3lU2AzoMM3uQb5Omh+U0xHNg1VoQIDAQAB
+```
 
-<Accordion title="Tips for setting up your DKIM Record" defaultOpen={false} icon="lightbulb">
-  * Generate the public/private key pair for encrypting and decrypting your DKIM signature.
+<Tip>
+  Our team also recommends checking out this [DKIM Record Generator](https://easydmarc.com/tools/dkim-record-generator) resource for more guidance.
+</Tip>
 
-  * Publish the public key in your DNS zone file as a TXT record – and secure your private key.
-
-  * Generate your signature and test your emails to ensure proper configuration.
+<Accordion title="Tips for setting up your DKIM Record" defaultOpen="false" icon="lightbulb">
+  - 
+  - Generate the public/private key pair for encrypting and decrypting your DKIM signature.
+  - Publish the public key in your DNS zone file as a TXT record – and secure your private key.
+  - Generate your signature and test your emails to ensure proper configuration.
 </Accordion>
 
 ### Set up DMARC Record
 
 A DMARC record may look like this:
 
-<img height="200" src="/images/deliverability/dmarc-record-example.png" />
+```
+v=DMARC1; p=quarantine; rua=mailto:dmarc@yourdomain.com
+```
 
-<Accordion title="Tips for setting up your DMARC Policy" defaultOpen={false} icon="lightbulb">
-  * Identify legitimate and illegitimate sources that fail authentication. This gives you insights to help you adjust other security protocols.
-
-  * Gradually tighten your DMARC policy from none to quarantine, and reject, and choose an email address for receiving DMARC reports.
-
-  * Monitor your emails to identify and analyze emails that fail authentication.
-
-  * Ensure you set up SPF and DKIM correctly.
-
-  * Generate and publish your DMARC record in TXT format in your DNS database.
+<Accordion title="Tips for setting up your DMARC Policy" defaultOpen="false" icon="lightbulb">
+  - Identify legitimate and illegitimate sources that fail authentication. This gives you insights to help you adjust other security protocols.
+  - We recommend setting your policy to quarantine (p=quarantine), and choosing an email address for receiving DMARC reports (rua).
+  - Monitor your emails to identify and analyze emails that fail authentication.
+  - Ensure you set up SPF and DKIM correctly.
+  - Generate and publish your DMARC record in TXT format in your DNS database.
 </Accordion>
 
 ### Helpful Resources
 
 To get some more detailed information about how you can create and manage these records, please check out the articles for some of the most popular host providers:
 
-* **Google Domains:** [DMARC](https://support.google.com/a/answer/2466563?hl=en) & [SPF/DKIM](https://www.google.com/url?client=internal-element-cse\&cx=a8a251bd03698fb03\&q=https://knowledge.workspace.google.com/kb/how-to-enable-sender-policy-framework-and-dkim-000008789\&sa=U\&ved=2ahUKEwjZ3cOr--WGAxXOMVkFHeSmDhgQFnoECAIQAg\&usg=AOvVaw1GwddUlQCR10DFdIHeMHTc\&arm=e\&fexp=72519171,72519168)
+- **Google Domains:** [DMARC](https://support.google.com/a/answer/2466563?hl=en) & [SPF/DKIM](https://www.google.com/url?client=internal-element-cse&cx=a8a251bd03698fb03&q=https://knowledge.workspace.google.com/kb/how-to-enable-sender-policy-framework-and-dkim-000008789&sa=U&ved=2ahUKEwjZ3cOr--WGAxXOMVkFHeSmDhgQFnoECAIQAg&usg=AOvVaw1GwddUlQCR10DFdIHeMHTc&arm=e&fexp=72519171,72519168)
+- **GoDaddy:** [DMARC/SPF/DKIM](https://www.godaddy.com/help/set-up-spf-dkim-or-dmarc-records-for-my-hosting-email-40810)
+- **Namecheap:** [DMARC/SPF/DKIM](https://www.namecheap.com/support/knowledgebase/article.aspx/317/2237/how-do-i-add-txtspfdkimdmarc-records-for-my-domain/)
+- **Squarespace:** [DMARC/SPF/DKIM](https://support.squarespace.com/hc/en-us/articles/360002101888-Adding-custom-DNS-records-to-your-Squarespace-managed-domain#toc-dmarc-records)
+- **Wix:** [SPF](https://support.wix.com/en/article/adding-or-updating-spf-records-in-your-wix-account) & [DKIM](https://support.wix.com/en/article/adding-a-dkim-txt-record) (for DMARC, contact [Wix Support](https://www.wix.com/about/contact-us))
+- **Shopify:** [DKIM/SPF](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-your-email#connect-to-spf-and-dkim-records) (for DMARC, contact [Shopify Support](https://help.shopify.com/en/support/login))
 
-* **GoDaddy:** [DMARC/SPF/DKIM](https://www.godaddy.com/help/set-up-spf-dkim-or-dmarc-records-for-my-hosting-email-40810)
-
-* **Namecheap:** [DMARC/SPF/DKIM](https://www.namecheap.com/support/knowledgebase/article.aspx/317/2237/how-do-i-add-txtspfdkimdmarc-records-for-my-domain/)
-
-* **Squarespace:** [DMARC/SPF/DKIM](https://support.squarespace.com/hc/en-us/articles/360002101888-Adding-custom-DNS-records-to-your-Squarespace-managed-domain#toc-dmarc-records)
-
-* **Wix:** [SPF](https://support.wix.com/en/article/adding-or-updating-spf-records-in-your-wix-account) & [DKIM](https://support.wix.com/en/article/adding-a-dkim-txt-record) (for DMARC, contact [Wix Support](https://www.wix.com/about/contact-us))
-
-* **Shopify:** [DKIM/SPF](https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-your-email#connect-to-spf-and-dkim-records) (for DMARC, contact [Shopify Support](https://help.shopify.com/en/support/login))
-
-If your host provider is not on the list above, don’t worry - you can contact us at [support@privy.com](mailto:support@privy.com?subject=DNS%20Help) so we can point you in the right direction!
+If your host provider is not on the list above, don’t worry - you can contact us at [support@privy.com](mailto:support@privy.com?subject=DNS%20Help) so we can point you in the right direction\!
 
 ## Verify your custom domain in Privy
 
@@ -125,15 +124,11 @@ If you haven't already, make sure you'd added your custom sending domain in Priv
 
 The approach to updating DNS records varies from one provider to another, most hosts have similar steps, however, we’ve included links to our KB articles for several top hosting sites:
 
-* Shopify
-
-* GoDaddy
-
-* Namecheap
-
-* Wix
-
-* Domain.com
+- Shopify
+- GoDaddy
+- Namecheap
+- Wix
+- Domain.com
 
 <Info>
   If you encounter any difficulties while attempting to verify your custom domain with Privy, and require further assistance, don’t hesitate to schedule a call with one of our DNS experts using this [link](https://calendly.com/david-sanchez0/dnssupport?month=2023-06).
@@ -142,7 +137,6 @@ The approach to updating DNS records varies from one provider to another, most h
 In order for a custom domain to become fully-verified, the custom domain must pass <u>both</u> of the following checks:
 
 1. **DNS Records Check**: Checks if the required Privy DNS records exist within the custom domain’s records and if they’re valid.
-
 2. **DMARC Policy Check**: Checks if a valid DMARC policy is configured within the custom domain’s records.
 
 ## Sending Status
@@ -151,7 +145,7 @@ Privy introduced the following sending statuses, which are dependent on the outc
 
 ### Can send emails
 
-A Privy account is placed into this status if the custom domain passes the DNS Records check, regardless of if the DMARC policy check fails. However, a valid DMARC policy is still recommended and should be added as soon as possible in order to comply with the recent Gmail + Yahoo sending requirements.
+A Privy account is placed into this status if the custom domain passes the DNS Records check, regardless of if the DMARC policy check fails. However, a valid DMARC policy is still recommended and should be added as soon as possible in order to comply with the recent Gmail \+ Yahoo sending requirements.
 
 ### Cannot send emails
 
@@ -162,23 +156,20 @@ If your Privy account is under the “Cannot send emails” status, you’d need
 ## FAQs
 
 <AccordionGroup>
-  <Accordion title="Who will be affected by the new requirements? " defaultOpen={false}>
+  <Accordion title="Who will be affected by the new requirements? " defaultOpen="false">
     All senders must be compliant with these new requirements, with more noticeable effects on deliverability for bulk senders. 
   </Accordion>
-
-  <Accordion title="What happens if I don’t meet Google and Yahoo’s requirements?" defaultOpen={false}>
+  <Accordion title="What happens if I don’t meet Google and Yahoo’s requirements?" defaultOpen="false">
     In that case, Google and Yahoo will block all emails that don’t meet their requirements, meaning that your recipients that have Gmail and Yahoo addresses will generate bounces on your newsletter campaigns and any other emails.
 
     This can cause a lot of damage to your sending reputation and deliverability rates and can create lasting consequences to your customers’ engagement and email-generated revenue.
   </Accordion>
-
-  <Accordion title="Will sending volume be a factor in these new requirements?" defaultOpen={false}>
+  <Accordion title="Will sending volume be a factor in these new requirements?" defaultOpen="false">
     While Google has stated that users who send to less than 5,000 contacts per day will have fewer requirements, we strongly recommend that all volume senders work on meeting all of the requirements to avoid deliverability issues.
   </Accordion>
-
-  <Accordion title="Where can I find more information about Google and Yahoo’s requirements? " defaultOpen={false}>
+  <Accordion title="Where can I find more information about Google and Yahoo’s requirements? " defaultOpen="false">
     For Google, you can access their [email sender guidelines](https://support.google.com/mail/answer/81126) to see the full list of their requirements.
 
-    And for Yahoo!, you can find this information on their [sender best practices](https://senders.yahooinc.com/best-practices/).
+    And for Yahoo\!, you can find this information on their [sender best practices](https://senders.yahooinc.com/best-practices/).
   </Accordion>
 </AccordionGroup>
